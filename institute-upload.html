@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GetzPAID - Institute Upload</title>
+    <meta name="Description" content="Getzpaid">
+    <meta name="Keywords" content="Getzpaid">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="scss/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="css/datatables.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+        .table-responsive table td {
+            text-align: center;
+            color: #424242 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header Starts-->
+    <header>
+
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="logo-img float-start col-md-3 col-xl-3 col-3">
+                        <a href="institute-dashboard.html"><img src="images/logo-main.svg" alt="" title=""
+                                class="img-fluid mb-3 mb-md-0 animated fadeInDown"></a>
+                    </div>
+                    <div class="heading-text col-md-6 col-xl-4 col-6 pt-xl-0 pt-5">
+                        <h2>Welcome Daly College, </h2>
+                        <p class="pt-1">to GetzPAID for Academic Institute </p>
+
+                    </div>
+                    <div class="right-side float-end col-md-12 col-xl-5 right-img col-12"><img src="images/logo-dc.svg"
+                            alt="" title="">
+                        <a href="#" id="dropdown" class="help">
+                            <img width="50px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Help"
+                                src="images/help.png" alt="" id="hideClick" class="right-icon col-md-2">
+
+                            <img width="50px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Help"
+                                src="images/help-web-button-2.png" alt="Help Web Button" id="imgactive"
+                                class="right-icon col-md-2">
+
+                            <div class="right-dropdown">
+                                <ul>
+                                    <li><span class="right-dropdown-img"><img src="images/user-guide-updated.png"
+                                                alt="User Guide Updated"></span>Guide</li>
+                                    <li><span class="right-dropdown-img"><img src="images/phone-call-upated.png"
+                                                alt="Phone Call Upated"></span><span>Contact:
+                                        </span>9876543210 </li>
+                                    <li><span class="right-dropdown-img"><img
+                                                src="images/message.png"></span><span>Email Id:
+                                        </span>ib.counsellor@podarin<br>ternationalschool.com </li>
+                                </ul>
+
+
+                            </div>
+                        </a>
+                        <div data-bs-toggle="tooltip" data-bs-placement="bottom" title="Logout" class="logout-button">
+                            <img src="images/logout-button.png" alt="log out" />
+
+                        </div>
+
+                        <button class="leftnav menu-button-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <!--Header Starts-->
+    <div class="container position-relative pb-10 px-xxl-2 pe-xl-4 ps-lg-0">
+        <div class="row">
+            <!-- Left panel -->
+            <div class="position-fixd leftmenu mt-0">
+                <ul class="menu-bar bg-menu rounded-left-nav rounded-left-nav-sm">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <li id="liDashboard">
+                        <a href="institute-dashboard.html" class="rounded-3 leftnav"><span
+                                class="dashboard"></span>Dashboard</a>
+                    </li>
+
+
+
+                    <li id="liCustomer" class="active"><a href="institute-select-class.html"
+                            class="rounded-3 leftnav"><span class="customer"></span>Students</a>
+                    </li>
+                    <li id="liContract"><a href="institute-fee-structure.html" class="rounded-3 leftnav"><span
+                                class="contracts"></span>Fee Structure</a></li>
+                    <li id="liMandate"><a href="institute-fee-collection.html" class="rounded-3 leftnav"><span
+                                class="mandates"></span>Fee Collection</a></li>
+                    <li title="Mandates" id="liPayments"><a href="institute-mandates.html"
+                            class="rounded-3 leftnav"><span class="payments"></span>Mandates</a></li>
+                    <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="reports second"></span>Fee
+                            Report</a>
+                    </li>
+                    <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="settings"></span>Settings</a>
+                    </li>
+                    <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="profiles"></span>Profile</a>
+                    </li>
+                    <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="help"></span>Help</a>
+                    </li>
+                    <li>
+                        <div class="menu-button ">Setup Fee<span class="material-icons"><img src="images/next.png"
+                                    alt=""></span></div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- Left panel -->
+            <!-- Right Panel -->
+            <div class="col-xl-9 col-xl-9 col-xxl-9 col-lg-12 col-md-12 ms-auto mt-4 ps-xl-1 dashboard-content">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 font-family-bold">
+                            <h2 class=" alumi-heading p-0">Student</h2>
+
+                        </div>
+
+
+                        <div class="col-md-5 p-0 font-family-bold mt-3 px-2">
+
+                            <div class="form-group ">
+                                <label for="exampleInputEmail1" class="pb-2 institute">Class :</label>
+
+                                <select class="form-select form-control" aria-label="Default select example">
+                                    <option selected>Higher Secondary Class - 9th</option>
+
+                                    <option value="1">Primary 1</option>
+                                    <option value="2">Primary 2</option>
+                                    <option value="3">Primary 3</option>
+                                    <option value="1">Primary 4</option>
+
+                                    <option value="1">Secondary 5</option>
+                                    <option value="2">Secondary 6</option>
+                                    <option value="3">Secondary 7</option>
+                                    <option value="1"> Secondary 8</option>
+
+                                    <option value="3">Higher Secondary 9</option>
+                                    <option value="1">Higher Secondary 10</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-12 mb-5 js wow fadeInUp pt-4">
+
+                            <div class="col-md-12 ms-auto">
+
+                                <div class="input-file-box rounded-4 text-center col-md-12 col-lg-12 m-auto">
+                                    <span class="icon-upload"><img src="images/upload-icon.png"></span>
+                                    <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1"
+                                        data-multiple-caption="{count} files selected" multiple />
+                                    <label for="file-1" onclick="move()">Drag and drop files here<br>or<br><span
+                                            class="btn btn-upload btn-height-sm rounded-3 px-3">Browse
+                                            Document</span></label>
+                                </div>
+
+                                <!-- Demo -->
+
+                                <div
+                                    class="input-file-box rounded-4 text-center col-md-12 col-lg-12 m-auto upload-wrapper">
+
+                                    <input type="file" id="uploadfile" class="inputfile-1 cover-all-sec" multiple />
+                                    <label for="uploadfile">
+                                        <div class="icon-upload"><img src="images/upload-icon.png" alt="upload-icon">
+                                        </div>
+                                        <p>Drag and drop files here</p>
+                                        <p>or</p>
+                                        <span class=" btn-upload btn-height-sm rounded-3 px-3">Browse Document</span>
+                                    </label>
+                                </div>
+
+                                <div class="showData">
+
+                                    <div class="groupUpload">
+
+                                        <div class="uploadFiledata-wrraper">
+                                            <div class="uploadFiledata">
+                                                <img src="images/uploadIcon.png" alt="upload" />
+                                                <div class="studentUpload">
+                                                    <p class="studentText">Studentsbatch2024.csv</p>
+                                                    <p class="uploadingText">Uploading</p>
+                                                </div>
+
+                                                <div class="progressBar">
+                                                    <span class="uploadMb">15MB</span>
+                                                    <div id="myProgress">
+                                                        <div id="myBar"></div>
+                                                    </div>
+                                                    <span class="uploadMbpecent">40%</span>
+                                                </div>
+
+
+
+                                            </div>
+                                            <img src="images/uploaddelete.png" alt="delete">
+                                        </div>
+
+                                        <div class="deleteupload">
+                                            <p class="textColor"><span class="greenColor">90000</span> / 10000
+                                                Successfully uploaded!
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="errorText">
+
+                                        <img src="images/errorImg.png" alt="delete">
+                                        <h6>Error</h6>
+
+
+                                        <p class="textPara">
+
+                                            Please fix these errors & and upload new CSV.
+                                            <span class="errorFound">5 Errors Found</span>
+                                        </p>
+
+                                    </div>
+
+
+
+
+
+                                    <!-- For Error message add class ===> class="error-in" -->
+
+                                    <!-- When data is max then it will scroll vertical  -->
+
+                                    <div class="data-table table-responsive pt-2">
+                                        <table class="" id="example">
+                                            <thead>
+                                                <tr>
+                                                    <th>Row</th>
+                                                    <th>Enrollment Number</th>
+                                                    <th>Student Name</th>
+                                                    <th>Division</th>
+                                                    <th>Roll No.</th>
+                                                    <th>Parent Name</th>
+
+                                                    <th class="text-center">Contact Number
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td data-label="Row" class="table-heading">4</td>
+                                                    <td data-label="Enrollment Number">SMI2024001</td>
+                                                    <td data-label="Student Name">Aarav Sharma</td>
+                                                    <td data-label="Division">B</td>
+                                                    <td data-label="Roll No.">1</td>
+                                                    <td data-label="Parent Name">Rajesh Sharma</td>
+
+                                                    <td data-label="Contact Number">
+                                                        <a href="#" class="error-in">
+                                                            9876543
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td scope="row" data-label="Row" class="table-heading">8</td>
+                                                    <td data-label="Enrollment Number">SMI2024002</td>
+                                                    <td data-label="Student Name">Kavya Patel</td>
+                                                    <td data-label="Division">
+                                                        <a href="#" class="error-in"> BL</a>
+                                                    </td>
+                                                    <td data-label="Roll No.">2</td>
+                                                    <td data-label="Parent Name">Ramesh Patel</td>
+
+                                                    <td data-label="Contact Number">
+                                                        9876543211
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row" data-label="Row" class="table-heading">20</td>
+                                                    <td data-label="Enrollment Number">
+                                                        <a href="#" class="error-in"> SMIJk2024003</a>
+                                                    </td>
+                                                    <td data-label="Student Name">Isha Verma</td>
+                                                    <td data-label="Division">B</td>
+                                                    <td data-label="Roll No.">3</td>
+                                                    <td data-label="Parent Name">Priya Verma</td>
+
+                                                    <td data-label="Contact Number">
+                                                        9876543212
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row" data-label="Row" class="table-heading">47</td>
+                                                    <td data-label="Enrollment Number">SMI2024004</td>
+                                                    <td data-label="Student Name">Rohan Mehta</td>
+                                                    <td data-label="Division">B</td>
+                                                    <td data-label="Roll No.">4</td>
+                                                    <td data-label="Parent Name">
+                                                        <a href="#" class="error-in"> Anjali Mehta </a>
+                                                    </td>
+
+                                                    <td data-label="Contact Number">
+
+                                                        9876543213
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row" data-label="Row" class="table-heading">55</td>
+                                                    <td data-label="Enrollment Number">
+                                                        <a href="#" class="error-in"> SMI202400500</a>
+                                                    </td>
+                                                    <td data-label="Student Name">Diya Gupta</td>
+                                                    <td data-label="Division">B</td>
+                                                    <td data-label="Roll No.">5</td>
+                                                    <td data-label="Parent Name">Amit Gupta</td>
+
+                                                    <td data-label="Contact Number">
+
+                                                        9876543214
+
+                                                    </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="text-center upload-file">
+                                    <a href="#" class=" colorWhitegrayblue">Download sample.csv file</a>
+                                </div>
+                            </div>
+
+                            <a href="javascript:void(0)" class="colorWhite btnUpload">Submit</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Right Panel -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <span class="powerdText">Powered by <img src="images/footerlogo.svg" /></span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="js/datatables.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        (function (document, window, index) {
+            var inputs = document.querySelectorAll('.inputfile');
+            Array.prototype.forEach.call(inputs, function (input) {
+                var label = input.nextElementSibling,
+                    labelVal = label.innerHTML;
+                input.addEventListener('change', function (e) {
+                    var fileName = '';
+                    if (this.files && this.files.length > 1)
+                        fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
+                    else
+                        fileName = e.target.value.split('\\').pop();
+
+                    if (fileName)
+                        label.querySelector('span').innerHTML = fileName;
+                    else
+                        label.innerHTML = labelVal;
+                });
+                // Firefox bug fix
+                input.addEventListener('focus', function () {
+                    input.classList.add('has-focus');
+                });
+                input.addEventListener('blur', function () {
+                    input.classList.remove('has-focus');
+                });
+            });
+        }(document, window, 0));
+
+
+
+        new DataTable('#example', {
+            ordering: false,
+            "bDestroy": false,
+            "bAutoWidth": false,
+            "bFilter": false,
+            "bSort": false,
+            "bPaginate": false,
+            "bInfo": false
+        });
+        $(document).ready(function () {
+
+            $(".btnUpload").on("click", function () {
+
+
+                $(".showData").show();
+                $(".colorWhitegrayblue").hide();
+                $(".upload-file").hide();
+
+
+            })
+
+        })
+    </script>
+
+    <script>
+    </script>
+</body>
+
+</html>

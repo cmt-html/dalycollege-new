@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="scss/main.css">
+    <title>GetzPAID - OTP Verify</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="header">
+            <div class="container">
+                <div class="row loginLogoutBorderNone">
+
+                    <div class="logo-img float-start col-md-3 col-xl-3 col-3">
+                        <a href="institute-dashboard.html"><img src="images/logo-main.svg" alt="" title="" class="img-fluid mb-3 mb-md-0 animated fadeInDown"></a>
+                    </div>
+                    
+                    <div class="right-side float-end col-md-12 col-xl-5 right-img col-12"><img src="images/logo-dc.svg" alt="Logo Daly" title="">
+                        <a href="#" id="dropdown" class="help">
+                            <img width="50px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Help" src="images/help.png" alt="" id="hideClick" class="right-icon col-md-2">
+
+                            <img width="50px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Help" src="images/help-web-button-2.png" alt="Help Web Button" id="imgactive" class="right-icon col-md-2">
+
+                            <div class="right-dropdown">
+                                <ul>
+                                    <li><span class="right-dropdown-img"><img
+                                                src="images/user-guide-updated.png" alt="User Guide Updated"></span>Guide</li>
+                                    <li><span class="right-dropdown-img"><img
+                                                src="images/phone-call-upated.png" alt="Phone Call Upated"></span><span>Contact:
+                                        </span>9876543210 </li>
+                                    <li><span class="right-dropdown-img"><img
+                                                src="images/message.png" alt="message.png"></span><span>Email Id:
+                                        </span>ib.counsellor@podarin<br>ternationalschool.com </li>
+                                </ul>
+
+
+                            </div>
+                        </a>
+                        <div data-bs-toggle="tooltip" data-bs-placement="bottom" title="Logout" class="logout-button">
+                            <!-- <img src="images/logout-button.png" alt="log out" /> -->
+
+                            <button class="leftnav menu-button-icon"><i class="fa fa-bars"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <div class="container ">
+        <div class="row ">
+            <div class="backButton">
+                <a href="login-institute.html"><img src="images/back-arrow.png"  alt="back-arrow.png"/></a>
+            </div>
+            <div class="col-md-10 col-lg-5 mx-auto my-auto instituteLogin">
+                <h1 class="enterText"> Enter the 6- digit code</h1>
+
+                <p class="weSent">We sent it to <span class="number text-nowrap">+9197*****528</span> & <span class="email text-nowrap"> we******@dalycollege.org</span></p>
+                <div class=" position-relative">
+                    <div class="col-12 col-md-12 col-lg-12 mx-auto  text-left">
+                        <div class="row">
+                            <p class="text-gray small  col-6 wow sixDigit fadeInUp col-md-6">Your 6- digit code</p>
+                            <p class="col-md-6  col-6 text-right timer">00:58</p>
+                        </div>
+                        <div class="row g-md-0 g-2">
+                            <div class="col-12 wow fadeInUp">
+                                <div class="row row-cols-6 g-md-3 g-2 inputs" id="inputs">
+                                    <div class="enterpass"><input type="text" maxlength="1" id="otp1" oninput="moveToNext(this, 'otp2')" class="form-control form-control-sm text-center px-2 shadow-none"></div>
+                                    <div class="enterpass"><input type="text" maxlength="1" id="otp2" oninput="moveToNext(this, 'otp3')" class="form-control form-control-sm text-center px-2 shadow-none"></div>
+                                    <div class="enterpass"><input type="text" maxlength="1" id="otp3" oninput="moveToNext(this, 'otp4')" class="form-control form-control-sm text-center px-2 shadow-none"></div>
+                                    <span class="dashed">-</span>
+
+                                    <div class="enterpass"><input type="text" maxlength="1" id="otp4" oninput="moveToNext(this, 'otp5')" class="form-control form-control-sm text-center px-2 shadow-none"></div>
+                                    <div class="enterpass"><input type="text" maxlength="1" id="otp5" oninput="moveToNext(this, 'otp6')" class="form-control form-control-sm text-center px-2 shadow-none"></div>
+                                    <div class="enterpass"><input type="text" maxlength="1" id="otp6" oninput="moveToNext(this, '')" class="form-control form-control-sm text-center px-2 shadow-none"></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="receive"><a href="#"> I didn't receive a code, Resend</a></div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="col-md-12 mx-auto mt-4 text-center">
+                    <a href="institute-dashboard.html" class="btn btn-gray-color text-white btn-height d-block wow fadeInUp colorWhite">Verify</a>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="col-md-12 text-center logoFooter footerInstitute">
+
+                <img src="images/footer-logo-nach-npci.svg" alt="">
+            </div>
+            <div class="col-md-12 text-center terms-and-condition">
+
+                By registering, you accept our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/jquery-3.7.0.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

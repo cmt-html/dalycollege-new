@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetzPAID - Parents Login </title>
+    <link rel="stylesheet" type="text/css" href="scss/main.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header">
+            <div class="container">
+                <div class="row loginLogoutBorderNone">
+
+                    <div class="logo-img float-start col-md-3 col-xl-3 col-3">
+                        <a href="institute-dashboard.html">
+                            <img src="images/logo-main.svg" alt="logo-main.svg" title="logo-main.svg" class="img-fluid mb-3 mb-md-0 animated fadeInDown">
+                        </a>
+                    </div>
+                    
+                    <div class="right-side float-end col-md-12 col-xl-5 right-img col-12"><img src="images/logo-dc.svg" alt="" title="">
+                        <a href="#" id="dropdown" class="help">
+                            <img width="50px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Help" src="images/help.png" alt="" id="hideClick" class="right-icon col-md-2">
+
+                            <img width="50px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Help" src="images/help-web-button-2.png" alt="Help Web Button" id="imgactive" class="right-icon col-md-2">
+
+                            <div class="right-dropdown">
+                                <ul>
+                                    <li><span class="right-dropdown-img"><img
+                                                src="images/user-guide-updated.png" alt="User Guide Updated"></span>Guide</li>
+                                    <li><span class="right-dropdown-img"><img
+                                                src="images/phone-call-upated.png" alt="Phone Call Upated"></span><span>Contact:
+                                        </span>9876543210 </li>
+                                    <li><span class="right-dropdown-img">
+                                        <img src="images/message.png" alt="message.png"></span><span>Email Id:
+                                        </span>ib.counsellor@podarin<br>ternationalschool.com </li>
+                                </ul>
+
+
+                            </div>
+                        </a>
+                        <div data-bs-toggle="tooltip" data-bs-placement="bottom" title="Logout" class="logout-button">
+                            <!-- <img src="images/logout-button.png" alt="log out" /> -->
+
+                            <button class="leftnav menu-button-icon"><i class="fa fa-bars"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <div class="container ">
+        <div class="row ">
+
+            <div class="col-md-10 col-lg-6  mx-auto wellcome-text login-text loginParent ">
+                <h2 class="text-center top-space">Welcome Parent.</h2>
+                <form class="form-top">
+                    <div class="form-group">
+                        <label for="enrollmentNumber" class="pb-2 institute">Enrollment Number</label>
+                        <input type="text" class="form-control" id="enrollmentNumber" placeholder="00234562001">
+                    </div>
+                    <div class="form-group password-top  mb-0">
+                        <label for="exampleInputPassword1 " class="pb-2 password">Password</label>
+                        <input type="password" class="form-control " id="txtPassword" placeholder="Password">
+                        <button type="button" id="btnToggle" class="toggle"><i id="eyeIcon" class="fa fa-eye-img"></i></button>
+                    </div>
+
+                    <div class="col-md-12 terms-condition">
+                        <label class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10" checked>
+                            <span class="form-check-label font-Login" for="flexCheckDefault10" >
+                                Stay updated! Receive email updates on your college fee payments
+                            </span>
+                        </label>
+                    </div>
+
+                    <a href="otp-verify-parents.html" class="colorWhite btn button-full-width">Login</a>
+                </form>
+            </div>
+
+            <div class="col-md-12 text-center logoFooter">
+
+                <img src="images/footer-logo-nach-npci.svg" alt="">
+            </div>
+            <div class="col-md-12 text-center terms-and-condition">
+
+                By registering, you accept our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="js/jquery-3.7.0.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
