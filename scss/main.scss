@@ -304,8 +304,83 @@ table {
   }
 }
 
-.header {
+header {
+  padding: 16px 10px;
   border-bottom: 1px solid #dbdbdb;
+  border-top: none;
+
+  .header-wrraper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .college-logo-part,
+  .header-options > ul,
+  .logo-part {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    padding-right: 24px;
+    position: relative;
+    img {
+      width: 112px !important;
+      width: 100%;
+    }
+
+    &::after {
+      content: "";
+      width: 1.5px;
+      height: 80%;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #dbdbdb;
+    }
+  }
+
+  .welcome-msg {
+    padding-left: 30px;
+  }
+
+  .college-logo-part,
+  .header-options > ul {
+    gap: 24px;
+  }
+
+  .clg-logo {
+    max-width: 283px;
+    width: 100%;
+  }
+
+  .header-options {
+    > ul {
+      > li {
+        width: 30px;
+        position: relative;
+      }
+    }
+  }
+}
+
+header.log-off {
+  .welcome-msg,
+  .logo::after,
+  .log-out-btn {
+    display: none !important;
+  }
+}
+
+.logo-part {
+  flex-grow: 1;
+}
+
+header.institute-header {
+  .logo::after {
+    display: none;
+  }
 }
 
 img {
@@ -909,10 +984,9 @@ p.bold-heading-you-have {
   color: #323232;
 }
 
-
 @media (min-width: 1440px) {
   .logo-img {
-      width: 17% !important;
+    width: 17% !important;
   }
 }
 
@@ -930,6 +1004,12 @@ p.bold-heading-you-have {
 }
 
 @media (min-width: 1200px) {
+  header.institute-header {
+    .welcome-msg {
+      padding-left: 15%;
+    }
+  }
+
   .logo-img {
     ~ .heading-text {
       display: flex;
@@ -1364,6 +1444,17 @@ select option {
   font-family: "metropolismedium";
 }
 
+// .inputs {
+//   .enterpass{
+//     max-width: 80px;
+//     padding: 0 !important;
+//     padding-right: 16px !important;
+//     &:last-child{
+//       padding-right: 0 !important;
+//     }
+//   }
+// }
+
 // .datepicker td,
 // .datepicker th {
 //     text-align: center;
@@ -1786,7 +1877,7 @@ select option {
     align-items: center;
   }
   .enterpass {
-    width: calc(15.5% + 2px) !important;
+    width: calc(15.5% + 3px) !important;
   }
   .wellcome-text {
     color: #424242;
@@ -2625,7 +2716,9 @@ input[type="password"]::-ms-reveal {
   opacity: 1 !important;
 }
 
-.cardmenu {  top: -10px !important;}
+.cardmenu {
+  top: -10px !important;
+}
 
 @media (max-width: 991px) {
   .tab-content > .tab-pane {
@@ -2692,6 +2785,18 @@ input[type="password"]::-ms-reveal {
     position: absolute;
     right: 12px;
     top: 22px;
+  }
+
+  header .header-wrraper {
+    flex-direction: column;
+  }
+
+  .logo-part {
+    margin-bottom: 20px;
+  }
+
+  .college-logo-part {
+    justify-content: space-between;
   }
 }
 
@@ -3244,6 +3349,7 @@ input[type="password"]::-ms-reveal {
   font-size: 18px;
   top: -3px;
   color: #323232;
+  font-family: "metropolissemi_bold";
 }
 
 .text-right-acdamic {
@@ -3291,13 +3397,24 @@ input[type="password"]::-ms-reveal {
 
 .divTableCell,
 .divTableHead {
-  border: 1px solid #d2d2d2;
+  border: 1.3px solid #d2d2d2;
+  border-bottom: none;
   display: table-cell;
   padding: 16px 33px;
   color: #323232;
   font-weight: 500;
   font-size: 16px;
   font-family: "metropolismedium";
+}
+
+.divTableBody {
+  .divTableRow {
+    .divTableCell {
+      &:first-child {
+        border-right: none !important;
+      }
+    }
+  }
 }
 
 .divTableHeading {
@@ -4416,6 +4533,10 @@ option {
   }
 }
 
+.only-mobile {
+  display: none;
+}
+
 @media (max-width: 991px) {
   .tab-content > .tab-pane {
     display: block;
@@ -4441,6 +4562,9 @@ option {
 }
 
 @include media-breakpoint-down(xl) {
+  .only-mobile {
+    display: block;
+  }
   .col-right {
     width: 73%;
     margin-left: 68px;
@@ -4459,8 +4583,20 @@ option {
     border: 0;
     font-size: 30px;
     position: absolute;
-    right: 12px;
-    top: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  header {
+    .header-options {
+      > ul {
+        > li {
+          &:last-child {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -4508,9 +4644,12 @@ option {
   }
 }
 
-
-
 @include media-breakpoint-down(md) {
+  header.institute-header {
+    .logo::after {
+      display: block;
+    }
+  }
   table.table.dataTable.table-striped > tbody > tr:nth-of-type(2n + 1) > * {
     box-shadow: none;
     color: #424242;
@@ -4718,7 +4857,7 @@ option {
     padding-left: 0px;
   }
   .body-padding-none {
-    padding: 20px !important;
+    padding: 20px 0 !important;
   }
   .alumini-details {
     color: #424242;
@@ -4805,6 +4944,10 @@ option {
     font-size: 18px;
     line-height: 17px;
     font-weight: 600;
+  }
+
+  .heading-text h2 {
+    font-size: 24px;
   }
   .wellcome-text {
     .top-space {
@@ -4998,6 +5141,44 @@ option {
   .tableShowEntries table.table.dataTable.table-striped > tbody > tr > td {
     text-align: right !important;
     font-size: 12px !important;
+  }
+  header {
+    padding: 15px 0;
+    margin-bottom: 0;
+    .logo {
+      padding-right: 18px;
+      img {
+        width: 80px !important;
+      }
+
+      &::after {
+        height: 100%;
+      }
+    }
+  }
+
+  header .welcome-msg {
+    padding-left: 0px;
+  }
+  header .header-options > ul {
+    gap: 20px;
+  }
+
+  header .header-options > ul > li {
+    width: 24px;
+  }
+
+  .menu-button-icon {
+    padding: 0;
+    font-size: 24px;
+  }
+
+  .menu-bar {
+    padding-top: 0 !important;
+  }
+
+  .parentCard {
+    padding: 0;
   }
 }
 

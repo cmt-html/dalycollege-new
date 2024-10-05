@@ -30,6 +30,11 @@
 // };
 
 // Create the data object
+
+
+
+
+
 const data = {
   labels: [
     "Fee Mandate Created",
@@ -90,65 +95,3 @@ const ctx = document.getElementById("chartContainer").getContext("2d");
 // Create the chart
 const myHorizontalBarChart = new Chart(ctx, config);
 
-// // Create the data object
-// const data = {
-//   labels: [
-//     "Fee Mandate Created",
-//     "Fee Mandate Accepted",
-//     "Fee Mandate Approval Pending",
-//     "Fee Mandate Rejected",
-//     "Revision Requested",
-//   ],
-//   datasets: [
-//     {
-//       label: "", // Set label as blank
-//       data: [750, 550, 190, 20, 80],
-//       backgroundColor: ["#1C3180", "#00895D", "#FFDA59", "#DF0D00", "#F26522"],
-//       //   borderColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)"],
-//     //   backgroundColor: "transparent", // Remove background color
-//       borderColor: "transparent", // Remove border color
-//       borderWidth: 0, // Set border width to 0
-//     },
-//   ],
-// };
-
-// // Set up the chart configuration
-// const config = {
-//   type: "bar", // Keep type as 'bar' for horizontal chart
-//   data: data,
-//   options: {
-//     responsive: true,
-//     indexAxis: "y", // Change axis direction (horizontal)
-//     scales: {
-//       x: {
-//         // X-axis settings
-//         beginAtZero: true,
-//         min: 0, // Set minimum value for X-axis
-//         max: 1000, // Set maximum value for X-axis
-//         ticks: {
-//           stepSize: 100, // Set increment for X-axis
-//         },
-//       },
-//       y: {
-//         // Y-axis settings
-//         grid: {
-//           display: true, // Optional: Display grid lines on the y-axis
-//         },
-//         ticks: {
-//           align: "start", // Align y-axis labels to the start (left)
-//         },
-//       },
-//     },
-//     plugins: {
-//       legend: {
-//         display: true, // Show the legend
-//       },
-//     },
-//   },
-// };
-
-// // Get the context of the canvas
-// const ctx = document.getElementById("chartContainer").getContext("2d");
-
-// // Create the chart
-// const myHorizontalBarChart = new Chart(ctx, config);

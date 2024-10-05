@@ -11035,8 +11035,67 @@ table {
   display: none;
 }
 
-.header {
+header {
+  padding: 16px 10px;
   border-bottom: 1px solid #dbdbdb;
+  border-top: none;
+}
+header .header-wrraper {
+  display: flex;
+  justify-content: space-between;
+}
+header .college-logo-part,
+header .header-options > ul,
+header .logo-part {
+  display: flex;
+  align-items: center;
+}
+header .logo {
+  padding-right: 24px;
+  position: relative;
+}
+header .logo img {
+  width: 112px !important;
+  width: 100%;
+}
+header .logo::after {
+  content: "";
+  width: 1.5px;
+  height: 80%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #dbdbdb;
+}
+header .welcome-msg {
+  padding-left: 30px;
+}
+header .college-logo-part,
+header .header-options > ul {
+  gap: 24px;
+}
+header .clg-logo {
+  max-width: 283px;
+  width: 100%;
+}
+header .header-options > ul > li {
+  width: 30px;
+  position: relative;
+}
+
+header.log-off .welcome-msg,
+header.log-off .logo::after,
+header.log-off .log-out-btn {
+  display: none !important;
+}
+
+.logo-part {
+  flex-grow: 1;
+}
+
+header.institute-header .logo::after {
+  display: none;
 }
 
 img {
@@ -11629,6 +11688,9 @@ p.bold-heading-you-have {
   }
 }
 @media (min-width: 1200px) {
+  header.institute-header .welcome-msg {
+    padding-left: 15%;
+  }
   .logo-img ~ .heading-text {
     display: flex;
     flex-direction: column;
@@ -12431,7 +12493,7 @@ select option {
   align-items: center;
 }
 .instituteLogin .enterpass {
-  width: calc(15.5% + 2px) !important;
+  width: calc(15.5% + 3px) !important;
 }
 .instituteLogin .wellcome-text {
   color: #424242;
@@ -13236,6 +13298,15 @@ input[type=password]::-ms-reveal {
     right: 12px;
     top: 22px;
   }
+  header .header-wrraper {
+    flex-direction: column;
+  }
+  .logo-part {
+    margin-bottom: 20px;
+  }
+  .college-logo-part {
+    justify-content: space-between;
+  }
 }
 @media (max-width: 991.98px) {
   .tableShowEntries table.table.dataTable.table-striped > tbody > tr > td {
@@ -13744,6 +13815,7 @@ input[type=password]::-ms-reveal {
   font-size: 18px;
   top: -3px;
   color: #323232;
+  font-family: "metropolissemi_bold";
 }
 
 .text-right-acdamic {
@@ -13791,13 +13863,18 @@ input[type=password]::-ms-reveal {
 
 .divTableCell,
 .divTableHead {
-  border: 1px solid #d2d2d2;
+  border: 1.3px solid #d2d2d2;
+  border-bottom: none;
   display: table-cell;
   padding: 16px 33px;
   color: #323232;
   font-weight: 500;
   font-size: 16px;
   font-family: "metropolismedium";
+}
+
+.divTableBody .divTableRow .divTableCell:first-child {
+  border-right: none !important;
 }
 
 .divTableHeading {
@@ -14787,6 +14864,10 @@ option {
   color: #1c3180;
 }
 
+.only-mobile {
+  display: none;
+}
+
 @media (max-width: 991px) {
   .tab-content > .tab-pane {
     display: block;
@@ -14810,6 +14891,9 @@ option {
   }
 }
 @media (max-width: 1199.98px) {
+  .only-mobile {
+    display: block;
+  }
   .col-right {
     width: 73%;
     margin-left: 68px;
@@ -14828,8 +14912,11 @@ option {
     border: 0;
     font-size: 30px;
     position: absolute;
-    right: 12px;
-    top: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  header .header-options > ul > li:last-child {
+    margin-left: 20px;
   }
 }
 @media (max-width: 991.98px) {
@@ -14875,6 +14962,9 @@ option {
   }
 }
 @media (max-width: 767.98px) {
+  header.institute-header .logo::after {
+    display: block;
+  }
   table.table.dataTable.table-striped > tbody > tr:nth-of-type(2n + 1) > * {
     box-shadow: none;
     color: #424242;
@@ -15067,7 +15157,7 @@ option {
     padding-left: 0px;
   }
   .body-padding-none {
-    padding: 20px !important;
+    padding: 20px 0 !important;
   }
   .alumini-details {
     color: #424242;
@@ -15152,6 +15242,9 @@ option {
     font-size: 18px;
     line-height: 17px;
     font-weight: 600;
+  }
+  .heading-text h2, .heading-text .h2 {
+    font-size: 24px;
   }
   .wellcome-text .top-space {
     padding-top: 45px;
@@ -15329,6 +15422,38 @@ option {
   .tableShowEntries table.table.dataTable.table-striped > tbody > tr > td {
     text-align: right !important;
     font-size: 12px !important;
+  }
+  header {
+    padding: 15px 0;
+    margin-bottom: 0;
+  }
+  header .logo {
+    padding-right: 18px;
+  }
+  header .logo img {
+    width: 80px !important;
+  }
+  header .logo::after {
+    height: 100%;
+  }
+  header .welcome-msg {
+    padding-left: 0px;
+  }
+  header .header-options > ul {
+    gap: 20px;
+  }
+  header .header-options > ul > li {
+    width: 24px;
+  }
+  .menu-button-icon {
+    padding: 0;
+    font-size: 24px;
+  }
+  .menu-bar {
+    padding-top: 0 !important;
+  }
+  .parentCard {
+    padding: 0;
   }
 }
 @media (max-width: 375px) {
