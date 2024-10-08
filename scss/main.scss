@@ -228,10 +228,8 @@ section {
 }
 
 body {
-  line-height: 1;
   overflow-x: hidden !important;
   font-family: "metropolislight";
-  width: 100vw;
 }
 
 ol,
@@ -291,6 +289,7 @@ table {
   padding: 20px 10px 20px 0px;
   width: 20%;
   position: relative;
+
   &:after {
     content: "";
     width: 1px;
@@ -324,6 +323,7 @@ header {
   .logo {
     padding-right: 24px;
     position: relative;
+
     img {
       width: 112px !important;
       width: 100%;
@@ -401,6 +401,7 @@ img {
   display: block;
   padding-top: 20px;
   padding: 28px 0;
+
   .right-icon {
     vertical-align: top;
     padding-left: 0px;
@@ -427,8 +428,10 @@ img {
     font-family: "metropolissemi_bold";
     color: #424242;
   }
+
   .form-top {
     padding-top: 13%;
+
     .button-full-width {
       width: 100%;
       background-color: #0d9161;
@@ -438,29 +441,34 @@ img {
       padding: 17px 17px;
       font-weight: normal;
     }
+
     .password-top {
       padding-top: 15px;
     }
-    .form-group {
-      label {
-        font-size: 18px;
-        font-weight: 500;
-        color: #757575;
-        font-family: "metropolismedium";
-      }
-    }
+
     .form-control {
       border-radius: 10px;
       color: #424242;
       font-size: 18px;
       font-family: "metropolissemi_bold";
-      margin-bottom: 12px;
+      padding: 16px !important;
     }
+
     .form-control::placeholder {
       border-radius: 15px;
       color: #424242;
-      padding: 10px 10px;
     }
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #757575;
+    font-family: "metropolismedium";
   }
 }
 
@@ -469,6 +477,7 @@ img {
   font-size: 16px;
   padding-top: 16%;
   padding-bottom: 5%;
+
   a {
     text-decoration: underline;
     color: #424242;
@@ -479,6 +488,7 @@ img {
 .heading-text {
   padding: 0;
   margin-left: 0px;
+
   h2 {
     padding-top: 10px;
     font-size: 24px;
@@ -491,10 +501,12 @@ img {
 .input-search {
   border: 1px solid #a3a3a3;
   border-radius: 45px;
-  padding: 12px 20px 12px 45px;
+  padding: 10px 17px 10px 50px;
   outline: none;
   font-family: "metropolissemi_bold";
-  width: 200px;
+  max-width: 232px;
+  width: 100%;
+  font-weight: 600;
 }
 
 .input-search::placeholder {
@@ -516,10 +528,22 @@ img {
   border: 1px solid #a3a3a3;
   background: none;
   border-radius: 40px;
-  padding: 1;
-  width: 124px;
   height: auto;
-  padding: 14px 5px;
+  padding: 10px 26px 10px 58px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+
+  .filter-icon {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .filter-text {
@@ -538,6 +562,10 @@ img {
   float: left;
 }
 
+.flex-v-center {
+  display: flex;
+  align-items: center;
+}
 .alumi-heading {
   font-size: 32px;
   color: #323232;
@@ -548,18 +576,15 @@ img {
 
 .add-button {
   background-color: #0d9161;
-  // width: 124px;
-  // height: 37px;
   border: 0px;
   font-weight: 600;
   font-size: 16px;
   color: #fff;
-  line-height: 10px;
   background-color: #0d9161;
   color: #fff;
-  line-height: 10px;
   border-radius: 50px;
-  padding: 19px 24px;
+  padding: 11px 24px;
+  white-space: nowrap;
 }
 
 .higher-secondary {
@@ -588,6 +613,7 @@ img {
   border-radius: 9px;
   border: 1px solid #e5e5e5;
   box-shadow: -3px 4px 4px 0px #b7b7b740;
+
   .class-heading {
     background-color: #e5f2f1;
     // overflow: hidden;
@@ -596,11 +622,13 @@ img {
     height: 49px;
     border-radius: 10px 10px 0px 0px;
   }
+
   .class-name {
     font-size: 20px;
     color: #323232;
     font-family: $metropolismedium-medium;
   }
+
   .nine {
     padding-left: 10px;
     padding-top: 3px;
@@ -613,6 +641,7 @@ img {
 
 .card-para {
   font-family: $metropolismedium-medium;
+
   h2 {
     color: #0c865b;
     font-size: 27px;
@@ -620,6 +649,7 @@ img {
     font-family: "metropolisbold";
     padding-left: 10px;
   }
+
   p {
     color: #323232;
     font-family: $metropolismedium-medium;
@@ -638,6 +668,7 @@ img {
     margin-top: 12px;
     margin-right: 17px;
   }
+
   .customer {
     background: url("../images/customer.png");
     width: 20px;
@@ -646,6 +677,7 @@ img {
     margin-top: 12px;
     margin-right: 17px;
   }
+
   .contracts {
     background: url("../images/contract.png");
     width: 20px;
@@ -654,6 +686,7 @@ img {
     margin-top: 12px;
     margin-right: 17px;
   }
+
   .mandates {
     background: url("../images/wallet.png");
     width: 20px;
@@ -662,6 +695,7 @@ img {
     margin-top: 12px;
     margin-right: 17px;
   }
+
   .payments {
     background: url("../images/mandates.png");
     width: 20px;
@@ -670,6 +704,7 @@ img {
     margin-top: 12px;
     margin-right: 17px;
   }
+
   .reports {
     background: url("../images/menu-icon.svg");
     width: 20px;
@@ -678,9 +713,11 @@ img {
     margin-top: 12px;
     margin-right: 17px;
   }
+
   .reports.second {
     background: url("../images/user-guide-icon.svg");
   }
+
   .settings {
     background: url("../images/setting.svg");
     width: 20px;
@@ -689,6 +726,7 @@ img {
     margin-top: 12px;
     margin-right: 17px;
   }
+
   .profiles {
     background: url("../images/profile-user.svg");
     width: 20px;
@@ -697,6 +735,7 @@ img {
     margin-top: 12px;
     margin-right: 17px;
   }
+
   .help {
     background: url("../images/help-web-button.svg");
     width: 20px;
@@ -715,17 +754,18 @@ img {
 }
 
 .leftmenu {
-  top: 9.5rem;
-  bottom: 100%;
-  z-index: -1;
-  left: 0;
-  right: 0;
   transition: all 0.5s ease-in-out;
 }
 
 .openmenu {
   z-index: 9;
   bottom: 0;
+}
+
+.wellcome-text {
+  .form-control {
+    height: 50px;
+  }
 }
 
 .menu-bar {
@@ -855,6 +895,10 @@ img {
   background: #eeeeee !important;
 }
 
+.dropdown-item {
+  font-weight: 600;
+}
+
 .leftmenu .dropdown-item:hover {
   color: #fff !important;
   background: #616161 !important;
@@ -940,6 +984,12 @@ img {
   }
 }
 
+.parents-fee-structure {
+  .button-full-width {
+    max-width: 154px;
+  }
+}
+
 .payment-details-foo {
   margin-top: 18px !important;
 }
@@ -954,18 +1004,26 @@ img {
       display: flex;
       align-items: center;
     }
+
     .form-check-input[type="checkbox"] {
       padding: 8px !important;
     }
   }
 
-  // .terms-condition {
-  //   margin-bottom: 20px;
-  // }
-
   .net-banking {
     max-width: 230px;
     width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .banking-img-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -984,6 +1042,18 @@ p.bold-heading-you-have {
   color: #323232;
 }
 
+.parent-header {
+  .header-options {
+    ul {
+      li {
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 1440px) {
   .logo-img {
     width: 17% !important;
@@ -995,6 +1065,7 @@ p.bold-heading-you-have {
     background-color: #1c3180;
     border-radius: 0px 0px 20px 20px;
   }
+
   .menu-button-icon {
     background: none;
     border: 0;
@@ -1003,10 +1074,16 @@ p.bold-heading-you-have {
   }
 }
 
+@media (width < 1440px) {
+  .institute-header .logo {
+    padding-right: 90px !important;
+  }
+}
+
 @media (min-width: 1200px) {
-  header.institute-header {
-    .welcome-msg {
-      padding-left: 15%;
+  .institute-header {
+    .logo {
+      padding-right: 100px;
     }
   }
 
@@ -1038,30 +1115,37 @@ p.bold-heading-you-have {
   .logo-img {
     width: 15%;
   }
+
   .dashboard-content {
-    width: 80% !important;
+    max-width: 100%;
+    width: 100%;
     box-sizing: border-box;
+    margin: 20px 0;
+    padding-right: 15px;
+    overflow: hidden;
   }
 
   .menu-button-icon {
     display: none;
   }
+
   .bg-menu {
     background-color: #1c3180;
   }
+
   .rounded-left-nav {
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
   }
-  .leftmenu {
-    top: 6.875rem;
-    bottom: 1rem;
-    z-index: 9;
-    left: 0;
-    width: 19%;
-    right: auto;
-    padding: 0;
+
+  .institute-wrraper {
+    display: flex;
   }
+
+  .leftmenu {
+    margin-right: 38px;
+  }
+
   .menu-bar {
     position: relative;
     bottom: 0;
@@ -1078,12 +1162,15 @@ p.bold-heading-you-have {
     transition: all 0.4s ease-in-out;
     padding-bottom: 40px;
   }
+
   .menu-bar li a:hover {
     background: #bebebe5e;
   }
+
   .menu-bar li.active a {
     background: #bebebe5e;
   }
+
   .menu-bar li a {
     display: flex;
     line-height: 2.5;
@@ -1094,12 +1181,15 @@ p.bold-heading-you-have {
     padding: 9px 0px;
     font-weight: 600;
     transition: background 0.1s ease-in-out;
+
     .menu-bar li {
       opacity: 1;
     }
+
     .open {
       max-width: 270px;
     }
+
     .navicon {
       font-size: 1.4rem;
       line-height: 1.8;
@@ -1107,9 +1197,11 @@ p.bold-heading-you-have {
       text-align: center;
       transition: padding 0.3s ease-in-out;
     }
+
     .open .navicon {
       padding: 0rem 1rem 0rem 2rem;
     }
+
     .menu-button {
       text-align: center;
       background: #fff;
@@ -1123,6 +1215,7 @@ p.bold-heading-you-have {
       width: 166px;
       height: 59px;
     }
+
     .menu-button .material-icons {
       line-height: 1;
       font-size: 2rem;
@@ -1132,10 +1225,12 @@ p.bold-heading-you-have {
       top: 4px;
       left: 11px;
     }
+
     .menu-button .material-icons {
       line-height: 1;
       font-size: 2rem;
     }
+
     // .open .menu-button .material-icons {
     //     transform: rotate(180deg);
     //     -webkit-transform: rotate(180deg);
@@ -1150,10 +1245,17 @@ p.bold-heading-you-have {
     .menu-bar:hover:hover .navicon {
       padding: 0rem 1rem 0rem 2rem;
     }
+
     .leftmenu .dropdown-toggle::after {
       margin-top: 18px;
       margin-left: 1rem;
     }
+  }
+}
+
+@media (width < 1200px) {
+  .institute-wrraper {
+    padding: 0 15px !important;
   }
 }
 
@@ -1254,6 +1356,7 @@ p.bold-heading-you-have {
     box-sizing: border-box;
     border-bottom: 1px solid #ccc !important;
   }
+
   .table-responsive table th,
   .table-responsive table td {
     border: 1px solid #e8ebf0;
@@ -1261,12 +1364,15 @@ p.bold-heading-you-have {
     color: #a3a3a3;
     text-align: right;
   }
+
   table {
     border: 0;
   }
+
   table caption {
     font-size: 1.3em;
   }
+
   table thead {
     border: none;
     clip: rect(0 0 0 0);
@@ -1277,17 +1383,20 @@ p.bold-heading-you-have {
     position: absolute;
     width: 1px;
   }
+
   table tr {
     border-bottom: 0px solid #ddd;
     display: block;
     margin-bottom: 0.625em;
   }
+
   .data-table table td {
     border-bottom: 1px solid #ddd;
     display: block !important;
     font-size: 0.8em;
     text-align: right;
   }
+
   table td::before {
     /*
       * aria-label has no advantage, it won't be read inside a table
@@ -1298,6 +1407,7 @@ p.bold-heading-you-have {
     font-weight: bold;
     text-transform: capitalize;
   }
+
   table td:last-child {
     border-bottom: 0;
   }
@@ -1444,29 +1554,6 @@ select option {
   font-family: "metropolismedium";
 }
 
-// .inputs {
-//   .enterpass{
-//     max-width: 80px;
-//     padding: 0 !important;
-//     padding-right: 16px !important;
-//     &:last-child{
-//       padding-right: 0 !important;
-//     }
-//   }
-// }
-
-// .datepicker td,
-// .datepicker th {
-//     text-align: center;
-//     width: 41px !important;
-//     height: 30px !important;
-//     -webkit-border-radius: 4px;
-//     font-family: 'metropolismedium';
-//     -moz-border-radius: 4px;
-//     border-radius: 4px;
-//     border: none;
-// }
-// Create Alumni css closed
 .tab-view .nav-link {
   display: block;
   padding: 12px 30px;
@@ -1480,6 +1567,7 @@ select option {
 
 .strcture {
   padding-top: 10px !important;
+
   p {
     padding-top: 6px !important;
     font-size: 20px;
@@ -1491,13 +1579,13 @@ select option {
 
 .create-structure {
   padding-top: 0px;
+
   .next-form {
     padding-top: 40px;
   }
 }
 
 .button-full-width {
-  width: 136px;
   background-color: #0d9161;
   border-radius: 45px;
   color: #fff;
@@ -1509,6 +1597,7 @@ select option {
 .strcture {
   .form-group {
     padding-bottom: 15px;
+
     label {
       color: #737373 !important;
       font-size: 18px;
@@ -1627,6 +1716,11 @@ select option {
   padding-top: 0px;
 }
 
+.form-check-input:checked[type="radio"] {
+  background-image: url("/images/checked-icon.svg") !important;
+  // background-position: center;
+}
+
 .shedule-text {
   font-size: #323232;
   padding: 10px 20px 20px 0px !important;
@@ -1657,12 +1751,14 @@ select option {
 .bg-color-total-free {
   background-color: #eaefff;
   border-radius: 4px;
-  width: 73%;
-  padding-top: 10px;
+  max-width: 390px;
   line-height: 14px;
-  padding: 11px 12px;
-  margin-left: 33px;
+  padding: 11px 13px;
   text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "metropolissemi_bold";
+
   .price {
     font-size: 20px;
     color: #323232;
@@ -1683,6 +1779,7 @@ select option {
 
 .select-width {
   float: right;
+
   .select-box {
     background-color: #fff;
     border: 0;
@@ -1691,34 +1788,38 @@ select option {
 
 .dashobard-card {
   position: relative;
+
   .money-img {
     position: absolute;
     right: 13px;
     top: 20px;
   }
+
   h1 {
     font-size: 30px;
     color: #323232;
     font-weight: 700;
     font-family: "metropolisbold";
   }
+
   .card-para {
-    padding-top: 43px;
-    min-height: 69px;
-    color: #323232;
     span {
       font-size: 16px;
     }
+
     a {
       margin-left: 8px;
     }
   }
+
   .card-par-bottom {
     font-family: $metropolismedium-medium;
+
     a {
       margin-left: 8px;
     }
   }
+
   .user-money {
     background: url("../images/money.png");
     width: 18px;
@@ -1726,9 +1827,11 @@ select option {
     display: block;
     float: left;
   }
+
   .user-money {
     margin-right: 8px;
   }
+
   .border-1 {
     border: 1px solid #e5e5e5;
     box-shadow: -3px 4px 4px 0px #b7b7b740;
@@ -1736,6 +1839,7 @@ select option {
     padding: 10px 10px 15px 10px;
     border-radius: 12px;
   }
+
   .user-icon {
     background: url("../images/user.png");
     width: 18px;
@@ -1745,12 +1849,14 @@ select option {
     float: left;
     margin-top: -2px;
   }
+
   .Total-fee {
     font-size: 16px;
     color: #323232;
     font-family: $metropolismedium-medium;
     font-weight: 500;
   }
+
   .price-dahboard {
     color: #323232;
     font-size: 16px;
@@ -1782,6 +1888,7 @@ select option {
   border: 1px solid #e5e5e5;
   box-shadow: -3px 4px 4px 0px #b7b7b740;
   border-radius: 12px;
+
   h2 {
     color: #323232;
     font-size: 20px;
@@ -1814,6 +1921,7 @@ select option {
   right: -55px;
   background: #fff;
   border: 1px solid #ccc;
+
   ul {
     li {
       list-style-type: none;
@@ -1823,11 +1931,13 @@ select option {
       text-align: left;
       font-size: 18px;
       color: #323232;
+
       span {
         display: block;
         color: #a9a9a9;
         font-size: 12px;
       }
+
       .right-dropdown-img {
         float: left;
         padding-top: 0px;
@@ -1836,6 +1946,7 @@ select option {
         padding-right: 25px;
       }
     }
+
     li:last-child {
       border-bottom: 0px solid #dbdbdb;
     }
@@ -1864,37 +1975,47 @@ select option {
 
 .instituteLogin {
   padding-top: 90px;
+  max-width: 608px;
+  width: 100%;
+  margin: 0 auto;
+
   .form-select,
   .form-control {
     border: 1px solid #9b9c9b;
     border-radius: 12px !important;
     height: 46px;
   }
+
   .dashed {
     width: 22px;
     text-align: center;
     display: flex;
     align-items: center;
   }
+
   .enterpass {
     width: calc(15.5% + 3px) !important;
   }
+
   .wellcome-text {
     color: #424242;
     font-size: 30px;
     font-weight: bold;
   }
+
   .enterText {
     font-size: 32px;
     text-align: center;
     color: #424242;
     font-family: "metropolissemi_bold";
   }
+
   .weSent {
     margin: 34px 0px;
     text-align: center;
     font-size: 16px;
   }
+
   .sixDigit {
     margin-bottom: 7px;
     font-size: 18px;
@@ -1902,6 +2023,7 @@ select option {
     padding-left: 12px;
     font-family: $metropolismedium-medium;
   }
+
   .receive {
     font-size: 18px;
     text-align: center;
@@ -1909,6 +2031,7 @@ select option {
     margin: 24px 0;
     font-family: "metropolissemi_bold";
   }
+
   .receive a {
     font-size: 18px;
     text-align: center;
@@ -1916,6 +2039,7 @@ select option {
     margin: 24px 0;
     font-family: "metropolissemi_bold";
   }
+
   .btn-gray-color {
     background-color: #0d9161;
     border-radius: 45px;
@@ -1995,6 +2119,7 @@ select option {
   justify-content: space-between;
   align-content: center;
   align-items: center;
+
   .next-button {
     margin-top: 0px;
   }
@@ -2006,6 +2131,7 @@ select option {
   flex-wrap: nowrap;
   margin-bottom: 60px;
   margin-top: 40px;
+
   .plansProduct {
     .net-banking {
       position: relative;
@@ -2019,6 +2145,7 @@ select option {
       margin-bottom: 20px;
       width: 100%;
     }
+
     .net-banking img {
       padding-bottom: 20px;
       height: auto;
@@ -2028,11 +2155,13 @@ select option {
       margin: 0 auto;
       top: 4px;
     }
+
     .totaldiv {
       max-width: 195px;
       width: 100%;
       margin: 0 auto;
     }
+
     .totalPrice {
       font-size: 12px;
       text-align: left;
@@ -2041,23 +2170,27 @@ select option {
       margin-top: 33px;
       color: #636363;
     }
+
     .planPrice {
       font-size: 40px;
       font-family: "metropolisbold";
       color: #00895d;
       user-select: none;
     }
+
     .monthlyPlan {
       margin-top: 31px;
       font-size: 12px;
       color: #858585;
     }
+
     .secondaryPrice {
       color: #969696;
       font-family: $metropolismedium-medium;
       font-size: 20px;
       position: relative;
       margin-bottom: 20px;
+
       .offer {
         font-size: 18px;
         position: absolute;
@@ -2067,6 +2200,7 @@ select option {
         padding: 4px 6px 4px 6px;
         border-radius: 2px;
       }
+
       .offerinner {
         font-size: 18px;
         position: absolute;
@@ -2077,14 +2211,17 @@ select option {
         border-radius: 2px;
       }
     }
+
     ul {
       margin-top: 41px;
       padding-top: 34px;
       border-top: 1px solid #ccc;
+
       .paymentDate {
         font-size: 12px;
         color: #858585;
       }
+
       li {
         display: flex;
         justify-content: space-between;
@@ -2137,14 +2274,17 @@ select option {
   clear: both;
   margin-top: -19px;
   margin-top: 20px;
+
   .net-banking {
     margin-top: 0 !important;
     border-radius: 0px 0px 14px 14px;
+
     p {
       color: #424242;
       font-family: $metropolismedium-medium;
     }
   }
+
   .bestplanInner {
     background-color: #00895d;
     padding: 10px 10px;
@@ -2166,16 +2306,19 @@ select option {
 div.dt-container div.dt-paging ul.pagination {
   justify-content: center;
   margin-top: 15px !important;
+
   a {
     border: none;
     font-size: 18px;
   }
+
   li.active a {
     border: none;
     color: #00895d;
     background-color: transparent !important;
     box-shadow: none;
   }
+
   li:first-child,
   li:last-child {
     display: none;
@@ -2185,6 +2328,7 @@ div.dt-container div.dt-paging ul.pagination {
 .leftmenu {
   li.locked {
     position: relative;
+
     &::before {
       content: "";
       position: absolute;
@@ -2197,10 +2341,12 @@ div.dt-container div.dt-paging ul.pagination {
       background-position: center;
       background-repeat: no-repeat;
     }
+
     a {
       color: #c8c8c8;
       pointer-events: none;
     }
+
     .mandates {
       background-image: url("../images/lock-eg.svg");
     }
@@ -2249,6 +2395,7 @@ div.dt-container div.dt-paging ul.pagination {
     text-decoration: none;
     background-color: none;
   }
+
   position: absolute;
   inset: 0px auto auto 0px;
   padding: 0 !important;
@@ -2257,15 +2404,18 @@ div.dt-container div.dt-paging ul.pagination {
   // -12px) !important;
   border: 0;
   box-shadow: 0px 2px 3px 0px rgba(134, 134, 134, 0.3490196078);
+
   li {
     border: 1px solid #d9d9d9;
     padding: 0 !important;
+
     // .dropdown-item {
     //   // padding: 0px !important;
     // }
     a {
       padding: 14px 17px;
     }
+
     a:hover {
       background: none;
     }
@@ -2321,34 +2471,41 @@ div.dt-container div.dt-paging ul.pagination {
   display: flex;
   align-items: center;
   margin-top: 26px;
+
   .uploadFiledata {
     background-color: #f8fffd;
     border: 1px solid #008459;
     padding: 16px;
     width: 100%;
     border-radius: 8px;
+
     img {
       float: left;
       margin-right: 5px;
     }
+
     .studentUpload {
       margin-bottom: 2px;
       font-family: "metropolismedium";
       display: flex;
       justify-content: space-between;
       font-size: 18px;
+
       p {
         color: #424242;
         font-size: 15px !important;
         margin-bottom: 10px;
       }
+
       .uploadingText {
         color: #00895d;
       }
     }
+
     .progressBar {
       display: flex;
       justify-content: space-between;
+
       .uploadMb {
         margin-top: 2px;
         display: block;
@@ -2357,6 +2514,7 @@ div.dt-container div.dt-paging ul.pagination {
         font-size: 16px;
         font-family: "metropolismedium";
       }
+
       .uploadMbpecent {
         color: #a6a6a6;
         margin-top: 3px;
@@ -2375,6 +2533,7 @@ div.dt-container div.dt-paging ul.pagination {
       cursor: pointer;
     }
   }
+
   .deleteupload {
     margin-left: 17px;
     display: flex;
@@ -2382,16 +2541,19 @@ div.dt-container div.dt-paging ul.pagination {
     justify-content: flex-end;
     width: 40%;
     position: relative;
+
     img {
       padding-right: 30px;
       cursor: pointer;
     }
+
     span {
       padding-left: 10px;
       padding-right: 10px;
       color: #424242;
       font-family: "metropolismedium";
     }
+
     span:before {
       content: "";
       position: absolute;
@@ -2410,9 +2572,11 @@ div.dt-container div.dt-paging ul.pagination {
   margin-top: 26px;
   display: flex;
   align-items: center;
+
   img {
     padding-right: 0px;
   }
+
   p:before {
     content: "";
     position: absolute;
@@ -2422,10 +2586,12 @@ div.dt-container div.dt-paging ul.pagination {
     margin-top: -2px;
     margin-left: -15px;
   }
+
   p {
     line-height: 19px;
     font-family: "metropolismedium";
   }
+
   h6 {
     padding-right: 40px;
     padding-left: 7px;
@@ -2433,6 +2599,7 @@ div.dt-container div.dt-paging ul.pagination {
     font-size: 32px;
     color: #424242;
   }
+
   .errorFound {
     display: block;
     color: #424242;
@@ -2576,7 +2743,7 @@ a.error-in {
 }
 
 .marginminusPlan {
-  margin-top: -23px;
+  margin-top: -10px;
 }
 
 .font-Login {
@@ -2615,7 +2782,9 @@ a.error-in {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-} // .tooltip-main {}
+}
+
+// .tooltip-main {}
 // .tooltip-qm {}
 // .tooltip-inner {
 //     background: #1c3180;
@@ -2656,7 +2825,8 @@ input[type="password"]::-ms-reveal {
   border: 0;
   position: absolute;
   right: 10px;
-  top: 60%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .wellcome-text .form-top .password-top {
@@ -2668,7 +2838,6 @@ input[type="password"]::-ms-reveal {
   background: url("../images/active_eye.png") no-repeat;
   width: 20px;
   height: 7px;
-  margin-top: 10px;
   display: block;
 }
 
@@ -2738,14 +2907,17 @@ input[type="password"]::-ms-reveal {
   .instituteLogin .enterpass {
     width: calc(15.5% + 1px) !important;
   }
+
   .calendar {
     border: 1px solid #d9d9d9;
     box-shadow: 0 0rem 1rem rgba(28, 49, 128, 0.2);
     margin-right: 10px;
   }
+
   .parentCard {
     flex-wrap: wrap;
   }
+
   .bg-color-total-free {
     background-color: #eaefff;
     width: 77%;
@@ -2761,23 +2933,28 @@ input[type="password"]::-ms-reveal {
   .menu-bar li {
     opacity: 0;
   }
+
   .calendar {
     border: 1px solid #d9d9d9;
     box-shadow: 0 0rem 1rem rgba(28, 49, 128, 0.2);
     margin-right: 10px !important;
   }
+
   .logo-img {
     &:after {
       display: none;
     }
   }
+
   .parentCard {
     flex-wrap: wrap;
   }
+
   .openmenu {
     background-color: #1c3180;
     border-radius: 0px 0px 20px 20px;
   }
+
   .menu-button-icon {
     background: none;
     border: 0;
@@ -2798,15 +2975,48 @@ input[type="password"]::-ms-reveal {
   .college-logo-part {
     justify-content: space-between;
   }
+
+  .leftmenu {
+    scale: 0;
+    margin: 0;
+    padding: 0;
+
+    &.openmenu {
+      padding: 20px 0;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @include media-breakpoint-down(lg) {
+  .parents-fee-structure {
+    .divTable {
+      max-width: 100%;
+    }
+
+    .body-padding-none {
+      padding: 20px 15px !important;
+    }
+
+    .button-full-width {
+      margin-left: 15px;
+    }
+
+    .button-style {
+      .col {
+        max-width: 184px;
+        margin: auto;
+      }
+    }
+  }
   .tableShowEntries table.table.dataTable.table-striped > tbody > tr > td {
     text-align: right !important;
   }
+
   .right-side-form {
     padding-top: 80px !important;
   }
+
   .alumi-heading {
     font-size: 21px;
     color: #323232;
@@ -2814,14 +3024,17 @@ input[type="password"]::-ms-reveal {
     padding-bottom: 0px;
     padding-top: 0px;
   }
+
   .table-responsive table td {
     text-align: right !important;
     color: #424242 !important;
   }
+
   .bg-color-total-free {
     background-color: #eaefff;
     width: 100%;
   }
+
   .body-padding-none {
     padding: 25px !important;
   }
@@ -2832,6 +3045,7 @@ input[type="password"]::-ms-reveal {
     .uploadFiledata-wrraper {
       margin-bottom: 25px;
     }
+
     .uploadFiledata-wrraper,
     .deleteupload {
       width: 100%;
@@ -2852,27 +3066,31 @@ input[type="password"]::-ms-reveal {
   .instituteLogin .dashed {
     height: 100%;
   }
+
   .text-center.noneMobile {
     display: none !important;
   }
+
   .append_icon {
     text-align: center !important;
   }
+
   .font-size-select-shedule {
     font-size: 14px;
   }
+
   .mobileNone {
     display: none;
   }
+
   .parentCard {
     margin-top: 0px;
   }
+
   .right-side-form {
     padding-top: 0 !important;
   }
-  .add-button {
-    margin-top: 20px;
-  }
+
   .tableShowEntries
     table.table.dataTable.table-striped
     > tbody
@@ -2886,14 +3104,17 @@ input[type="password"]::-ms-reveal {
     font-family: "metropolismedium";
     text-align: right;
   }
+
   .right-text {
     .text-center {
       text-align: right !important;
     }
   }
+
   .terms-condition {
     padding: 0px 0px 10px 0px;
     line-height: 32px;
+
     .form-check {
       line-height: 38px;
       border-radius: 3px;
@@ -2907,20 +3128,24 @@ input[type="password"]::-ms-reveal {
       display: flex;
     }
   }
+
   .right-img {
     text-align: right;
     display: block;
     padding-top: 20px;
     padding: 0px 12px 15px 5px !important;
   }
+
   .marginminusPlan {
     margin-top: 0;
     max-width: 256px;
   }
+
   .groupUpload {
     display: block;
     align-items: center;
   }
+
   .groupUpload .deleteupload {
     margin-left: 17px;
     margin-top: 26px;
@@ -2928,6 +3153,7 @@ input[type="password"]::-ms-reveal {
     align-items: center;
     justify-content: start;
   }
+
   .groupUpload .uploadFiledata .studentUpload {
     margin-bottom: 2px;
     font-family: "metropolismedium";
@@ -2935,34 +3161,41 @@ input[type="password"]::-ms-reveal {
     justify-content: space-between;
     font-size: 18px;
   }
+
   .table-responsive table td {
     text-align: right !important;
     color: #424242;
   }
+
   .instituteLogin .dashed {
     width: 22px;
     margin-top: 24px;
     text-align: center;
   }
+
   .right-img {
     text-align: right;
     display: block;
     padding-top: 20px;
     padding: 28px 0;
   }
+
   .heading-text {
     padding: 0;
     margin-left: 20px;
   }
+
   .logo-img {
     padding: 22px 9px 0px 10px;
   }
+
   .right-img {
     text-align: right;
     display: block;
     padding-top: 20px;
     padding: 28px 12px 15px 5px;
   }
+
   .right-dropdown {
     padding: 20px;
     box-shadow: -2px 3px 4px 0px rgba(177, 177, 177, 0.2509803922);
@@ -2973,11 +3206,13 @@ input[type="password"]::-ms-reveal {
     background: #fff;
     border: 1px solid #ccc;
   }
+
   .dashobard-card .card-para {
     padding-top: 43px;
     font-family: $metropolismedium-medium;
     min-height: 65px;
   }
+
   .dashobard-card h1,
   .dashobard-card .h1 {
     font-size: 22px;
@@ -2985,26 +3220,31 @@ input[type="password"]::-ms-reveal {
     font-weight: 700;
     padding-top: 4px;
   }
+
   .bg-color-total-free {
     width: 100%;
     padding-top: 10px;
     line-height: 22px;
     padding: 9px 6px;
     margin-left: 0;
+
     .price {
       font-size: 18px;
       color: #323232;
       font-weight: 600;
     }
   }
+
   .dashboard {
     width: 100%;
   }
+
   .alumi-heading {
     font-size: 19px;
   }
+
   .button-full-width {
-    width: 109px;
+    // max-width: 109px;
     background-color: #0d9161;
     border-radius: 45px;
     font-family: "metropolissemi_bold";
@@ -3012,6 +3252,7 @@ input[type="password"]::-ms-reveal {
     padding: 4px 8px 4px 5px;
     border: none;
   }
+
   .strcture {
     .form-group {
       label {
@@ -3020,10 +3261,12 @@ input[type="password"]::-ms-reveal {
       }
     }
   }
+
   .password {
     font-size: 14px !important;
     font-family: "metropolismedium";
   }
+
   .details-heading {
     .form-top {
       .button-full-width {
@@ -3037,6 +3280,7 @@ input[type="password"]::-ms-reveal {
       }
     }
   }
+
   .wellcome-text {
     .form-top {
       .form-control {
@@ -3044,42 +3288,52 @@ input[type="password"]::-ms-reveal {
       }
     }
   }
+
   .strcture p {
     font-size: 16px;
   }
+
   .alumi-heading {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 0px;
   }
+
   .body-padding-none {
     padding: 20px !important;
   }
+
   .alumini-details {
     color: #424242;
     font-size: 16px;
   }
+
   .details-heading {
     padding-right: 15px;
     padding-top: 7px !important;
   }
+
   .create-structure {
     padding-top: 10px;
   }
+
   .shedule-text {
     font-size: 18px;
   }
+
   .free-particular {
     font-size: 24px;
     padding-top: 20px;
     color: #0d9161;
     font-family: "metropolissemi_bold";
   }
+
   table.dataTable th,
   table.dataTable td {
     box-sizing: border-box;
     font-size: 14px !important;
   }
+
   .table-responsive table th,
   .table-responsive table td {
     border: 1px solid #e8ebf0;
@@ -3087,24 +3341,29 @@ input[type="password"]::-ms-reveal {
     padding: 12px 12px;
     text-align: right;
   }
+
   .higher-secondary {
     font-size: 18px;
   }
+
   .card-para p {
     padding-top: 5px;
     font-size: 14px;
   }
+
   .card-class {
     .nine {
       margin-top: -3px;
       font-size: 22px;
     }
+
     .class-name {
       font-size: 16px;
       color: #323232;
       padding-top: 3px;
     }
   }
+
   .card-para h2,
   .card-para .h2 {
     color: #0c865b;
@@ -3114,27 +3373,33 @@ input[type="password"]::-ms-reveal {
     font-family: "metropolisbold";
     padding-left: 10px;
   }
+
   .input-search {
     width: 100%;
   }
+
   .alumi-heading {
     padding-top: 7px;
     padding-bottom: 20px;
     padding-left: 0;
   }
+
   .cart-top {
     padding-top: 20px;
   }
+
   .higher-secondary {
     margin-top: 20px;
     padding-left: 0px !important;
   }
+
   .card-class {
     width: 45%;
     height: 135px;
     margin-right: 20px;
     margin-bottom: 20px;
   }
+
   .heading-text h2,
   .heading-text .h2 {
     padding-top: 10px;
@@ -3143,11 +3408,13 @@ input[type="password"]::-ms-reveal {
     font-weight: 600;
     font-family: "metropolissemi_bold";
   }
+
   .wellcome-text {
     .top-space {
       padding-top: 45px;
       font-size: 28px;
     }
+
     .form-top {
       .form-group label {
         font-size: 16px;
@@ -3156,9 +3423,11 @@ input[type="password"]::-ms-reveal {
       }
     }
   }
+
   .wellcome-text .form-top .form-group label {
     font-size: 14px;
   }
+
   .terms-and-condition {
     font-size: 14px;
     line-height: 24px;
@@ -3170,6 +3439,14 @@ input[type="password"]::-ms-reveal {
 
   .btnUpload {
     margin: 0px auto;
+  }
+
+  .right-dropdown ul li br {
+    display: block;
+  }
+
+  .institute-table-option {
+    justify-content: flex-start !important;
   }
 }
 
@@ -3189,6 +3466,7 @@ input[type="password"]::-ms-reveal {
   background: #fff;
   border: 1px solid #ccc;
   font-family: "metropolismedium";
+
   ul {
     li {
       list-style-type: none;
@@ -3198,12 +3476,14 @@ input[type="password"]::-ms-reveal {
       text-align: left;
       font-size: 18px;
       color: #323232;
+
       span {
         display: block;
         color: #a9a9a9;
         font-size: 12px;
         margin-bottom: 5px;
       }
+
       .right-dropdown-img {
         float: left;
         padding-top: 0px;
@@ -3212,6 +3492,7 @@ input[type="password"]::-ms-reveal {
         padding-right: 12px;
       }
     }
+
     li:last-child {
       border-bottom: 0px solid #dbdbdb;
     }
@@ -3301,6 +3582,7 @@ input[type="password"]::-ms-reveal {
 
 .button-style {
   margin-top: 10px;
+
   .btn-primary {
     padding: 15px 29px;
     border-radius: 18px !important;
@@ -3369,6 +3651,43 @@ input[type="password"]::-ms-reveal {
   color: #fff !important;
   font-size: 20px !important;
   font-weight: 600 !important;
+}
+
+.otp-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .otp-input {
+    width: 80px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: 0.83px solid #9b9c9b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none !important;
+    text-align: center;
+
+    &.otp-dashed {
+      max-width: 7px;
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      margin: 0 16px !important;
+    }
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+
+    &:focus {
+      outline: none !important;
+    }
+  }
 }
 
 .divTable {
@@ -3611,6 +3930,7 @@ input[type="password"]::-ms-reveal {
 
 .strcture {
   padding-top: 10px !important;
+
   p {
     padding-top: 6px !important;
     font-size: 20px;
@@ -3622,13 +3942,14 @@ input[type="password"]::-ms-reveal {
 
 .create-structure {
   padding-top: 0px;
+
   .next-form {
     padding-top: 40px;
   }
 }
 
 .button-full-width {
-  width: 154px;
+  line-height: normal;
   background-color: #00895d;
   border-radius: 45px;
   color: #fff;
@@ -3640,6 +3961,7 @@ input[type="password"]::-ms-reveal {
 .strcture {
   .form-group {
     padding-bottom: 15px;
+
     label {
       color: #737373 !important;
       font-size: 18px;
@@ -3772,6 +4094,7 @@ input[type="password"]::-ms-reveal {
 
 .select-width {
   float: right;
+
   .select-box {
     background-color: #fff;
     border: none;
@@ -3786,30 +4109,36 @@ input[type="password"]::-ms-reveal {
 
 .dashobard-card {
   position: relative;
+
   .money-img {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   h1 {
     font-size: 30px;
     color: #323232;
     font-weight: 700;
   }
+
   .card-para {
-    padding-top: 43px;
-    min-height: 82px;
-    margin: 50px 0 0;
+    padding: 0px;
+    margin-top: 67px;
+    margin-bottom: 10px;
+
     a {
       margin-left: 8px;
       color: #3990f1;
     }
   }
+
   .card-par-bottom {
     a {
       margin-left: 8px;
     }
   }
+
   .user-money {
     background: url("../images/money.png");
     width: 18px;
@@ -3817,9 +4146,11 @@ input[type="password"]::-ms-reveal {
     display: block;
     float: left;
   }
+
   .user-money {
     margin-right: 8px;
   }
+
   .border-1 {
     border: 1px solid #e5e5e5;
     box-shadow: -3px 4px 4px 0px #b7b7b740;
@@ -3828,6 +4159,7 @@ input[type="password"]::-ms-reveal {
     border-radius: 12px;
     position: relative;
   }
+
   .user-icon {
     background: url("../images/user.png");
     width: 18px;
@@ -3836,11 +4168,13 @@ input[type="password"]::-ms-reveal {
     display: block;
     float: left;
   }
+
   .Total-fee {
     font-size: 16px;
     color: #323232;
     font-weight: 500;
   }
+
   .price-dahboard {
     color: #323232;
     font-size: 16px;
@@ -3853,6 +4187,21 @@ input[type="password"]::-ms-reveal {
   margin-top: 20px;
 }
 
+.institute-dashboard {
+  .dashobard-card {
+    width: 360px;
+  }
+
+  .row.d-flex {
+    gap: 34px;
+  }
+
+  .card-para {
+    padding: 0;
+    margin: 64px 0 10px;
+  }
+}
+
 .bg-grap-canvas {
   border: 1px solid #e5e5e5;
   box-shadow: -3px 4px 4px 0px #b7b7b740;
@@ -3861,6 +4210,7 @@ input[type="password"]::-ms-reveal {
   height: auto;
   margin-bottom: 20px;
   margin-top: 5px;
+
   h2 {
     font-size: 20px;
     font-family: "metropolissemi_bold";
@@ -3879,12 +4229,19 @@ input[type="password"]::-ms-reveal {
   border: 1px solid #e5e5e5;
   box-shadow: -3px 4px 4px 0px #b7b7b740;
   border-radius: 12px;
+
   h2 {
     color: #323232;
     font-size: 20px;
     padding-bottom: 3px;
     font-weight: 600;
   }
+}
+
+.steps-semibold {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
 }
 
 .steps-1 {
@@ -3899,6 +4256,9 @@ input[type="password"]::-ms-reveal {
   color: #323232;
   font-size: 18px;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .input-space-steps {
@@ -3910,12 +4270,14 @@ input[type="password"]::-ms-reveal {
 
 .input-space-steps-otp {
   margin-top: 20px;
+
   input {
     width: 11%;
     float: left;
     margin-right: 17px;
     text-align: center;
   }
+
   .dash {
     font-size: 20px;
     float: left;
@@ -3924,6 +4286,7 @@ input[type="password"]::-ms-reveal {
     display: inline-block;
     margin-right: 24px;
   }
+
   .received-text {
     color: #757575;
     font-weight: 600;
@@ -3949,18 +4312,22 @@ input[type="password"]::-ms-reveal {
     .grayNone {
       display: inline-block;
     }
+
     .activeNone {
       display: none;
     }
   }
+
   .net-banking.activeProduct {
     .grayNone {
       display: none;
     }
+
     .activeNone {
       display: inline-block;
       color: #008459 !important;
     }
+
     .bank-building {
       color: #008459 !important;
     }
@@ -3982,10 +4349,12 @@ input[type="password"]::-ms-reveal {
   border-radius: 14px;
   vertical-align: middle;
   cursor: pointer;
+
   img {
     padding-bottom: 20px;
     height: 54px;
   }
+
   .form-check {
     display: block;
     min-height: 1.5rem;
@@ -3995,6 +4364,7 @@ input[type="password"]::-ms-reveal {
     top: 5px;
     right: 7px;
   }
+
   // h6 {
   //   // color: #AAAAAA;
   // }
@@ -4002,6 +4372,7 @@ input[type="password"]::-ms-reveal {
     border-radius: 3.25em;
     padding: 10px;
   }
+
   .form-check-input:checked {
     background-color: #0c865b;
     border-color: #0c865b;
@@ -4009,7 +4380,6 @@ input[type="password"]::-ms-reveal {
 }
 
 .Personal-information {
-  padding: 33px 20px 20px 0px !important;
   clear: both;
   display: inline-block;
   font-size: 24px;
@@ -4035,6 +4405,7 @@ input[type="password"]::-ms-reveal {
   padding: 0px 0px 10px 0px;
   line-height: 32px;
   margin-top: -9px;
+
   .form-check {
     line-height: 38px;
     border-radius: 3px;
@@ -4045,37 +4416,28 @@ input[type="password"]::-ms-reveal {
     margin-right: 10px;
     margin-left: 27px;
   }
+
   .form-check-input[type="checkbox"] {
     border-radius: 3px;
     padding: 13px;
     margin-right: 10px;
   }
+
   .form-check-input:checked {
     background-color: #0c865b;
     border-color: #0c865b;
   }
 }
 
-.send-otp-phone-number {
-  a {
-    color: #0c865b;
-    font-size: 14px;
-    text-decoration: underline;
-    position: absolute;
-    top: 39px;
-    right: 25px;
-  }
-}
-
-.send-otp {
-  a {
-    color: #0c865b;
-    font-size: 14px;
-    text-decoration: underline;
-    position: absolute;
-    top: 39px;
-    right: 25px;
-  }
+.send-otp a,
+.send-otp-phone-number a {
+  color: #0c865b;
+  font-size: 14px;
+  text-decoration: underline;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25px;
 }
 
 .orText {
@@ -4156,10 +4518,18 @@ input[type="password"]::-ms-reveal {
 
 .border-radius-round {
   border-radius: 45px;
-  padding: 16px 32px 16px 32px;
+  padding: 16px 32px;
   border: 1px solid #25b7ad;
   font-weight: 600;
-  box-shadow: -1px 1px 3px 0px #ababab1a;
+  box-shadow: -1px 1px 3px 0px rgba(171, 171, 171, 0.1019607843);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.lets-go-btn {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .text-para-create-your {
@@ -4314,6 +4684,7 @@ option {
   align-items: center;
   flex-wrap: nowrap;
   justify-content: flex-end;
+
   label {
     white-space: nowrap;
     margin-right: 10px;
@@ -4323,6 +4694,7 @@ option {
 .inputWrapperHero {
   display: flex;
   justify-content: flex-end;
+
   .inutwrap {
     display: flex;
     max-width: 520px;
@@ -4347,21 +4719,26 @@ option {
   width: 100%;
   display: flex;
   align-items: center;
+
   span {
     color: #a3a3a3;
   }
+
   .dt-length {
     max-width: 128px;
     width: 100%;
+
     select {
       width: 100%;
       border-radius: 13px;
       margin-left: 8px;
     }
+
     label {
       display: none;
     }
   }
+
   .appendEntries {
     max-width: 128px;
     width: 100%;
@@ -4387,7 +4764,7 @@ option {
 
 .freeStructure {
   margin-top: 42px;
-  font-family: "metropolismedium";
+  font-family: "metropolissemi_bold";
   color: #737373;
   font-size: 18px;
 }
@@ -4432,6 +4809,7 @@ option {
   #imgactive {
     display: none;
   }
+
   #hideClick {
     display: inline-block;
   }
@@ -4441,6 +4819,7 @@ option {
   #imgactive {
     display: inline-block;
   }
+
   #hideClick {
     display: none;
   }
@@ -4502,6 +4881,7 @@ option {
   width: 60%;
   margin-left: 68px;
   float: left;
+
   .my-4 {
     margin-top: 15px !important;
     margin-bottom: 15px !important;
@@ -4512,21 +4892,26 @@ option {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   .pagination {
     ul {
       display: flex;
+
       li {
         padding: 0px 5px;
         cursor: pointer;
+
         span {
           padding-right: 3px;
           padding-left: 3px;
         }
       }
     }
+
     .page-item {
       color: #bcbcbc;
     }
+
     .page-item.activepangination {
       color: #1c3180;
     }
@@ -4550,6 +4935,7 @@ option {
     margin-left: 68px;
     float: left;
   }
+
   .bg-color-total-free {
     background-color: #eaefff;
     width: 77%;
@@ -4565,19 +4951,19 @@ option {
   .only-mobile {
     display: block;
   }
+
   .col-right {
     width: 73%;
     margin-left: 68px;
     float: left;
   }
-  .add-button {
-    padding: 15px 19px;
-    width: auto;
-  }
+
   .openmenu {
     background-color: #1c3180;
     border-radius: 0px 0px 20px 20px;
+    scale: 1;
   }
+
   .menu-button-icon {
     background: none;
     border: 0;
@@ -4610,35 +4996,39 @@ option {
     text-align: center;
     font-family: "metropolismedium";
   }
+
   .left-col {
     width: 100%;
   }
+
   .col-right {
     width: 100%;
     margin-left: 0;
     float: left;
+
     .row-cols-3 > * {
       flex: 0 0 auto;
       width: 40%;
       float: left;
     }
   }
-  .add-button {
-    padding: 15px 19px;
-  }
+
   .rightSearch {
     width: auto;
   }
+
   .input-space-steps-otp input {
     width: 13%;
     float: left;
     text-align: center;
     margin-right: 6px;
   }
+
   .bg-color-total-free {
     background-color: #eaefff;
     width: 100%;
   }
+
   .body-padding-none {
     padding: 25px !important;
   }
@@ -4650,6 +5040,17 @@ option {
       display: block;
     }
   }
+
+  .institute-dashboard .dashobard-card {
+    max-width: 390px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .institute-dashboard .row.d-flex {
+    gap: 10px;
+  }
+
   table.table.dataTable.table-striped > tbody > tr:nth-of-type(2n + 1) > * {
     box-shadow: none;
     color: #424242;
@@ -4659,24 +5060,29 @@ option {
     text-align: center;
     font-family: "metropolismedium";
   }
+
   .left-col {
     width: 100%;
   }
+
   .col-right {
     width: 100%;
     margin-left: 0;
     float: left;
+
     .row-cols-3 > * {
       flex: 0 0 auto;
       width: 80%;
       margin: 0 auto;
     }
   }
+
   .alumi-heading {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 0 !important;
   }
+
   .freeSuheduleHeading {
     font-family: "metropolismedium";
     color: #737373;
@@ -4684,28 +5090,30 @@ option {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
   .freeStructure {
     margin-top: 0;
     font-family: "metropolismedium";
     color: #737373;
     font-size: 18px;
   }
-  .add-button {
-    padding: 15px 19px;
-    width: 160px;
-  }
+
   .rightSearch {
     width: auto;
   }
+
   .instituteLogin .enterText {
     font-size: 28px;
   }
+
   .instituteLogin .weSent {
     line-height: 30px;
   }
+
   .logo-img {
     padding: 22px 9px 20px 10px;
   }
+
   .right-dropdown {
     font-family: "metropolismedium";
     padding: 20px;
@@ -4718,9 +5126,11 @@ option {
     right: 0px;
     border: 1px solid #ccc;
   }
+
   .text-para-create-your {
     font-size: 12px;
   }
+
   .bold-heading-you-have {
     font-weight: bold;
     text-align: left;
@@ -4728,21 +5138,26 @@ option {
     margin-bottom: 70px;
     line-height: 25px;
   }
+
   .net-banking {
     width: 41%;
   }
+
   .text-style-input {
     p {
       font-size: 16px;
       color: #424242;
     }
   }
+
   br {
     display: none;
   }
+
   .right-side br {
     display: block !important;
   }
+
   .input-space-steps-otp .dash {
     font-size: 20px;
     float: left;
@@ -4751,21 +5166,26 @@ option {
     display: inline-block;
     margin-right: 6px;
   }
+
   .div-table-bottom {
     font-size: 16px !important;
   }
+
   .alumi-heading {
     padding-top: 8px;
     padding-bottom: 20px;
     padding-left: 20px;
   }
+
   .acdimic-text {
     font-size: 14px;
     top: -1px;
   }
+
   .date-academic {
     font-size: 16px;
   }
+
   .divTableCell,
   .divTableHead {
     display: table-cell;
@@ -4773,19 +5193,23 @@ option {
     color: #323232;
     font-size: 12px;
   }
+
   .div-table-top {
     font-size: 14px !important;
     font-weight: 600 !important;
   }
+
   .divTable {
     display: table;
     width: 100%;
     margin-top: 20px;
   }
+
   .dashobard-card .card-para {
     padding-top: 55px;
     min-height: 65px;
   }
+
   .dashobard-card h1,
   .dashobard-card .h1 {
     font-size: 22px;
@@ -4793,31 +5217,37 @@ option {
     font-weight: 700;
     padding-top: 4px;
   }
+
   .bg-color-total-free {
     width: 100%;
     padding-top: 10px;
     line-height: 22px;
     padding: 9px 6px;
     margin-left: 0;
+
     .price {
       font-size: 18px;
       color: #323232;
       font-weight: 600;
     }
   }
+
   .dashboard {
     width: 100%;
   }
+
   .alumi-heading {
     font-size: 19px;
   }
-  .button-full-width {
-    width: 109px;
-    background-color: #0d9161;
-    border-radius: 45px;
-    color: #fff;
-    padding: 4px 8px 4px 5px;
-  }
+
+  // .button-full-width {
+  //   width: 109px;
+  //   background-color: #0d9161;
+  //   border-radius: 45px;
+  //   color: #fff;
+  //   padding: 4px 8px 4px 5px;
+  // }
+
   .strcture {
     .form-group {
       label {
@@ -4826,9 +5256,11 @@ option {
       }
     }
   }
+
   .password {
     font-size: 14px !important;
   }
+
   .details-heading {
     .form-top {
       .button-full-width {
@@ -4841,6 +5273,7 @@ option {
       }
     }
   }
+
   .wellcome-text {
     .form-top {
       .form-control {
@@ -4848,67 +5281,78 @@ option {
       }
     }
   }
+
   .strcture p {
     font-size: 16px;
   }
+
   .alumi-heading {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 0px;
   }
-  .body-padding-none {
-    padding: 20px 0 !important;
-  }
+
   .alumini-details {
     color: #424242;
     font-size: 16px;
     font-weight: 600;
   }
+
   .details-heading {
     padding-right: 15px;
     padding-top: 7px !important;
   }
+
   .create-structure {
     padding-top: 10px;
   }
+
   .shedule-text {
     font-size: 18px;
   }
+
   .free-particular {
     font-size: 18px;
     padding-top: 20px;
     color: #0d9161;
     font-weight: 600;
   }
+
   table.dataTable th,
   table.dataTable td {
     box-sizing: border-box;
     font-size: 14px !important;
   }
+
   .table-responsive table th,
   .table-responsive table td {
     border: 1px solid #e8ebf0;
     padding: 12px 12px;
     text-align: right;
   }
+
   .higher-secondary {
     font-size: 18px;
   }
+
   .card-para p {
     padding-top: 5px;
     font-size: 14px;
   }
+
   .card-class {
     .nine {
       margin-top: -3px;
       font-size: 22px;
     }
+
     .class-name {
       font-size: 16px;
       color: #323232;
       padding-top: 3px;
     }
   }
+
   .card-para h2,
   .card-para .h2 {
     color: #0c865b;
@@ -4917,27 +5361,33 @@ option {
     font-weight: 700;
     padding-left: 10px;
   }
+
   .input-search {
     width: 100%;
   }
+
   .alumi-heading {
     padding-top: 7px;
     padding-bottom: 20px;
     padding-left: 0;
   }
+
   .cart-top {
     padding-top: 20px;
   }
+
   .higher-secondary {
     margin-top: 20px;
     padding-left: 0px !important;
   }
+
   .card-class {
     width: 45%;
     height: 135px;
     margin-right: 20px;
     margin-bottom: 20px;
   }
+
   .heading-text h2,
   .heading-text .h2 {
     padding-top: 10px;
@@ -4949,11 +5399,13 @@ option {
   .heading-text h2 {
     font-size: 24px;
   }
+
   .wellcome-text {
     .top-space {
       padding-top: 45px;
       font-size: 28px;
     }
+
     .form-top {
       .form-group label {
         font-size: 16px;
@@ -4963,32 +5415,40 @@ option {
       }
     }
   }
+
   .wellcome-text .form-top .form-group label {
     font-size: 14px;
   }
+
   .terms-and-condition {
     font-size: 14px;
     line-height: 24px;
   }
+
   .inputWrapperMain {
     flex: 0 0 100%;
     justify-content: flex-start;
+
     // flex-wrap: wrap;
     label {
       width: 138px;
       text-align: right;
     }
   }
+
   .inputWrapperHero {
     display: block;
+
     .inutwrap {
       flex-direction: column;
     }
   }
+
   .showEntries,
   .inputWrapperMain {
     margin-bottom: 15px;
   }
+
   .input-file-box br {
     display: block;
   }
@@ -4996,38 +5456,51 @@ option {
   .upload-file {
     margin: 25px 0 !important;
   }
+
+  .right-alumni {
+    margin-bottom: 10px;
+    text-align: left;
+    margin-top: 20px;
+  }
 }
 
 @include media-breakpoint-down(sm) {
   .dashobard-card .card-para {
     margin: 30px 0 0;
   }
+
   .left-col {
     width: 100%;
   }
+
   .col-right {
     width: 100%;
     margin-left: 0;
     float: left;
+
     .row-cols-3 > * {
       flex: 0 0 auto;
       width: 80%;
       margin: 0 auto;
     }
   }
+
   .searchInner {
     flex-direction: column;
     display: flex;
     max-width: 386px;
     width: 100%;
   }
+
   .searchBtn {
     margin-top: 15px;
     text-align: center;
   }
+
   .rightSearch {
     margin-right: 0px;
   }
+
   .parentCard .plansProduct .net-banking {
     position: relative;
     max-width: 100%;
@@ -5042,19 +5515,38 @@ option {
     margin-bottom: 20px;
     margin-top: 0px !important;
   }
+
   .parentCard .plansProduct .net-banking {
     margin-top: 54px;
   }
+
+  .parents-fee-structure {
+    .plansProduct {
+      width: 100%;
+    }
+
+    .marginminusPlan {
+      max-width: 100%;
+    }
+  }
+
+  .right-dropdown {
+    padding: 0 20px;
+  }
+
   .parentCard {
     display: block;
     gap: 20px;
   }
+
   .instituteLogin {
     padding-top: 30px;
   }
+
   .footerInstitute {
     margin-top: 0 !important;
   }
+
   .Personal-information {
     padding: 14px 7px 14px 0px !important;
     clear: both;
@@ -5062,35 +5554,37 @@ option {
     font-size: 18px;
     font-weight: 700;
   }
+
   .net-banking {
     width: 100%;
     padding-top: 30px;
   }
+
   .alumi-heading {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 0px;
   }
+
   .higher-secondary {
     margin-top: 20px;
     padding-left: 20px !important;
   }
+
   .card-class {
     width: 43%;
     margin-left: auto;
     margin-right: auto;
   }
+
   .card-class:last-child {
     margin-right: 16px;
   }
+
   .mobile-display {
     display: block !important;
   }
-  .right-alumni {
-    margin-bottom: 10px;
-    text-align: left;
-    margin-top: 20px;
-  }
+
   .alumi-heading {
     padding-top: 0px;
     padding-bottom: 20px;
@@ -5101,6 +5595,7 @@ option {
     img {
       max-width: 20px;
     }
+
     h6 {
       font-size: 18px;
     }
@@ -5131,22 +5626,32 @@ option {
   }
 }
 
+// *{outline:1px solid}
 @media (max-width: 600px) {
+  .institute-header .logo {
+    padding-right: 10px !important;
+  }
+
   .tooltip {
     display: none !important;
   }
+
   .logo-img img {
     max-width: 80px;
   }
+
   .tableShowEntries table.table.dataTable.table-striped > tbody > tr > td {
     text-align: right !important;
     font-size: 12px !important;
   }
+
   header {
     padding: 15px 0;
     margin-bottom: 0;
+
     .logo {
       padding-right: 18px;
+
       img {
         width: 80px !important;
       }
@@ -5160,6 +5665,7 @@ option {
   header .welcome-msg {
     padding-left: 0px;
   }
+
   header .header-options > ul {
     gap: 20px;
   }
@@ -5173,12 +5679,35 @@ option {
     font-size: 24px;
   }
 
-  .menu-bar {
-    padding-top: 0 !important;
-  }
-
   .parentCard {
     padding: 0;
+  }
+
+  .heading-text h2,
+  .heading-text .h2 {
+    font-size: 18px;
+  }
+
+  .input-search {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .otp-wrapper .otp-input:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .otp-wrapper .otp-input {
+    width: 100%;
+    height: 40px;
+  }
+
+  .otp-wrapper .otp-input.otp-dashed {
+    margin: 0 10px !important;
+  }
+
+  .instituteLogin .btn-gray-color, .wellcome-text .form-top .button-full-width{
+    padding: 10px;
   }
 }
 
@@ -5193,10 +5722,12 @@ option {
     display: block;
     left: 64px !important;
   }
+
   .showEntries label,
   .inputWrapperMain label {
     margin-bottom: 10px;
   }
+
   .form-control-date {
     width: 100%;
   }
@@ -5207,15 +5738,18 @@ option {
     text-align: right !important;
     font-size: 10px !important;
   }
+
   table.dataTable th,
   table.dataTable td {
     box-sizing: border-box;
     font-size: 10px !important;
   }
+
   .showEntries label,
   .inputWrapperMain label {
     margin-bottom: 10px;
   }
+
   .form-control-date {
     width: 100%;
   }

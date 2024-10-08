@@ -76,7 +76,7 @@
             <div class="backButton">
                 <a href="login-institute.html"><img src="images/back-arrow.png"  alt="back-arrow.png"/></a>
             </div>
-            <div class="col-md-10 col-lg-5 mx-auto my-auto instituteLogin">
+            <div class="instituteLogin">
                 <h1 class="enterText"> Enter the 6- digit code</h1>
 
                 <p class="weSent">We sent it to <span class="number text-nowrap">+9197*****528</span> & <span class="email text-nowrap"> we******@dalycollege.org</span></p>
@@ -86,23 +86,17 @@
                             <p class="text-gray small  col-6 wow sixDigit fadeInUp col-md-6">Your 6- digit code</p>
                             <p class="col-md-6  col-6 text-right timer">00:58</p>
                         </div>
-                        <div class="row g-md-0 g-2">
-                            <div class="col-12 wow fadeInUp">
-                                <div class="row row-cols-6 g-md-3 g-2 inputs" id="inputs">
-                                    <div class="enterpass"><input type="text" maxlength="1" id="otp1" oninput="moveToNext(this, 'otp2')" class="form-control form-control-sm text-center px-2 shadow-none"></div>
-                                    <div class="enterpass"><input type="text" maxlength="1" id="otp2" oninput="moveToNext(this, 'otp3')" class="form-control form-control-sm text-center px-2 shadow-none"></div>
-                                    <div class="enterpass"><input type="text" maxlength="1" id="otp3" oninput="moveToNext(this, 'otp4')" class="form-control form-control-sm text-center px-2 shadow-none"></div>
-                                    <span class="dashed">-</span>
-
-                                    <div class="enterpass"><input type="text" maxlength="1" id="otp4" oninput="moveToNext(this, 'otp5')" class="form-control form-control-sm text-center px-2 shadow-none"></div>
-                                    <div class="enterpass"><input type="text" maxlength="1" id="otp5" oninput="moveToNext(this, 'otp6')" class="form-control form-control-sm text-center px-2 shadow-none"></div>
-                                    <div class="enterpass"><input type="text" maxlength="1" id="otp6" oninput="moveToNext(this, '')" class="form-control form-control-sm text-center px-2 shadow-none"></div>
-                                </div>
-                            </div>
 
 
+                        <div class="otp-wrapper">
+                            <input type="text" maxlength="1" class="otp-input" id="otp1" oninput="moveToNext(this, 'otp2')">
+                            <input type="text" maxlength="1" class="otp-input" id="otp2" oninput="moveToNext(this, 'otp3')" onkeydown="moveToPrevious(event, 'otp1')">
+                            <input type="text" maxlength="1" class="otp-input m-0" id="otp3" oninput="moveToNext(this, 'otp4')" onkeydown="moveToPrevious(event, 'otp2')">
+                            <div class="otp-input otp-dashed">-</div>
+                            <input type="text" maxlength="1" class="otp-input" id="otp4" oninput="moveToNext(this, 'otp5')" onkeydown="moveToPrevious(event, 'otp3')">
+                            <input type="text" maxlength="1" class="otp-input" id="otp5" oninput="moveToNext(this, 'otp6')" onkeydown="moveToPrevious(event, 'otp4')">
+                            <input type="text" maxlength="1" class="otp-input" id="otp6" onkeydown="moveToPrevious(event, 'otp5')">
                         </div>
-
                         <div class="receive"><a href="#"> I didn't receive a code, Resend</a></div>
                     </div>
 

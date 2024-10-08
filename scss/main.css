@@ -10960,10 +10960,8 @@ section {
 }
 
 body {
-  line-height: 1;
   overflow-x: hidden !important;
   font-family: "metropolislight";
-  width: 100vw;
 }
 
 ol,
@@ -11154,28 +11152,29 @@ img {
 .wellcome-text .form-top .password-top {
   padding-top: 15px;
 }
-.wellcome-text .form-top .form-group label {
-  font-size: 18px;
-  font-weight: 500;
-  color: #757575;
-  font-family: "metropolismedium";
-}
 .wellcome-text .form-top .form-control {
   border-radius: 10px;
   color: #424242;
   font-size: 18px;
   font-family: "metropolissemi_bold";
-  margin-bottom: 12px;
+  padding: 16px !important;
 }
 .wellcome-text .form-top .form-control::-moz-placeholder {
   border-radius: 15px;
   color: #424242;
-  padding: 10px 10px;
 }
 .wellcome-text .form-top .form-control::placeholder {
   border-radius: 15px;
   color: #424242;
-  padding: 10px 10px;
+}
+.wellcome-text .form-group {
+  margin-bottom: 16px;
+}
+.wellcome-text label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #757575;
+  font-family: "metropolismedium";
 }
 
 .terms-and-condition {
@@ -11205,10 +11204,12 @@ img {
 .input-search {
   border: 1px solid #a3a3a3;
   border-radius: 45px;
-  padding: 12px 20px 12px 45px;
+  padding: 10px 17px 10px 50px;
   outline: none;
   font-family: "metropolissemi_bold";
-  width: 200px;
+  max-width: 232px;
+  width: 100%;
+  font-weight: 600;
 }
 
 .input-search::-moz-placeholder {
@@ -11235,10 +11236,21 @@ img {
   border: 1px solid #a3a3a3;
   background: none;
   border-radius: 40px;
-  padding: 1;
-  width: 124px;
   height: auto;
-  padding: 14px 5px;
+  padding: 10px 26px 10px 58px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+}
+.filter-button .filter-icon {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
 }
 
 .filter-text {
@@ -11257,6 +11269,11 @@ img {
   float: left;
 }
 
+.flex-v-center {
+  display: flex;
+  align-items: center;
+}
+
 .alumi-heading {
   font-size: 32px;
   color: #323232;
@@ -11271,12 +11288,11 @@ img {
   font-weight: 600;
   font-size: 16px;
   color: #fff;
-  line-height: 10px;
   background-color: #0d9161;
   color: #fff;
-  line-height: 10px;
   border-radius: 50px;
-  padding: 19px 24px;
+  padding: 11px 24px;
+  white-space: nowrap;
 }
 
 .higher-secondary {
@@ -11425,17 +11441,16 @@ img {
 }
 
 .leftmenu {
-  top: 9.5rem;
-  bottom: 100%;
-  z-index: -1;
-  left: 0;
-  right: 0;
   transition: all 0.5s ease-in-out;
 }
 
 .openmenu {
   z-index: 9;
   bottom: 0;
+}
+
+.wellcome-text .form-control {
+  height: 50px;
 }
 
 .menu-bar {
@@ -11565,6 +11580,10 @@ img {
   background: #eeeeee !important;
 }
 
+.dropdown-item {
+  font-weight: 600;
+}
+
 .leftmenu .dropdown-item:hover {
   color: #fff !important;
   background: #616161 !important;
@@ -11640,6 +11659,10 @@ img {
   margin-bottom: 16px;
 }
 
+.parents-fee-structure .button-full-width {
+  max-width: 154px;
+}
+
 .payment-details-foo {
   margin-top: 18px !important;
 }
@@ -11657,6 +11680,16 @@ img {
 .parents-fee-structure .net-banking {
   max-width: 230px;
   width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.parents-fee-structure .banking-img-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 p.bold-heading-you-have {
@@ -11668,6 +11701,10 @@ p.bold-heading-you-have {
   font-size: 12px;
   font-weight: 400;
   color: #323232;
+}
+
+.parent-header .header-options ul li:last-child {
+  display: none;
 }
 
 @media (min-width: 1440px) {
@@ -11687,9 +11724,14 @@ p.bold-heading-you-have {
     position: absolute;
   }
 }
+@media (width < 1440px) {
+  .institute-header .logo {
+    padding-right: 90px !important;
+  }
+}
 @media (min-width: 1200px) {
-  header.institute-header .welcome-msg {
-    padding-left: 15%;
+  .institute-header .logo {
+    padding-right: 100px;
   }
   .logo-img ~ .heading-text {
     display: flex;
@@ -11710,8 +11752,12 @@ p.bold-heading-you-have {
     width: 15%;
   }
   .dashboard-content {
-    width: 80% !important;
+    max-width: 100%;
+    width: 100%;
     box-sizing: border-box;
+    margin: 20px 0;
+    padding-right: 15px;
+    overflow: hidden;
   }
   .menu-button-icon {
     display: none;
@@ -11723,14 +11769,11 @@ p.bold-heading-you-have {
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
   }
+  .institute-wrraper {
+    display: flex;
+  }
   .leftmenu {
-    top: 6.875rem;
-    bottom: 1rem;
-    z-index: 9;
-    left: 0;
-    width: 19%;
-    right: auto;
-    padding: 0;
+    margin-right: 38px;
   }
   .menu-bar {
     position: relative;
@@ -11813,6 +11856,11 @@ p.bold-heading-you-have {
   .menu-bar li a .leftmenu .dropdown-toggle::after {
     margin-top: 18px;
     margin-left: 1rem;
+  }
+}
+@media (width < 1200px) {
+  .institute-wrraper {
+    padding: 0 15px !important;
   }
 }
 .dots-bg {
@@ -12117,7 +12165,6 @@ select option {
 }
 
 .button-full-width {
-  width: 136px;
   background-color: #0d9161;
   border-radius: 45px;
   color: #fff;
@@ -12244,6 +12291,10 @@ select option {
   padding-top: 0px;
 }
 
+.form-check-input:checked[type=radio] {
+  background-image: url("/images/checked-icon.svg") !important;
+}
+
 .shedule-text {
   font-size: #323232;
   padding: 10px 20px 20px 0px !important;
@@ -12274,12 +12325,13 @@ select option {
 .bg-color-total-free {
   background-color: #eaefff;
   border-radius: 4px;
-  width: 73%;
-  padding-top: 10px;
+  max-width: 390px;
   line-height: 14px;
-  padding: 11px 12px;
-  margin-left: 33px;
+  padding: 11px 13px;
   text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "metropolissemi_bold";
 }
 .bg-color-total-free .price {
   font-size: 20px;
@@ -12319,11 +12371,6 @@ select option {
   color: #323232;
   font-weight: 700;
   font-family: "metropolisbold";
-}
-.dashobard-card .card-para {
-  padding-top: 43px;
-  min-height: 69px;
-  color: #323232;
 }
 .dashobard-card .card-para span {
   font-size: 16px;
@@ -12479,6 +12526,9 @@ select option {
 
 .instituteLogin {
   padding-top: 90px;
+  max-width: 608px;
+  width: 100%;
+  margin: 0 auto;
 }
 .instituteLogin .form-select,
 .instituteLogin .form-control {
@@ -13108,7 +13158,7 @@ a.error-in::before {
 }
 
 .marginminusPlan {
-  margin-top: -23px;
+  margin-top: -10px;
 }
 
 .font-Login {
@@ -13175,7 +13225,8 @@ input[type=password]::-ms-reveal {
   border: 0;
   position: absolute;
   right: 10px;
-  top: 60%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .wellcome-text .form-top .password-top {
@@ -13187,7 +13238,6 @@ input[type=password]::-ms-reveal {
   background: url("../images/active_eye.png") no-repeat;
   width: 20px;
   height: 7px;
-  margin-top: 10px;
   display: block;
 }
 
@@ -13307,8 +13357,30 @@ input[type=password]::-ms-reveal {
   .college-logo-part {
     justify-content: space-between;
   }
+  .leftmenu {
+    scale: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .leftmenu.openmenu {
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 991.98px) {
+  .parents-fee-structure .divTable {
+    max-width: 100%;
+  }
+  .parents-fee-structure .body-padding-none {
+    padding: 20px 15px !important;
+  }
+  .parents-fee-structure .button-full-width {
+    margin-left: 15px;
+  }
+  .parents-fee-structure .button-style .col {
+    max-width: 184px;
+    margin: auto;
+  }
   .tableShowEntries table.table.dataTable.table-striped > tbody > tr > td {
     text-align: right !important;
   }
@@ -13372,9 +13444,6 @@ input[type=password]::-ms-reveal {
   }
   .right-side-form {
     padding-top: 0 !important;
-  }
-  .add-button {
-    margin-top: 20px;
   }
   .tableShowEntries table.table.dataTable.table-striped > tbody > tr:nth-of-type(2n + 1) > * {
     box-shadow: none;
@@ -13501,7 +13570,6 @@ input[type=password]::-ms-reveal {
     font-size: 19px;
   }
   .button-full-width {
-    width: 109px;
     background-color: #0d9161;
     border-radius: 45px;
     font-family: "metropolissemi_bold";
@@ -13647,6 +13715,12 @@ input[type=password]::-ms-reveal {
   }
   .btnUpload {
     margin: 0px auto;
+  }
+  .right-dropdown ul li br {
+    display: block;
+  }
+  .institute-table-option {
+    justify-content: flex-start !important;
   }
 }
 /* DivTable.com */
@@ -13835,6 +13909,40 @@ input[type=password]::-ms-reveal {
   color: #fff !important;
   font-size: 20px !important;
   font-weight: 600 !important;
+}
+
+.otp-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.otp-wrapper .otp-input {
+  width: 80px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: 0.83px solid #9b9c9b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none !important;
+  text-align: center;
+}
+.otp-wrapper .otp-input.otp-dashed {
+  max-width: 7px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin: 0 16px !important;
+}
+.otp-wrapper .otp-input:not(:last-child) {
+  margin-right: 16px;
+}
+.otp-wrapper .otp-input:focus {
+  outline: none !important;
 }
 
 .divTable {
@@ -14067,7 +14175,7 @@ input[type=password]::-ms-reveal {
 }
 
 .button-full-width {
-  width: 154px;
+  line-height: normal;
   background-color: #00895d;
   border-radius: 45px;
   color: #fff;
@@ -14232,9 +14340,9 @@ input[type=password]::-ms-reveal {
   font-weight: 700;
 }
 .dashobard-card .card-para {
-  padding-top: 43px;
-  min-height: 82px;
-  margin: 50px 0 0;
+  padding: 0px;
+  margin-top: 67px;
+  margin-bottom: 10px;
 }
 .dashobard-card .card-para a {
   margin-left: 8px;
@@ -14285,6 +14393,17 @@ input[type=password]::-ms-reveal {
   margin-top: 20px;
 }
 
+.institute-dashboard .dashobard-card {
+  width: 360px;
+}
+.institute-dashboard .row.d-flex {
+  gap: 34px;
+}
+.institute-dashboard .card-para {
+  padding: 0;
+  margin: 64px 0 10px;
+}
+
 .bg-grap-canvas {
   border: 1px solid #e5e5e5;
   box-shadow: -3px 4px 4px 0px rgba(183, 183, 183, 0.2509803922);
@@ -14319,6 +14438,12 @@ input[type=password]::-ms-reveal {
   font-weight: 600;
 }
 
+.steps-semibold {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
 .steps-1 {
   border: 2px solid #0c865b;
   padding: 10px;
@@ -14331,6 +14456,9 @@ input[type=password]::-ms-reveal {
   color: #323232;
   font-size: 18px;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .input-space-steps {
@@ -14431,7 +14559,6 @@ input[type=password]::-ms-reveal {
 }
 
 .Personal-information {
-  padding: 33px 20px 20px 0px !important;
   clear: both;
   display: inline-block;
   font-size: 24px;
@@ -14478,21 +14605,14 @@ input[type=password]::-ms-reveal {
   border-color: #0c865b;
 }
 
+.send-otp a,
 .send-otp-phone-number a {
   color: #0c865b;
   font-size: 14px;
   text-decoration: underline;
   position: absolute;
-  top: 39px;
-  right: 25px;
-}
-
-.send-otp a {
-  color: #0c865b;
-  font-size: 14px;
-  text-decoration: underline;
-  position: absolute;
-  top: 39px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 25px;
 }
 
@@ -14573,10 +14693,18 @@ input[type=password]::-ms-reveal {
 
 .border-radius-round {
   border-radius: 45px;
-  padding: 16px 32px 16px 32px;
+  padding: 16px 32px;
   border: 1px solid #25b7ad;
   font-weight: 600;
   box-shadow: -1px 1px 3px 0px rgba(171, 171, 171, 0.1019607843);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.lets-go-btn {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .text-para-create-your {
@@ -14738,7 +14866,7 @@ option {
 
 .freeStructure {
   margin-top: 42px;
-  font-family: "metropolismedium";
+  font-family: "metropolissemi_bold";
   color: #737373;
   font-size: 18px;
 }
@@ -14899,13 +15027,10 @@ option {
     margin-left: 68px;
     float: left;
   }
-  .add-button {
-    padding: 15px 19px;
-    width: auto;
-  }
   .openmenu {
     background-color: #1c3180;
     border-radius: 0px 0px 20px 20px;
+    scale: 1;
   }
   .menu-button-icon {
     background: none;
@@ -14941,9 +15066,6 @@ option {
     width: 40%;
     float: left;
   }
-  .add-button {
-    padding: 15px 19px;
-  }
   .rightSearch {
     width: auto;
   }
@@ -14964,6 +15086,14 @@ option {
 @media (max-width: 767.98px) {
   header.institute-header .logo::after {
     display: block;
+  }
+  .institute-dashboard .dashobard-card {
+    max-width: 390px;
+    width: 100%;
+    margin: auto;
+  }
+  .institute-dashboard .row.d-flex {
+    gap: 10px;
   }
   table.table.dataTable.table-striped > tbody > tr:nth-of-type(2n + 1) > * {
     box-shadow: none;
@@ -15003,10 +15133,6 @@ option {
     font-family: "metropolismedium";
     color: #737373;
     font-size: 18px;
-  }
-  .add-button {
-    padding: 15px 19px;
-    width: 160px;
   }
   .rightSearch {
     width: auto;
@@ -15123,13 +15249,6 @@ option {
   .alumi-heading {
     font-size: 19px;
   }
-  .button-full-width {
-    width: 109px;
-    background-color: #0d9161;
-    border-radius: 45px;
-    color: #fff;
-    padding: 4px 8px 4px 5px;
-  }
   .strcture .form-group label {
     color: #737373 !important;
     font-size: 14px !important;
@@ -15155,9 +15274,6 @@ option {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 0px;
-  }
-  .body-padding-none {
-    padding: 20px 0 !important;
   }
   .alumini-details {
     color: #424242;
@@ -15287,6 +15403,11 @@ option {
   .upload-file {
     margin: 25px 0 !important;
   }
+  .right-alumni {
+    margin-bottom: 10px;
+    text-align: left;
+    margin-top: 20px;
+  }
 }
 @media (max-width: 575.98px) {
   .dashobard-card .card-para {
@@ -15335,6 +15456,15 @@ option {
   .parentCard .plansProduct .net-banking {
     margin-top: 54px;
   }
+  .parents-fee-structure .plansProduct {
+    width: 100%;
+  }
+  .parents-fee-structure .marginminusPlan {
+    max-width: 100%;
+  }
+  .right-dropdown {
+    padding: 0 20px;
+  }
   .parentCard {
     display: block;
     gap: 20px;
@@ -15376,11 +15506,6 @@ option {
   .mobile-display {
     display: block !important;
   }
-  .right-alumni {
-    margin-bottom: 10px;
-    text-align: left;
-    margin-top: 20px;
-  }
   .alumi-heading {
     padding-top: 0px;
     padding-bottom: 20px;
@@ -15413,6 +15538,9 @@ option {
   }
 }
 @media (max-width: 600px) {
+  .institute-header .logo {
+    padding-right: 10px !important;
+  }
   .tooltip {
     display: none !important;
   }
@@ -15449,11 +15577,29 @@ option {
     padding: 0;
     font-size: 24px;
   }
-  .menu-bar {
-    padding-top: 0 !important;
-  }
   .parentCard {
     padding: 0;
+  }
+  .heading-text h2,
+  .heading-text .h2 {
+    font-size: 18px;
+  }
+  .input-search {
+    max-width: 100%;
+    width: 100%;
+  }
+  .otp-wrapper .otp-input:not(:last-child) {
+    margin-right: 8px;
+  }
+  .otp-wrapper .otp-input {
+    width: 100%;
+    height: 40px;
+  }
+  .otp-wrapper .otp-input.otp-dashed {
+    margin: 0 10px !important;
+  }
+  .instituteLogin .btn-gray-color, .wellcome-text .form-top .button-full-width {
+    padding: 10px;
   }
 }
 @media (max-width: 375px) {

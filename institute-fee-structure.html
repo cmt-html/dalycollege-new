@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="IE=Edge">
-    <meta name="theme-color" content="midnightblue">
     <title>GetzPAID - Institute Fee Structure View</title>
     <meta name="Description" content="Getzpaid">
     <meta name="Keywords" content="Getzpaid">
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="scss/main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link href="css/datatables.min.css" rel="stylesheet">
@@ -20,61 +18,7 @@
 
 <body>
     <!--Header Starts-->
-    <!-- <header class="mb-0">
-
-        <div class="header">
-            <div class="container">
-                <div class="row">
-                    <div class="logo-img float-start col-md-3 col-xl-3 col-3">
-                        <a href="institute-dashboard.html"><img src="images/logo-main.svg" alt="Logo Main" title=""
-                                class="img-fluid mb-3 mb-md-0 animated fadeInDown"></a>
-                    </div>
-                    <div class="heading-text col-md-6 col-xl-4 col-6 pt-xl-0 pt-5">
-                        <h2>Welcome Daly College, </h2>
-                        <p class="pt-1">to GetzPAID for Academic Institute </p>
-
-                    </div>
-                    <div class="right-side float-end col-md-12 col-xl-5 right-img col-12"><img src="images/logo-dc.svg"
-                            alt="Logo Dc" title="">
-                        <a href="#" id="dropdown" class="help">
-                            <img width="50px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Help"
-                                src="images/help.png" alt="Help" id="hideClick" class="right-icon col-md-2">
-
-                            <img width="50px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Help"
-                                src="images/help-web-button-2.png" alt="Help Web Button" id="imgactive"
-                                class="right-icon col-md-2">
-
-                            <div class="right-dropdown">
-                                <ul>
-                                    <li><span class="right-dropdown-img"><img src="images/user-guide-updated.png"
-                                                alt="User Guide Updated"></span>Guide</li>
-                                    <li><span class="right-dropdown-img"><img src="images/phone-call-upated.png"
-                                                alt="Phone Call Upated"></span><span>Contact:
-                                        </span>9876543210 </li>
-                                    <li><span class="right-dropdown-img"><img
-                                                src="images/message.png"></span><span>Email Id:
-                                        </span>ib.counsellor@podarin<br>ternationalschool.com </li>
-                                </ul>
-
-
-                            </div>
-                        </a>
-                        <div data-bs-toggle="tooltip" data-bs-placement="bottom" title="Logout" class="logout-button">
-                            <img src="images/logout-button.png" alt="log out" />
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </header> -->
-
-
-
-    <header>
+    <header class="institute-header">
         <div class="container">
             <div class="header-wrraper">
                 <div class="logo-part">
@@ -84,7 +28,7 @@
                         </a>
                     </div>
                     <div class="welcome-msg heading-text">
-                        <h2>Welcome Ramesh, </h2>
+                        <h2>Welcome Daly College, </h2>
                         <p>to GetzPAID for Academic Institute </p>
                     </div>
                 </div>
@@ -95,13 +39,12 @@
                     <div class="header-options">
                         <ul>
                             <li>
-                                <a href="javascript:void(0)" id="dropdown" class="help" >
-                                    <img width="30px"
-                                        src="images/help.png" alt="Help" id="hideClick" class="right-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Help">
+                                <a href="javascript:void(0)" id="dropdown" class="help">
+                                    <img width="30px" src="images/help.png" alt="Help" id="hideClick" class="right-icon"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom" title="Help">
 
-                                    <img width="30px"
-                                        src="images/help-web-button-2.png" alt="Help Web Button" id="imgactive"
-                                        class="right-icon">
+                                    <img width="30px" src="images/help-web-button-2.png" alt="Help Web Button"
+                                        id="imgactive" class="right-icon">
 
                                     <div class="right-dropdown">
                                         <ul>
@@ -120,9 +63,10 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="log-out-btn">
                                 <a href="#">
-                                    <img src="/images/logout-button.png" alt="logout-button.png">
+                                    <img src="/images/logout-button.png" alt="logout-button.png"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom" title="Logout">
                                 </a>
                             </li>
                             <li class="only-mobile">
@@ -136,308 +80,308 @@
         </div>
     </header>
     <!--Header Starts-->
-    <div class="container position-relative pb-10 px-4 px-xxl-2 pe-xl-4 ps-xl-0">
-        <div class="row">
-            <!-- Left panel -->
-            <div class="position-fixd leftmenu mt-0">
-                <ul class="menu-bar bg-menu rounded-left-nav rounded-left-nav-sm">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <li id="liDashboard">
-                        <a href="institute-dashboard.html" class="rounded-3 leftnav"><span
-                                class="dashboard"></span>Dashboard</a>
-                    </li>
+
+    <div class="institute-wrraper container p-md-0">
+        <!-- Left panel -->
+        <div class="leftmenu">
+            <ul class="menu-bar bg-menu rounded-left-nav rounded-left-nav-sm">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <li id="liDashboard">
+                    <a href="institute-dashboard.html" class="rounded-3 leftnav"><span
+                            class="dashboard"></span>Dashboard</a>
+                </li>
 
 
 
-                    <li id="liCustomer"><a href="institute-select-class.html" class="rounded-3 leftnav"><span
-                                class="customer"></span>Students</a>
-                    </li>
-                    <li id="liContract" class="active"><a href="institute-fee-structure.html"
-                            class="rounded-3 leftnav"><span class="contracts"></span>Fee Structure</a></li>
-                    <li id="liMandate"><a href="institute-fee-collection.html" class="rounded-3 leftnav"><span
-                                class="mandates"></span>Fee Collection</a></li>
-                    <li title="Mandates" id="liPayments"><a href="institute-mandates.html"
-                            class="rounded-3 leftnav"><span class="payments"></span>Mandates</a></li>
-                    <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="reports second"></span>Fee
-                            Report</a>
-                    </li>
-                    <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="settings"></span>Settings</a>
-                    </li>
-                    <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="profiles"></span>Profile</a>
-                    </li>
-                    <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="help"></span>Help</a>
-                    </li>
-                    <li>
-                        <div class="menu-button ">Setup Fee<span class="material-icons"><img src="images/next.png"
-                                    alt="Next"></span></div>
-                    </li>
-                </ul>
-            </div>
+                <li id="liCustomer"><a href="institute-select-class.html" class="rounded-3 leftnav"><span
+                            class="customer"></span>Students</a>
+                </li>
+                <li id="liContract" class="active"><a href="institute-fee-structure.html"
+                        class="rounded-3 leftnav"><span class="contracts"></span>Fee Structure</a></li>
+                <li id="liMandate"><a href="institute-fee-collection.html" class="rounded-3 leftnav"><span
+                            class="mandates"></span>Fee Collection</a></li>
+                <li title="Mandates" id="liPayments"><a href="institute-mandates.html" class="rounded-3 leftnav"><span
+                            class="payments"></span>Mandates</a></li>
+                <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="reports second"></span>Fee
+                        Report</a>
+                </li>
+                <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="settings"></span>Settings</a>
+                </li>
+                <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="profiles"></span>Profile</a>
+                </li>
+                <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="help"></span>Help</a>
+                </li>
+                <li>
+                    <div class="menu-button ">Setup Fee<span class="material-icons"><img src="images/next.png"
+                                alt="Next"></span></div>
+                </li>
+            </ul>
+        </div>
 
 
-            <!-- Left panel -->
+        <!-- Left panel -->
 
 
-            <!-- Left panel -->
-            <!-- Right Panel -->
-            <div class="col-xl-9 col-lg-12 col-md-12 ms-auto mt-4 ps-xl-3 dashboard-content">
-                <div class="container">
-                    <div class="row">
+        <!-- Left panel -->
+        <!-- Right Panel -->
 
-                        <div class="col-md-5 p-0 font-family-bold">
-                            <h2 class=" alumi-heading mb-3">Fee Structure</h2>
-                            <div class="form-group ">
-                                <label for="exampleInputEmail1" class="pb-2 institute">Class :</label>
+        <div class="dashboard-content">
+            <div class="container">
+                <div class="row">
 
-                                <select class="form-select form-control" aria-label="Default select example">
-                                    <option selected>Higher Secondary Class - 9th</option>
+                    <div class="col-md-5 p-0 font-family-bold">
+                        <h2 class=" alumi-heading mb-3">Fee Structure</h2>
+                        <div class="form-group ">
+                            <label for="exampleInputEmail1" class="pb-2 institute">Class :</label>
 
-                                    <option value="1">Primary 1</option>
-                                    <option value="2">Primary 2</option>
-                                    <option value="3">Primary 3</option>
-                                    <option value="1">Primary 4</option>
+                            <select class="form-select form-control" aria-label="Default select example">
+                                <option selected>Higher Secondary Class - 9th</option>
 
-                                    <option value="1">Secondary 5</option>
-                                    <option value="2">Secondary 6</option>
-                                    <option value="3">Secondary 7</option>
-                                    <option value="1"> Secondary 8</option>
+                                <option value="1">Primary 1</option>
+                                <option value="2">Primary 2</option>
+                                <option value="3">Primary 3</option>
+                                <option value="1">Primary 4</option>
 
-                                    <option value="3">Higher Secondary 9</option>
-                                    <option value="1">Higher Secondary 10</option>
-                                </select>
-                            </div>
+                                <option value="1">Secondary 5</option>
+                                <option value="2">Secondary 6</option>
+                                <option value="3">Secondary 7</option>
+                                <option value="1"> Secondary 8</option>
+
+                                <option value="3">Higher Secondary 9</option>
+                                <option value="1">Higher Secondary 10</option>
+                            </select>
                         </div>
-                        <div class="col-md-7 ">
+                    </div>
+                    <div class="col-md-7 ">
 
-                            <div class="row">
+                        <div class="row">
 
-                                <div class="d-flex justify-content-end mobile-display p-0 ">
-
-
-                                    <div class=" right-alumni">
-                                        <a href="institute-fee-structure-upload.html" class="colorWhite"><button
-                                                type="button" class="add-button me-xl-2"> Upload New </button></a>
+                            <div class="d-flex justify-content-end mobile-display p-0 ">
 
 
-                                    </div>
+                                <div class=" right-alumni">
+                                    <a href="institute-fee-structure-upload.html" class="colorWhite"><button
+                                            type="button" class="add-button me-xl-2"> Upload New </button></a>
+
+
                                 </div>
                             </div>
-
                         </div>
 
                     </div>
 
-                    <div class="row">
+                </div>
+
+                <div class="row">
 
 
 
 
-                        <div class="accordion-body">
-                            <h1 class="freeStructure">Fee Structure :</h1>
-                            <div class="data-table table-responsive ">
-                                <div class="divTable">
-                                    <div class="divTableBody">
-                                        <div class="divTableRow">
-                                            <div class="divTableCell div-table-top"
-                                                style="border-top-left-radius: 20px;">Fee Particulars</div>
-                                            <div class="divTableCell div-table-top"
-                                                style="border-top-right-radius: 20px;">Amount (in Rupees)</div>
+                    <div class="accordion-body">
+                        <h1 class="freeStructure">Fee Structure :</h1>
+                        <div class="data-table table-responsive ">
+                            <div class="divTable">
+                                <div class="divTableBody">
+                                    <div class="divTableRow">
+                                        <div class="divTableCell div-table-top" style="border-top-left-radius: 20px;">
+                                            Fee Particulars</div>
+                                        <div class="divTableCell div-table-top" style="border-top-right-radius: 20px;">
+                                            Amount (in Rupees)</div>
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell">Admission fee</div>
+                                        <div class="divTableCell"><b>₹50,000</b></div>
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell">Maintenance Fee</div>
+                                        <div class="divTableCell"><b>₹5,000</b></div>
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell">Miscellaneous Fee</div>
+                                        <div class="divTableCell"><b>₹10,000</b></div>
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell">Tuition Fee</div>
+                                        <div class="divTableCell"><b>₹20,000</b></div>
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell">Sports Fee</div>
+                                        <div class="divTableCell"><b>₹4,000</b></div>
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell">Other Activities Fee</div>
+                                        <div class="divTableCell"><b>₹2,000</b></div>
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell">Examination Fee</div>
+                                        <div class="divTableCell"><b>₹4,000</b></div>
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell">Transport Fee</div>
+                                        <div class="divTableCell"><b>₹5,000</b></div>
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell div-table-bottom"
+                                            style="border-bottom-left-radius: 20px; border: 1.3px solid #777;">Total
                                         </div>
-                                        <div class="divTableRow">
-                                            <div class="divTableCell">Admission fee</div>
-                                            <div class="divTableCell"><b>₹50,000</b></div>
-                                        </div>
-                                        <div class="divTableRow">
-                                            <div class="divTableCell">Maintenance Fee</div>
-                                            <div class="divTableCell"><b>₹5,000</b></div>
-                                        </div>
-                                        <div class="divTableRow">
-                                            <div class="divTableCell">Miscellaneous Fee</div>
-                                            <div class="divTableCell"><b>₹10,000</b></div>
-                                        </div>
-                                        <div class="divTableRow">
-                                            <div class="divTableCell">Tuition Fee</div>
-                                            <div class="divTableCell"><b>₹20,000</b></div>
-                                        </div>
-                                        <div class="divTableRow">
-                                            <div class="divTableCell">Sports Fee</div>
-                                            <div class="divTableCell"><b>₹4,000</b></div>
-                                        </div>
-                                        <div class="divTableRow">
-                                            <div class="divTableCell">Other Activities Fee</div>
-                                            <div class="divTableCell"><b>₹2,000</b></div>
-                                        </div>
-                                        <div class="divTableRow">
-                                            <div class="divTableCell">Examination Fee</div>
-                                            <div class="divTableCell"><b>₹4,000</b></div>
-                                        </div>
-                                        <div class="divTableRow">
-                                            <div class="divTableCell">Transport Fee</div>
-                                            <div class="divTableCell"><b>₹5,000</b></div>
-                                        </div>
-                                        <div class="divTableRow">
-                                            <div class="divTableCell div-table-bottom"
-                                                style="border-bottom-left-radius: 20px; border: 1.3px solid #777;">Total
-                                            </div>
-                                            <div class="divTableCell div-table-bottom"
-                                                style="border-bottom-right-radius: 20px; border: 1.3px solid #777;">
-                                                ₹100,000</div>
-                                        </div>
+                                        <div class="divTableCell div-table-bottom"
+                                            style="border-bottom-right-radius: 20px; border: 1.3px solid #777;">
+                                            ₹100,000</div>
                                     </div>
                                 </div>
-                                <!-- DivTable.com -->
-
                             </div>
+                            <!-- DivTable.com -->
+
                         </div>
-                        <h1 class="freeSuheduleHeading">Fee Schedule options:</h1>
+                    </div>
+                    <h1 class="freeSuheduleHeading">Fee Schedule options:</h1>
 
 
-                        <div class="parentCard parent-active ">
-                            <div class="plansProduct">
+                    <div class="parentCard parent-active ">
+                        <div class="plansProduct">
 
 
 
-                                <div class="net-banking">
-                                    <p>Monthly</p>
+                            <div class="net-banking">
+                                <p>Monthly</p>
 
-                                    <div class="totaldiv">
-                                        <span class="totalPrice">Total</span>
-                                        <div class="planPrice"><strong>₹</strong>100,000</div>
-                                        <p class="monthlyPlan">Monthly payment according to the details below</p>
-                                    </div>
-                                    <ul>
-                                        <li class="paymentDate"><span>Payment Date</span><span>Amount</span></li>
-                                        <li><span>10th Sep 2024</span> <span>₹8,333.4</span></li>
-                                        <li><span>10th Oct 2024</span> <span>₹8,333.4</span></li>
-                                        <li><span>10th Nov 2024</span> <span>₹8,333.4</span></li>
-                                        <li><span>10th Dec 2024</span> <span>₹8,333.4</span></li>
-                                        <li><span>10th Jan 2025</span> <span>₹8,333.4</span></li>
-                                        <li><span>10th Feb 2025</span> <span>₹8,333.4</span></li>
-                                        <li><span>10th Mar 2025</span> <span>₹8,333.4</span></li>
-                                        <li><span>10th Apr 2025</span> <span>₹8,333.4</span></li>
-                                        <li><span>10th May 2025</span> <span>₹8,333.4</span></li>
-                                        <li><span>10th Jun 2025</span> <span>₹8,333.4</span></li>
-                                        <li><span>10th Jul 2025</span> <span>₹8,333.4</span></li>
-                                        <li><span>10th Aug 2025</span> <span>₹8,333.4</span></li>
-
-
-                                    </ul>
+                                <div class="totaldiv">
+                                    <span class="totalPrice">Total</span>
+                                    <div class="planPrice"><strong>₹</strong>100,000</div>
+                                    <p class="monthlyPlan">Monthly payment according to the details below</p>
                                 </div>
+                                <ul>
+                                    <li class="paymentDate"><span>Payment Date</span><span>Amount</span></li>
+                                    <li><span>10th Sep 2024</span> <span>₹8,333.4</span></li>
+                                    <li><span>10th Oct 2024</span> <span>₹8,333.4</span></li>
+                                    <li><span>10th Nov 2024</span> <span>₹8,333.4</span></li>
+                                    <li><span>10th Dec 2024</span> <span>₹8,333.4</span></li>
+                                    <li><span>10th Jan 2025</span> <span>₹8,333.4</span></li>
+                                    <li><span>10th Feb 2025</span> <span>₹8,333.4</span></li>
+                                    <li><span>10th Mar 2025</span> <span>₹8,333.4</span></li>
+                                    <li><span>10th Apr 2025</span> <span>₹8,333.4</span></li>
+                                    <li><span>10th May 2025</span> <span>₹8,333.4</span></li>
+                                    <li><span>10th Jun 2025</span> <span>₹8,333.4</span></li>
+                                    <li><span>10th Jul 2025</span> <span>₹8,333.4</span></li>
+                                    <li><span>10th Aug 2025</span> <span>₹8,333.4</span></li>
 
 
-                            </div>
-
-                            <div class="plansProduct">
-                                <div class="net-banking">
-                                    <p>Bi- Monthly</p>
-
-                                    <div class="totaldiv">
-                                        <span class="totalPrice">Total</span>
-                                        <div class="planPrice"><strong>₹</strong>98,000</div>
-                                        <div class="secondaryPrice"><strong>₹</strong>100,000 <img
-                                                src="images/line-red.png" /> <span class="offer">2% off</span></div>
-                                        <p class="monthlyPlan">Bi- Monthly payment according to the details below</p>
-                                    </div>
-                                    <ul>
-                                        <li class="paymentDate"><span>Payment Date</span><span>Amount</span></li>
-                                        <li><span>10th Sep 2024</span> <span>₹16,333.4</span></li>
-                                        <li><span>10th Nov 2024</span> <span>₹16,333.4</span></li>
-                                        <li><span>10th Jan 2025</span> <span>₹16,333.4</span></li>
-                                        <li><span>10th Mar 2025</span> <span>₹16,333.4</span></li>
-                                        <li><span>10th May 2025</span> <span>₹16,333.4</span></li>
-                                        <li><span>10th Jul 2025</span> <span>₹16,333.4</span></li>
-
-
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div class="plansProduct">
-                                <div class="net-banking">
-                                    <p>Quarterly</p>
-
-                                    <div class="totaldiv">
-                                        <span class="totalPrice">Total</span>
-                                        <div class="planPrice"><strong>₹</strong>95,000</div>
-                                        <div class="secondaryPrice"><strong>₹</strong>100,000 <img
-                                                src="images/line-red.png" /><span class="offer">5% off</span></div>
-                                        <p class="monthlyPlan">Quarterly payment according to the details below</p>
-                                    </div>
-                                    <ul>
-                                        <li class="paymentDate"><span>Payment Date</span><span>Amount</span></li>
-                                        <li><span>10th Sep 2024</span> <span>₹23,750</span></li>
-                                        <li><span>10th Dec 2024</span> <span>₹23,750</span></li>
-                                        <li><span>10th Mar 2025</span> <span>₹23,750</span></li>
-                                        <li><span>10th June 2025</span> <span>₹23,750</span></li>
-
-
-
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div class="plansProduct">
-                                <div class="net-banking">
-                                    <p>Half Yearly</p>
-
-                                    <div class="totaldiv">
-                                        <span class="totalPrice">Total</span>
-                                        <div class="planPrice"><strong>₹</strong>90,000</div>
-                                        <div class="secondaryPrice"><strong>₹</strong>100,000 <img
-                                                src="images/line-red.png" /><span class="offer">10% off</span></div>
-                                        <p class="monthlyPlan">Semi - Yearly payment according to the details below</p>
-                                    </div>
-                                    <ul>
-                                        <li class="paymentDate"><span>Payment Date</span><span>Amount</span></li>
-                                        <li><span>10th Sep 2024</span> <span>₹45,000</span></li>
-                                        <li><span>10th Mar 2025</span> <span>₹45,000</span></li>
-
-
-
-                                    </ul>
-                                </div>
-
-                                <div class="bestPlan">
-                                    <div class="bestplanInner">
-                                        <p> <img src="images/star.png" class="pe-2" alt="" />Best Plan !</p>
-                                    </div>
-                                    <div class="plansProduct">
-                                        <div class="net-banking">
-                                            <p>One- Time</p>
-
-                                            <div class="totaldiv">
-                                                <span class="totalPrice">Total</span>
-                                                <div class="planPrice"><strong>₹</strong>85,000</div>
-                                                <div class="secondaryPrice"><strong>₹</strong>100,000 <img
-                                                        src="images/line-red.png" /><span class="offer">15% off</span>
-                                                </div>
-                                                <p class="monthlyPlan">One Time payment according to the details below
-                                                </p>
-                                            </div>
-                                            <ul>
-                                                <li class="paymentDate"><span>Payment Date</span><span>Amount</span>
-                                                </li>
-                                                <li><span>10th Sep 2024</span> <span>₹85,000</span></li>
-
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                </div>
+                                </ul>
                             </div>
 
 
                         </div>
+
+                        <div class="plansProduct">
+                            <div class="net-banking">
+                                <p>Bi- Monthly</p>
+
+                                <div class="totaldiv">
+                                    <span class="totalPrice">Total</span>
+                                    <div class="planPrice"><strong>₹</strong>98,000</div>
+                                    <div class="secondaryPrice"><strong>₹</strong>100,000 <img
+                                            src="images/line-red.png" /> <span class="offer">2% off</span></div>
+                                    <p class="monthlyPlan">Bi- Monthly payment according to the details below</p>
+                                </div>
+                                <ul>
+                                    <li class="paymentDate"><span>Payment Date</span><span>Amount</span></li>
+                                    <li><span>10th Sep 2024</span> <span>₹16,333.4</span></li>
+                                    <li><span>10th Nov 2024</span> <span>₹16,333.4</span></li>
+                                    <li><span>10th Jan 2025</span> <span>₹16,333.4</span></li>
+                                    <li><span>10th Mar 2025</span> <span>₹16,333.4</span></li>
+                                    <li><span>10th May 2025</span> <span>₹16,333.4</span></li>
+                                    <li><span>10th Jul 2025</span> <span>₹16,333.4</span></li>
+
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="plansProduct">
+                            <div class="net-banking">
+                                <p>Quarterly</p>
+
+                                <div class="totaldiv">
+                                    <span class="totalPrice">Total</span>
+                                    <div class="planPrice"><strong>₹</strong>95,000</div>
+                                    <div class="secondaryPrice"><strong>₹</strong>100,000 <img
+                                            src="images/line-red.png" /><span class="offer">5% off</span></div>
+                                    <p class="monthlyPlan">Quarterly payment according to the details below</p>
+                                </div>
+                                <ul>
+                                    <li class="paymentDate"><span>Payment Date</span><span>Amount</span></li>
+                                    <li><span>10th Sep 2024</span> <span>₹23,750</span></li>
+                                    <li><span>10th Dec 2024</span> <span>₹23,750</span></li>
+                                    <li><span>10th Mar 2025</span> <span>₹23,750</span></li>
+                                    <li><span>10th June 2025</span> <span>₹23,750</span></li>
+
+
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="plansProduct">
+                            <div class="net-banking">
+                                <p>Half Yearly</p>
+
+                                <div class="totaldiv">
+                                    <span class="totalPrice">Total</span>
+                                    <div class="planPrice"><strong>₹</strong>90,000</div>
+                                    <div class="secondaryPrice"><strong>₹</strong>100,000 <img
+                                            src="images/line-red.png" /><span class="offer">10% off</span></div>
+                                    <p class="monthlyPlan">Semi - Yearly payment according to the details below</p>
+                                </div>
+                                <ul>
+                                    <li class="paymentDate"><span>Payment Date</span><span>Amount</span></li>
+                                    <li><span>10th Sep 2024</span> <span>₹45,000</span></li>
+                                    <li><span>10th Mar 2025</span> <span>₹45,000</span></li>
+
+
+
+                                </ul>
+                            </div>
+
+                            <div class="bestPlan">
+                                <div class="bestplanInner">
+                                    <p> <img src="images/star.png" class="pe-2" alt="" />Best Plan !</p>
+                                </div>
+                                <div class="plansProduct">
+                                    <div class="net-banking">
+                                        <p>One- Time</p>
+
+                                        <div class="totaldiv">
+                                            <span class="totalPrice">Total</span>
+                                            <div class="planPrice"><strong>₹</strong>85,000</div>
+                                            <div class="secondaryPrice"><strong>₹</strong>100,000 <img
+                                                    src="images/line-red.png" /><span class="offer">15% off</span>
+                                            </div>
+                                            <p class="monthlyPlan">One Time payment according to the details below
+                                            </p>
+                                        </div>
+                                        <ul>
+                                            <li class="paymentDate"><span>Payment Date</span><span>Amount</span>
+                                            </li>
+                                            <li><span>10th Sep 2024</span> <span>₹85,000</span></li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
         </div>
+
 
         <!-- Right Panel -->
     </div>

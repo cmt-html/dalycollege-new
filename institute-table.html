@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="IE=Edge">
-    <meta name="theme-color" content="midnightblue">
     <title>GetzPAID - Institute Table</title>
     <meta name="Description" content="Getzpaid">
     <meta name="Keywords" content="Getzpaid">
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="scss/main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link href="css/datatables.min.css" rel="stylesheet">
@@ -29,386 +27,413 @@
 
 <body>
     <!--Header Starts-->
-    <header>
-
-        <div class="header">
-            <div class="container">
-                <div class="row">
-                    <div class="logo-img float-start col-md-3 col-xl-3 col-3">
-                        <a href="institute-dashboard.html"><img src="images/logo-main.svg" alt="" title=""
-                                class="img-fluid mb-3 mb-md-0 animated fadeInDown"></a>
-                    </div>
-                    <div class="heading-text col-md-6 col-xl-4 col-6 pt-xl-0 pt-5">
-                        <h2>Welcome Daly College, </h2>
-                        <p class="pt-1">to GetzPAID for Academic Institute </p>
-
-                    </div>
-                    <div class="right-side float-end col-md-12 col-xl-5 right-img col-12"><img src="images/logo-dc.svg"
-                            alt="" title="">
-                        <a href="#" id="dropdown" class="help">
-                            <img width="50px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Help"
-                                src="images/help.png" alt="" id="hideClick" class="right-icon col-md-2">
-
-                            <img width="50px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Help"
-                                src="images/help-web-button-2.png" alt="Help Web Button" id="imgactive"
-                                class="right-icon col-md-2">
-
-                            <div class="right-dropdown">
-                                <ul>
-                                    <li><span class="right-dropdown-img"><img src="images/user-guide-updated.png"
-                                                alt="User Guide Updated"></span>Guide</li>
-                                    <li><span class="right-dropdown-img"><img src="images/phone-call-upated.png"
-                                                alt="Phone Call Upated"></span><span>Contact:
-                                        </span>9876543210 </li>
-                                    <li><span class="right-dropdown-img"><img
-                                                src="images/message.png"></span><span>Email Id:
-                                        </span>ib.counsellor@podarin<br>ternationalschool.com </li>
-                                </ul>
-
-
-                            </div>
+    <header class="institute-header">
+        <div class="container">
+            <div class="header-wrraper">
+                <div class="logo-part">
+                    <div class="logo">
+                        <a href="login-parents.html">
+                            <img src="images/logo-main.svg" alt="" class="img-fluid animated fadeInDown">
                         </a>
-                        <div data-bs-toggle="tooltip" data-bs-placement="bottom" title="Logout" class="logout-button">
-                            <img src="images/logout-button.png" alt="log out" />
+                    </div>
+                    <div class="welcome-msg heading-text">
+                        <h2>Welcome Daly College, </h2>
+                        <p>to GetzPAID for Academic Institute </p>
+                    </div>
+                </div>
+                <div class="college-logo-part">
+                    <div class="clg-logo">
+                        <img src="images/logo-dc.svg" alt="Logo Dc" title="">
+                    </div>
+                    <div class="header-options">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)" id="dropdown" class="help">
+                                    <img width="30px" src="images/help.png" alt="Help" id="hideClick" class="right-icon"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom" title="Help">
+
+                                    <img width="30px" src="images/help-web-button-2.png" alt="Help Web Button"
+                                        id="imgactive" class="right-icon">
+
+                                    <div class="right-dropdown">
+                                        <ul>
+                                            <li><span class="right-dropdown-img"><img
+                                                        src="images/user-guide-updated.png"
+                                                        alt="User Guide Updated"></span>Guide</li>
+                                            <li><span class="right-dropdown-img"><img src="images/phone-call-upated.png"
+                                                        alt="Phone Call Upated"></span><span>Contact:
+                                                </span>9876543210 </li>
+                                            <li><span class="right-dropdown-img">
+                                                    <img src="images/message.png" alt="message.png"></span><span>Email
+                                                    Id:
+                                                </span>ib.counsellor@podarin<br>ternationalschool.com </li>
+                                        </ul>
 
 
-                        </div>
-                        <button class="leftnav menu-button-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="log-out-btn">
+                                <a href="#">
+                                    <img src="/images/logout-button.png" alt="logout-button.png"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom" title="Logout">
+                                </a>
+                            </li>
+                            <li class="only-mobile">
+                                <button class="leftnav menu-button-icon"><i class="fa fa-bars"
+                                        aria-hidden="true"></i></button>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-
         </div>
-
     </header>
+
+
+    <div class="institute-wrraper container p-md-0">
     <!--Header Starts-->
-    <div class="container position-relative px-4 pb-10 px-xxl-2 pe-xl-4 ps-lg-0">
-        <div class="row">
-            <!-- Left panel -->
-            <div class="position-fixd leftmenu mt-0">
-                <ul class="menu-bar bg-menu rounded-left-nav rounded-left-nav-sm">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <li id="liDashboard">
-                        <a href="institute-dashboard.html" class="rounded-3 leftnav"><span
-                                class="dashboard"></span>Dashboard</a>
-                    </li>
+       
+                <!-- Left panel -->
+                <div class="leftmenu">
+                    <ul class="menu-bar bg-menu rounded-left-nav rounded-left-nav-sm">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <li id="liDashboard">
+                            <a href="institute-dashboard.html" class="rounded-3 leftnav"><span
+                                    class="dashboard"></span>Dashboard</a>
+                        </li>
 
 
 
-                    <li id="liCustomer" class="active"><a href="institute-select-class.html"
-                            class="rounded-3 leftnav"><span class="customer"></span>Students</a>
-                    </li>
-                    <li id="liContract"><a href="institute-fee-structure.html" class="rounded-3 leftnav"><span
-                                class="contracts"></span>Fee Structure</a></li>
-                    <li id="liMandate"><a href="institute-fee-collection.html" class="rounded-3 leftnav"><span
-                                class="mandates"></span>Fee Collection</a></li>
-                    <li title="Mandates" id="liPayments"><a href="institute-mandates.html"
-                            class="rounded-3 leftnav"><span class="payments"></span>Mandates</a></li>
-                    <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="reports second"></span>Fee
-                            Report</a>
-                    </li>
-                    <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="settings"></span>Settings</a>
-                    </li>
-                    <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="profiles"></span>Profile</a>
-                    </li>
-                    <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="help"></span>Help</a>
-                    </li>
-                    <li>
-                        <div class="menu-button ">Setup Fee<span class="material-icons"><img src="images/next.png"
-                                    alt=""></span></div>
-                    </li>
-                </ul>
-            </div>
+                        <li id="liCustomer" class="active"><a href="institute-select-class.html"
+                                class="rounded-3 leftnav"><span class="customer"></span>Students</a>
+                        </li>
+                        <li id="liContract"><a href="institute-fee-structure.html" class="rounded-3 leftnav"><span
+                                    class="contracts"></span>Fee Structure</a></li>
+                        <li id="liMandate"><a href="institute-fee-collection.html" class="rounded-3 leftnav"><span
+                                    class="mandates"></span>Fee Collection</a></li>
+                        <li title="Mandates" id="liPayments"><a href="institute-mandates.html"
+                                class="rounded-3 leftnav"><span class="payments"></span>Mandates</a></li>
+                        <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="reports second"></span>Fee
+                                Report</a>
+                        </li>
+                        <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="settings"></span>Settings</a>
+                        </li>
+                        <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="profiles"></span>Profile</a>
+                        </li>
+                        <li class="locked"><a href="#" class="rounded-3 leftnav"><span class="help"></span>Help</a>
+                        </li>
+                        <li>
+                            <div class="menu-button ">Setup Fee<span class="material-icons"><img src="images/next.png"
+                                        alt=""></span></div>
+                        </li>
+                    </ul>
+                </div>
 
 
-            <!-- Left panel -->
-            <!-- Right Panel -->
-            <div class="col-xl-9 col-lg-12 col-md-12 ms-auto mt-4 ps-xl-1">
+                <!-- Left panel -->
+                <!-- Right Panel -->
+                <div class="dashboard-content">
 
-                <div class="row">
-
-                    <div class="col-md-4 p-0 font-family-bold">
-                        <h2 class=" alumi-heading">Students <span class="fontSizeClass">Class 9</span> </h2>
-
-                    </div>
-                    <div class="col-md-8 ">
+                    <div class="container">
                         <div class="row">
-                            <div class="d-flex justify-content-end mobile-display p-0 ">
-                                <div class=" position-relative right-alumni me-3 ">
-                                    <input type="text" class="input-search" alt="" placeholder="Search" />
-                                    <span class="search-icon"></span>
 
+                            <div class="col-md-4 p-0 font-family-bold flex-v-center">
+                                <h2 class=" alumi-heading">Students <span class="fontSizeClass">Class 9</span> </h2>
+                            </div>
+                            <div class="col-md-8 ">
+                                <div class="row">
+                                    <div class="d-flex justify-content-end mobile-display p-0 institute-table-option">
+                                        <div class=" position-relative right-alumni me-3 ">
+                                            <input type="text" class="input-search" alt="" placeholder="Search" />
+                                            <span class="search-icon"></span>
+
+                                        </div>
+                                        <div class="  right-alumni">
+                                            <button type="button" class="filter-button me-3"> <span
+                                                    class="filter-icon"></span>
+                                                <span class="filter-text">Filter</span> </button>
+
+
+                                        </div>
+                                        <div class=" right-alumni">
+
+                                            <a href="institute-add-new.html" class="colorWhite"> <button type="button"
+                                                    class="add-button me-xl-0"><span class="add-text">Add
+                                                        Student</span></button></a>
+
+
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="  right-alumni">
-                                    <button type="button" class="filter-button me-3"> <span class="filter-icon"></span>
-                                        <span class="filter-text">Filter</span> </button>
 
+                            </div>
+                            <div class="data-table table-responsive pt-4 tableData">
+                                <table  id="studentsTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Enrollment Number</th>
+                                            <th>Student Name</th>
+                                            <th>Division</th>
+                                            <th>Roll Number</th>
+                                            <th>Parent Name</th>
+                                            <th>Contact Number</th>
 
-                                </div>
-                                <div class=" right-alumni">
+                                            <th class="text-center">Action
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Enrollment Number" class="table-heading">SMI2024001</td>
+                                            <td data-label="Student Name">Aarav Sharma</td>
+                                            <td data-label="Division">B</td>
+                                            <td data-label="Roll Number">1</td>
+                                            <td data-label="Parent Name">Priya Verma</td>
+                                            <td data-label="Contact Number">9876543212</td>
 
-                                    <a href="institute-add-new.html" class="colorWhite"> <button type="button"
-                                            class="add-button me-xl-0"><span class="add-text">Add
-                                                Student</span></button></a>
+                                            <td>
 
+                                                <button class="dots-bg" type="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-h " aria-hidden="true"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#"><i
+                                                                class="fas fa-edit me-2"></i>Edit</a></li>
+                                                    <li><a class="dropdown-item deleteColor" href="#" ><i
+                                                                class="fa fa-trash me-2 " aria-hidden="true"></i>Delete</a>
+                                                    </li>
 
-                                </div>
+                                                </ul>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="Enrollment Number" class="table-heading">SMI2024002
+                                            </td>
+                                            <td data-label="Student Name">Kavya Patel</td>
+                                            <td data-label="Division">B</td>
+                                            <td data-label="Roll Number">2</td>
+                                            <td data-label="Parent Name">Anjali Mehta</td>
+                                            <td data-label="Contact Number">9876543213</td>
+
+                                            <td>
+
+                                                <button class="dots-bg" type="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-h " aria-hidden="true"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#"><i
+                                                                class="fas fa-edit me-2"></i>Edit</a></li>
+                                                    <li><a class="dropdown-item deleteColor" href="#" ><i
+                                                                class="fa fa-trash me-2 " aria-hidden="true"></i>Delete</a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="Enrollment Number" class="table-heading">SMI2024003
+                                            </td>
+                                            <td data-label="Student Name">Isha Verma</td>
+                                            <td data-label="Division">B</td>
+                                            <td data-label="Roll Number">2</td>
+                                            <td data-label="Parent Name">Amit Gupta</td>
+                                            <td data-label="Contact Number">9876543214</td>
+
+                                            <td>
+
+                                                <button class="dots-bg" type="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-h " aria-hidden="true"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#"><i
+                                                                class="fas fa-edit me-2"></i>Edit</a></li>
+                                                    <li><a class="dropdown-item deleteColor" href="#" ><i
+                                                                class="fa fa-trash me-2 " aria-hidden="true"></i>Delete</a>
+                                                    </li>
+
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="Enrollment Number" class="table-heading">SMI2024004
+                                            </td>
+                                            <td data-label="Student Name">Rohan Mehta</td>
+                                            <td data-label="Division">B</td>
+                                            <td data-label="Roll Number">2</td>
+                                            <td data-label="Parent Name">Kunal Desai</td>
+                                            <td data-label="Contact Number">9876543215</td>
+
+                                            <td>
+
+                                                <button class="dots-bg" type="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-h " aria-hidden="true"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#"><i
+                                                                class="fas fa-edit me-2"></i>Edit</a></li>
+                                                    <li><a class="dropdown-item deleteColor" href="#" ><i
+                                                                class="fa fa-trash me-2 " aria-hidden="true"></i>Delete</a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="Enrollment Number" class="table-heading">SMI2024005
+                                            </td>
+                                            <td data-label="Student Name">Diya Gupta</td>
+                                            <td data-label="Division">B</td>
+                                            <td data-label="Roll Number">2</td>
+                                            <td data-label="Parent Name">Swati Rao</td>
+                                            <td data-label="Contact Number">9876543216</td>
+
+                                            <td>
+
+                                                <button class="dots-bg" type="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-h " aria-hidden="true"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#"><i
+                                                                class="fas fa-edit me-2"></i>Edit</a></li>
+                                                    <li><a class="dropdown-item deleteColor" href="#" ><i
+                                                                class="fa fa-trash me-2 " aria-hidden="true"></i>Delete</a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row" data-label="Enrollment Number" class="table-heading">SMI2024006
+                                            </td>
+                                            <td data-label="Student Name">Ayaan Desai</td>
+                                            <td data-label="Division">B</td>
+                                            <td data-label="Roll Number">2</td>
+                                            <td data-label="Parent Name">Vikram Singh</td>
+                                            <td data-label="Contact Number">9876543217</td>
+
+                                            <td>
+
+                                                <button class="dots-bg" type="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-h " aria-hidden="true"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#"><i
+                                                                class="fas fa-edit me-2"></i>Edit</a></li>
+                                                    <li><a class="dropdown-item deleteColor" href="#" ><i
+                                                                class="fa fa-trash me-2 " aria-hidden="true"></i>Delete</a>
+                                                    </li>
+
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row" data-label="Enrollment Number" class="table-heading">SMI2024007
+                                            </td>
+                                            <td data-label="Student Name">Nisha Rao</td>
+                                            <td data-label="Division">B</td>
+                                            <td data-label="Roll Number">2</td>
+                                            <td data-label="Parent Name">Ramesh Patel</td>
+                                            <td data-label="Contact Number">9876543211</td>
+
+                                            <td>
+
+                                                <button class="dots-bg" type="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-h " aria-hidden="true"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#"><i
+                                                                class="fas fa-edit me-2"></i>Edit</a></li>
+                                                    <li><a class="dropdown-item deleteColor" href="#" ><i
+                                                                class="fa fa-trash me-2 " aria-hidden="true"></i>Delete</a>
+                                                    </li>
+
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row" data-label="Enrollment Number" class="table-heading">SMI2024008
+                                            </td>
+                                            <td data-label="Student Name">Arjun Singh</td>
+                                            <td data-label="Division">B</td>
+                                            <td data-label="Roll Number">2</td>
+                                            <td data-label="Parent Name">Ramesh Patel</td>
+                                            <td data-label="Contact Number">9876543211</td>
+
+                                            <td>
+
+                                                <button class="dots-bg" type="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-h " aria-hidden="true"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#"><i
+                                                                class="fas fa-edit me-2"></i>Edit</a></li>
+                                                    <li><a class="dropdown-item deleteColor" href="#"><i
+                                                                class="fa fa-trash me-2 " aria-hidden="true"></i>Delete</a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row" data-label="Enrollment Number" class="table-heading">SMI2024002
+                                            </td>
+                                            <td data-label="Student Name">Kavya Patel</td>
+                                            <td data-label="Division">B</td>
+                                            <td data-label="Roll Number">2</td>
+                                            <td data-label="Parent Name">Ramesh Patel</td>
+                                            <td data-label="Contact Number">9876543211</td>
+
+                                            <td>
+
+                                                <button class="dots-bg" type="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-h " aria-hidden="true"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#"><i
+                                                                class="fas fa-edit me-2"></i>Edit</a></li>
+                                                    <li><a class="dropdown-item deleteColor" href="#"><i
+                                                                class="fa fa-trash me-2 " aria-hidden="true"></i>Delete</a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
                             </div>
                         </div>
-
-                    </div>
-                    <div class="data-table table-responsive pt-4 tableData">
-                        <table class="" id="example">
-                            <thead>
-                                <tr>
-                                    <th>Enrollment Number</th>
-                                    <th>Student Name</th>
-                                    <th>Division</th>
-                                    <th>Roll Number</th>
-                                    <th>Parent Name</th>
-                                    <th>Contact Number</th>
-
-                                    <th class="text-center">Action
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td data-label="Enrollment Number" class="table-heading">SMI2024001</td>
-                                    <td data-label="Student Name">Aarav Sharma</td>
-                                    <td data-label="Division">B</td>
-                                    <td data-label="Roll Number">1</td>
-                                    <td data-label="Parent Name">Priya Verma</td>
-                                    <td data-label="Contact Number">9876543212</td>
-
-                                    <td>
-
-                                        <button class="dots-bg" type="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            <i class="fa fa-ellipsis-h " aria-hidden="true"></i>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#"><i
-                                                        class="fas fa-edit me-2"></i>Edit</a></li>
-                                            <li><a class="dropdown-item deleteColor" href="#" class=""><i
-                                                        class="fa fa-trash me-2 " aria-hidden="true"></i>Delete</a></li>
-
-                                        </ul>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row" data-label="Enrollment Number" class="table-heading">SMI2024002</td>
-                                    <td data-label="Student Name">Kavya Patel</td>
-                                    <td data-label="Division">B</td>
-                                    <td data-label="Roll Number">2</td>
-                                    <td data-label="Parent Name">Anjali Mehta</td>
-                                    <td data-label="Contact Number">9876543213</td>
-
-                                    <td>
-
-                                        <button class="dots-bg" type="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            <i class="fa fa-ellipsis-h " aria-hidden="true"></i>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#"><i
-                                                        class="fas fa-edit me-2"></i>Edit</a></li>
-                                            <li><a class="dropdown-item deleteColor" href="#" class=""><i
-                                                        class="fa fa-trash me-2 " aria-hidden="true"></i>Delete</a></li>
-
-                                        </ul>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row" data-label="Enrollment Number" class="table-heading">SMI2024003</td>
-                                    <td data-label="Student Name">Isha Verma</td>
-                                    <td data-label="Division">B</td>
-                                    <td data-label="Roll Number">2</td>
-                                    <td data-label="Parent Name">Amit Gupta</td>
-                                    <td data-label="Contact Number">9876543214</td>
-
-                                    <td>
-
-                                        <button class="dots-bg" type="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            <i class="fa fa-ellipsis-h " aria-hidden="true"></i>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#"><i
-                                                        class="fas fa-edit me-2"></i>Edit</a></li>
-                                            <li><a class="dropdown-item deleteColor" href="#" class=""><i
-                                                        class="fa fa-trash me-2 " aria-hidden="true"></i>Delete</a></li>
-
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row" data-label="Enrollment Number" class="table-heading">SMI2024004</td>
-                                    <td data-label="Student Name">Rohan Mehta</td>
-                                    <td data-label="Division">B</td>
-                                    <td data-label="Roll Number">2</td>
-                                    <td data-label="Parent Name">Kunal Desai</td>
-                                    <td data-label="Contact Number">9876543215</td>
-
-                                    <td>
-
-                                        <button class="dots-bg" type="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            <i class="fa fa-ellipsis-h " aria-hidden="true"></i>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#"><i
-                                                        class="fas fa-edit me-2"></i>Edit</a></li>
-                                            <li><a class="dropdown-item deleteColor" href="#" class=""><i
-                                                        class="fa fa-trash me-2 " aria-hidden="true"></i>Delete</a></li>
-
-                                        </ul>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row" data-label="Enrollment Number" class="table-heading">SMI2024005</td>
-                                    <td data-label="Student Name">Diya Gupta</td>
-                                    <td data-label="Division">B</td>
-                                    <td data-label="Roll Number">2</td>
-                                    <td data-label="Parent Name">Swati Rao</td>
-                                    <td data-label="Contact Number">9876543216</td>
-
-                                    <td>
-
-                                        <button class="dots-bg" type="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            <i class="fa fa-ellipsis-h " aria-hidden="true"></i>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#"><i
-                                                        class="fas fa-edit me-2"></i>Edit</a></li>
-                                            <li><a class="dropdown-item deleteColor" href="#" class=""><i
-                                                        class="fa fa-trash me-2 " aria-hidden="true"></i>Delete</a></li>
-
-                                        </ul>
-
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td scope="row" data-label="Enrollment Number" class="table-heading">SMI2024006</td>
-                                    <td data-label="Student Name">Ayaan Desai</td>
-                                    <td data-label="Division">B</td>
-                                    <td data-label="Roll Number">2</td>
-                                    <td data-label="Parent Name">Vikram Singh</td>
-                                    <td data-label="Contact Number">9876543217</td>
-
-                                    <td>
-
-                                        <button class="dots-bg" type="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            <i class="fa fa-ellipsis-h " aria-hidden="true"></i>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#"><i
-                                                        class="fas fa-edit me-2"></i>Edit</a></li>
-                                            <li><a class="dropdown-item deleteColor" href="#" class=""><i
-                                                        class="fa fa-trash me-2 " aria-hidden="true"></i>Delete</a></li>
-
-                                        </ul>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td scope="row" data-label="Enrollment Number" class="table-heading">SMI2024007</td>
-                                    <td data-label="Student Name">Nisha Rao</td>
-                                    <td data-label="Division">B</td>
-                                    <td data-label="Roll Number">2</td>
-                                    <td data-label="Parent Name">Ramesh Patel</td>
-                                    <td data-label="Contact Number">9876543211</td>
-
-                                    <td>
-
-                                        <button class="dots-bg" type="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            <i class="fa fa-ellipsis-h " aria-hidden="true"></i>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#"><i
-                                                        class="fas fa-edit me-2"></i>Edit</a></li>
-                                            <li><a class="dropdown-item deleteColor" href="#" class=""><i
-                                                        class="fa fa-trash me-2 " aria-hidden="true"></i>Delete</a></li>
-
-                                        </ul>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td scope="row" data-label="Enrollment Number" class="table-heading">SMI2024008</td>
-                                    <td data-label="Student Name">Arjun Singh</td>
-                                    <td data-label="Division">B</td>
-                                    <td data-label="Roll Number">2</td>
-                                    <td data-label="Parent Name">Ramesh Patel</td>
-                                    <td data-label="Contact Number">9876543211</td>
-
-                                    <td>
-
-                                        <button class="dots-bg" type="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            <i class="fa fa-ellipsis-h " aria-hidden="true"></i>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#"><i
-                                                        class="fas fa-edit me-2"></i>Edit</a></li>
-                                            <li><a class="dropdown-item deleteColor" href="#" class=""><i
-                                                        class="fa fa-trash me-2 " aria-hidden="true"></i>Delete</a></li>
-
-                                        </ul>
-
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td scope="row" data-label="Enrollment Number" class="table-heading">SMI2024002</td>
-                                    <td data-label="Student Name">Kavya Patel</td>
-                                    <td data-label="Division">B</td>
-                                    <td data-label="Roll Number">2</td>
-                                    <td data-label="Parent Name">Ramesh Patel</td>
-                                    <td data-label="Contact Number">9876543211</td>
-
-                                    <td>
-
-                                        <button class="dots-bg" type="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            <i class="fa fa-ellipsis-h " aria-hidden="true"></i>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#"><i
-                                                        class="fas fa-edit me-2"></i>Edit</a></li>
-                                            <li><a class="dropdown-item deleteColor" href="#" class=""><i
-                                                        class="fa fa-trash me-2 " aria-hidden="true"></i>Delete</a></li>
-
-                                        </ul>
-
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-
                     </div>
                 </div>
-
-
-
-
-
-
+                <!-- Right Panel -->
             </div>
-            <!-- Right Panel -->
-        </div>
-    </div>
+
+
+
 
     <script src="js/jquery-3.7.0.js"></script>
     <script src="js/datatables.min.js"></script>
@@ -416,19 +441,7 @@
         crossorigin="anonymous"></script>
     <script src="js/custom.js"></script>
     <script>
-        // $(document).ready(function () {
-        //     $(".menu-button").click(function () {
-        //         $(".menu-bar").toggleClass("open");
-        //         $(".leftmenu").toggleClass("openmenu");
-        //     })
-        // })
-
-
-
-
-
-
-        new DataTable('#example', {
+        new DataTable('#studentsTable', {
             ordering: false,
             "bDestroy": false,
             "bAutoWidth": false,
