@@ -11137,6 +11137,13 @@ img {
   font-family: "metropolissemi_bold";
   color: #424242;
 }
+.wellcome-text .form-control {
+  border-radius: 10px;
+  color: #424242;
+  font-size: 18px;
+  font-family: "metropolissemi_bold";
+  padding: 16px !important;
+}
 .wellcome-text .form-top {
   padding-top: 13%;
 }
@@ -11151,13 +11158,6 @@ img {
 }
 .wellcome-text .form-top .password-top {
   padding-top: 15px;
-}
-.wellcome-text .form-top .form-control {
-  border-radius: 10px;
-  color: #424242;
-  font-size: 18px;
-  font-family: "metropolissemi_bold";
-  padding: 16px !important;
 }
 .wellcome-text .form-top .form-control::-moz-placeholder {
   border-radius: 15px;
@@ -11703,8 +11703,11 @@ p.bold-heading-you-have {
   color: #323232;
 }
 
-.parent-header .header-options ul li:last-child {
-  display: none;
+.parent-header .header-options ul > li:last-child {
+  display: none !important;
+}
+.parent-header .header-options ul > li:last-child.only-mobile {
+  display: none !important;
 }
 
 @media (min-width: 1440px) {

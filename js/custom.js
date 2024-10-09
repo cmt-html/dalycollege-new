@@ -60,22 +60,53 @@ $(document).ready(function () {
   });
 });
 
-// $(document).ready(function() {
-//     // $(".menu-button").click(function () {
-//     //     $(".menu-bar").toggleClass("open");
-//     //     $(".leftmenu").toggleClass("openmenu");
-//     // })
-//     let appendEntries = $(".appendEntries");
-//     console.log(appendEntries);
+// Menu Js
 
-//     $(".tableShowEntries .dt-length").appendTo(appendEntries);
-// })
+//  const menuLi = document.querySelectorAll(".leftmenu .menu-bar li");
+//  menuLi.forEach( e => {
+//     menuLi.classList.remove("active");
 
-// function showPanel() {
+//     e.addEventListener("click", ()=> {
+//         console.log("menu clicked", e);
+//         e.classList.add("active");
+//     });
+//  });
 
-//     $(".showPanleDiv").show();
+// var elems = document.querySelector(".leftmenu .menu-bar .active");
+//   if(elems !==null){
+//    elems.classList.remove("active");
+//   }
+//  e.target.className = "active";
 
-// }
+// const currentPath = window.location.pathname;
+
+//   // Select all list items with anchor links inside the nav
+//   const navItems = document.querySelectorAll('.leftmenu ul.menu-bar li');
+
+//   // Loop through the list items
+//   navItems.forEach(item => {
+//     // Get the href attribute of the anchor tag inside the list item
+//     const link = item.querySelector('a');
+//     if (link && link.getAttribute('href') === currentPath) {
+//       // Add 'active' class to the list item if the href matches the current path
+//       item.classList.add('active');
+//     }
+//   });
+
+const currentPage = window.location.pathname.split("/").pop();
+
+// Select all list items with anchor links inside the nav
+const navItems = document.querySelectorAll(".leftmenu ul.menu-bar li");
+
+// Loop through the list items
+navItems.forEach((item) => {
+  // Get the href attribute of the anchor tag inside the list item
+  const link = item.querySelector("a");
+  if (link && link.getAttribute("href") === currentPage) {
+    // Add 'active' class to the list item if the href matches the current page
+    item.classList.add("active");
+  }
+});
 
 var i = 0;
 
