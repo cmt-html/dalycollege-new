@@ -53,11 +53,13 @@ $(document).ready(function () {
 
     var text = $(this).text();
     $(this).text(text == "Show Less" ? "Show More" : "Show Less");
+
+    $(this).siblings("img").toggleClass("rotateImg180");
   });
 
-  $(".imgBox").on("click", function () {
-    $(".imgBox img").toggleClass("rotateImg180");
-  });
+  // $(".imgBox").on("click", function () {
+  //   $(".imgBox img").toggleClass("rotateImg180");
+  // });
 });
 
 // Menu Js
