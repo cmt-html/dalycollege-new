@@ -1,993 +1,1432 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="IE=Edge">
-    <meta name="theme-color" content="midnightblue">
-    <title>GetzPAID - Parents Fee Structure </title>
-    <meta name="Description" content="Getzpaid">
-    <meta name="Keywords" content="Getzpaid">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+    <meta name="theme-color" content="midnightblue" />
+    <title>GetzPAID - Parents Fee Structure</title>
+    <meta name="Description" content="Getzpaid" />
+    <meta name="Keywords" content="Getzpaid" />
     <!-- <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" /> -->
     <link rel="stylesheet" type="text/css" href="scss/main.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link href="css/datatables.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link href="css/datatables.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/bootstrap-datepicker.min.css"
+    />
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <!--Header Starts-->
     <header class="parent-header">
-        <div class="container">
-            <div class="header-wrraper">
-                <div class="logo-part">
-                    <div class="logo">
-                        <a href="login-parents.html">
-                            <img src="images/logo-main.svg" alt="" class="img-fluid animated fadeInDown">
-                        </a>
-                    </div>
-                    <div class="welcome-msg heading-text">
-                        <h2>Welcome Ramesh, </h2>
-                        <p>to GetzPAID for Academic Institute </p>
-                    </div>
-                </div>
-                <div class="college-logo-part">
-                    <div class="clg-logo">
-                        <img src="images/logo-dc.svg" alt="Logo Dc" title="">
-                    </div>
-                    <div class="header-options">
-                        <ul>
-                            <li>
-                                <a href="javascript:void(0)" id="dropdown" class="help">
-                                    <img width="30px" src="images/help.png" alt="Help" id="hideClick" class="right-icon"
-                                        data-bs-toggle="tooltip" data-bs-placement="bottom" title="Help">
-
-                                    <img width="30px" src="images/help-web-button-2.png" alt="Help Web Button"
-                                        id="imgactive" class="right-icon">
-
-                                    <div class="right-dropdown">
-                                        <ul>
-                                            <li><span class="right-dropdown-img">
-                                                <img src="images/user-guide-updated.png" class="mt-1" alt="User Guide Updated">
-                                            </span>Guide</li>
-                                            <li><span class="right-dropdown-img"><img src="images/phone-call-upated.png"
-                                                        alt="Phone Call Upated"></span><span>Contact:
-                                                </span>9876543210 </li>
-                                            <li><span class="right-dropdown-img"><img
-                                                        src="images/message.png"></span><span>Email Id:
-                                                </span>ib.counsellor@podarin<br>ternationalschool.com </li>
-                                        </ul>
-
-
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="log-out-btn">
-                                <a href="#">
-                                    <img src="/images/logout-button.png" alt="logout-button.png"
-                                        data-bs-toggle="tooltip" data-bs-placement="bottom" title="Logout">
-                                </a>
-                            </li>
-                            <li class="only-mobile">
-                                <button class="leftnav menu-button-icon"><i class="fa fa-bars"
-                                        aria-hidden="true"></i></button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="header-wrraper">
+          <div class="logo-part">
+            <div class="logo">
+              <a href="login-parents.html">
+                <img
+                  src="images/logo-main.svg"
+                  alt=""
+                  class="img-fluid animated fadeInDown"
+                />
+              </a>
             </div>
+            <div class="welcome-msg heading-text">
+              <h2>Welcome Ramesh,</h2>
+              <p>to GetzPAID for Academic Institute</p>
+            </div>
+          </div>
+          <div class="college-logo-part">
+            <div class="clg-logo">
+              <img src="images/logo-dc.svg" alt="Logo Dc" title="" />
+            </div>
+            <div class="header-options">
+              <ul>
+                <li>
+                  <a href="javascript:void(0)" id="dropdown" class="help">
+                    <img
+                      width="30px"
+                      src="images/help.png"
+                      alt="Help"
+                      id="hideClick"
+                      class="right-icon"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      title="Help"
+                    />
+
+                    <img
+                      width="30px"
+                      src="images/help-web-button-2.png"
+                      alt="Help Web Button"
+                      id="imgactive"
+                      class="right-icon"
+                    />
+
+                    <div class="right-dropdown">
+                      <ul>
+                        <li>
+                          <span class="right-dropdown-img">
+                            <img
+                              src="images/user-guide-updated.png"
+                              class="mt-1"
+                              alt="User Guide Updated"
+                            /> </span
+                          >Guide
+                        </li>
+                        <li>
+                          <span class="right-dropdown-img"
+                            ><img
+                              src="images/phone-call-upated.png"
+                              alt="Phone Call Upated" /></span
+                          ><span>Contact: </span>9876543210
+                        </li>
+                        <li>
+                          <span class="right-dropdown-img"
+                            ><img src="images/message.png" /></span
+                          ><span>Email Id: </span
+                          >ib.counsellor@podarin<br />ternationalschool.com
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+                <li class="log-out-btn">
+                  <a href="#">
+                    <img
+                      src="/images/logout-button.png"
+                      alt="logout-button.png"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      title="Logout"
+                    />
+                  </a>
+                </li>
+                <li class="only-mobile">
+                  <button class="leftnav menu-button-icon">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
     <!--Header Starts-->
-    <div class="container position-relative pb-10 px-xxl-2 pe-xl-4 px-4 parents-fee-structure">
-        <div class="px-md-3">
-            <!-- Left panel -->
+    <div
+      class="container position-relative pb-10 px-xxl-2 pe-xl-4 px-4 parents-fee-structure"
+    >
+      <div class="px-md-3">
+        <!-- Left panel -->
 
+        <!-- Left panel -->
+        <!-- Right Panel -->
+        <div class="col-xl-12 col-lg-12 col-md-12 ms-auto mt-4 ps-xl-3">
+          <div class="row">
+            <div class="col-md-4 col-7 col-lg-6 p-0">
+              <h2 class="alumi-heading mb-1">Setup Fee e-mandate</h2>
+            </div>
+            <div class="col-md-8 col-5 col-lg-6 text-right-acdamic">
+              <span class="acdimic-text">Academic Year:</span
+              ><span class="date-academic">2024 - 2025</span>
+            </div>
+          </div>
 
-            <!-- Left panel -->
-            <!-- Right Panel -->
-            <div class="col-xl-12 col-lg-12 col-md-12 ms-auto mt-4 ps-xl-3 ">
-
-                <div class="row">
-                    <div class="col-md-4 col-7 col-lg-6 p-0">
-                        <h2 class=" alumi-heading mb-1 ">Setup Fee e-mandate </h2>
-
+          <div class="row tab-view">
+            <ul class="nav nav-tabs d-none d-lg-flex" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#home-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="home-tab-pane"
+                  aria-selected="true"
+                >
+                  Structure
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#profile-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile-tab-pane"
+                  aria-selected="false"
+                >
+                  Fee Schedule
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#contact-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact-tab-pane"
+                  aria-selected="false"
+                >
+                  Payment options
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content accordion" id="myTabContent">
+              <div
+                class="tab-pane fade show active accordion-item"
+                id="home-tab-pane"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+                tabindex="0"
+              >
+                <h2 class="accordion-header d-lg-none" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Structure
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show d-lg-block"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#myTabContent"
+                >
+                  <div class="accordion-body body-padding-none">
+                    <div class="data-table table-responsive">
+                      <div class="divTable">
+                        <div class="divTableBody">
+                          <div class="divTableRow">
+                            <div
+                              class="divTableCell div-table-top"
+                              style="border-top-left-radius: 20px"
+                            >
+                              Fee Particulars
+                            </div>
+                            <div
+                              class="divTableCell div-table-top"
+                              style="border-top-right-radius: 20px"
+                            >
+                              Amount (in Rupees)
+                            </div>
+                          </div>
+                          <div class="divTableRow">
+                            <div class="divTableCell">Admission fee</div>
+                            <div class="divTableCell"><b>₹50,000</b></div>
+                          </div>
+                          <div class="divTableRow">
+                            <div class="divTableCell">Maintenance Fee</div>
+                            <div class="divTableCell"><b>₹5,000</b></div>
+                          </div>
+                          <div class="divTableRow">
+                            <div class="divTableCell">Miscellaneous Fee</div>
+                            <div class="divTableCell"><b>₹10,000</b></div>
+                          </div>
+                          <div class="divTableRow">
+                            <div class="divTableCell">Tuition Fee</div>
+                            <div class="divTableCell"><b>₹20,000</b></div>
+                          </div>
+                          <div class="divTableRow">
+                            <div class="divTableCell">Sports Fee</div>
+                            <div class="divTableCell"><b>₹4,000</b></div>
+                          </div>
+                          <div class="divTableRow">
+                            <div class="divTableCell">Other Activities Fee</div>
+                            <div class="divTableCell"><b>₹2,000</b></div>
+                          </div>
+                          <div class="divTableRow">
+                            <div class="divTableCell">Examination Fee</div>
+                            <div class="divTableCell"><b>₹4,000</b></div>
+                          </div>
+                          <div class="divTableRow">
+                            <div class="divTableCell">Transport Fee</div>
+                            <div class="divTableCell"><b>₹5,000</b></div>
+                          </div>
+                          <div class="divTableRow">
+                            <div
+                              class="divTableCell div-table-bottom"
+                              style="
+                                border-bottom-left-radius: 20px;
+                                border-right: 1.3px solid #777 !important;
+                                border-top: 1px solid #777;
+                              "
+                            >
+                              Total
+                            </div>
+                            <div
+                              class="divTableCell div-table-bottom"
+                              style="
+                                border-bottom-right-radius: 20px;
+                                border-top: 1px solid #777;
+                              "
+                            >
+                              ₹100,000
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- DivTable.com -->
+                      <button
+                        type="submit"
+                        class="btn button-full-width next-button bg-accept mobileNone"
+                      >
+                        <a href="#" class="colorWhite"> Next</a>
+                      </button>
                     </div>
-                    <div class="col-md-8 col-5 col-lg-6 text-right-acdamic">
-
-                        <span class="acdimic-text">Academic Year:</span><span class="date-academic">2024 - 2025</span>
-                    </div>
-
-
+                  </div>
                 </div>
+              </div>
+              <div
+                class="tab-pane fade accordion-item"
+                id="profile-tab-pane"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+                tabindex="0"
+              >
+                <h2 class="accordion-header d-lg-none" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Fee Schedule
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse d-lg-block showPanleDiv"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#myTabContent"
+                >
+                  <div class="accordion-body body-padding-none">
+                    <div class="headerWrapper">
+                      <div
+                        class="pb-3 col-md-12 select-shedule steps-semibold headerWrapper"
+                      >
+                        <p class="font-size-select-shedule">
+                          Select Schedule as per your Preference
+                        </p>
+                        <button
+                          type="submit"
+                          id="nextButton"
+                          class="btn button-full-width next-button bg-accept bg-accept2"
+                        >
+                          Next
+                        </button>
+                      </div>
+                      <!-- <button type="submit" class="btn button-full-width next-button">Next</button> -->
+                    </div>
 
-                <div class="row tab-view">
+                    <div class="parentCard">
+                      <label class="plansProduct" for="id1">
+                        <div class="net-banking">
+                          <p>Monthly</p>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="id1"
+                            />
+                          </div>
+                          <div class="totaldiv">
+                            <span class="totalPrice">Total</span>
+                            <div class="planPrice">
+                              <strong>₹</strong>100,000
+                            </div>
+                            <p class="monthlyPlan">
+                              Monthly payment according to the details below
+                            </p>
+                          </div>
+                          <ul>
+                            <li class="paymentDate">
+                              <span>Payment Date</span><span>Amount</span>
+                            </li>
+                            <li>
+                              <span>10th Sep 2024</span> <span>₹8,333.4</span>
+                            </li>
+                            <li>
+                              <span>10th Oct 2024</span> <span>₹8,333.4</span>
+                            </li>
+                            <li>
+                              <span>10th Nov 2024</span> <span>₹8,333.4</span>
+                            </li>
+                            <li>
+                              <span>10th Dec 2024</span> <span>₹8,333.4</span>
+                            </li>
+                            <li>
+                              <span>10th Jan 2025</span> <span>₹8,333.4</span>
+                            </li>
+                            <li>
+                              <span>10th Feb 2025</span> <span>₹8,333.4</span>
+                            </li>
+                            <li>
+                              <span>10th Mar 2025</span> <span>₹8,333.4</span>
+                            </li>
+                            <li>
+                              <span>10th Apr 2025</span> <span>₹8,333.4</span>
+                            </li>
+                            <li>
+                              <span>10th May 2025</span> <span>₹8,333.4</span>
+                            </li>
+                            <li>
+                              <span>10th Jun 2025</span> <span>₹8,333.4</span>
+                            </li>
+                            <li>
+                              <span>10th Jul 2025</span> <span>₹8,333.4</span>
+                            </li>
+                            <li>
+                              <span>10th Aug 2025</span> <span>₹8,333.4</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </label>
 
-                    <ul class="nav nav-tabs d-none d-lg-flex" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
-                                aria-selected="true">Structure</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
-                                data-bs-target="#profile-tab-pane" type="button" role="tab"
-                                aria-controls="profile-tab-pane" aria-selected="false">Fee Schedule</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
-                                data-bs-target="#contact-tab-pane" type="button" role="tab"
-                                aria-controls="contact-tab-pane" aria-selected="false">Payment options</button>
-                        </li>
-                        <!-- <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="total-tab" data-bs-toggle="tab" data-bs-target="#total-tab-pane" type="button" role="tab" aria-controls="total-tab-pane" aria-selected="false">Total</button>
-                        </li> -->
-                    </ul>
-                    <div class="tab-content accordion" id="myTabContent">
-                        <div class="tab-pane fade show active accordion-item" id="home-tab-pane" role="tabpanel"
-                            aria-labelledby="home-tab" tabindex="0">
+                      <label class="plansProduct" for="id2">
+                        <div class="net-banking">
+                          <p>Bi- Monthly</p>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="id2"
+                            />
+                          </div>
+                          <div class="totaldiv">
+                            <span class="totalPrice">Total</span>
+                            <div class="planPrice">
+                              <strong>₹</strong>98,000
+                            </div>
+                            <div class="secondaryPrice">
+                              <strong>₹</strong>100,000
+                              <img src="images/line-red.png" />
+                              <span class="offer">2% off</span>
+                            </div>
+                            <p class="monthlyPlan">
+                              Bi- Monthly payment according to the details below
+                            </p>
+                          </div>
+                          <ul>
+                            <li class="paymentDate">
+                              <span>Payment Date</span><span>Amount</span>
+                            </li>
+                            <li>
+                              <span>10th Sep 2024</span> <span>₹16,333.4</span>
+                            </li>
+                            <li>
+                              <span>10th Nov 2024</span> <span>₹16,333.4</span>
+                            </li>
+                            <li>
+                              <span>10th Jan 2025</span> <span>₹16,333.4</span>
+                            </li>
+                            <li>
+                              <span>10th Mar 2025</span> <span>₹16,333.4</span>
+                            </li>
+                            <li>
+                              <span>10th May 2025</span> <span>₹16,333.4</span>
+                            </li>
+                            <li>
+                              <span>10th Jul 2025</span> <span>₹16,333.4</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </label>
+                      <label class="plansProduct" for="id3">
+                        <div class="net-banking">
+                          <p>Quarterly</p>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="id3"
+                            />
+                          </div>
+                          <div class="totaldiv">
+                            <span class="totalPrice">Quarterly</span>
+                            <div class="planPrice">
+                              <strong>₹</strong>95,000
+                            </div>
+                            <div class="secondaryPrice">
+                              <strong>₹</strong>100,000
+                              <img src="images/line-red.png" /><span
+                                class="offer"
+                                >5% off</span
+                              >
+                            </div>
+                            <p class="monthlyPlan">
+                              Quarterly payment according to the details below
+                            </p>
+                          </div>
+                          <ul>
+                            <li class="paymentDate">
+                              <span>Payment Date</span><span>Amount</span>
+                            </li>
+                            <li>
+                              <span>10th Sep 2024</span> <span>₹23,750</span>
+                            </li>
+                            <li>
+                              <span>10th Dec 2024</span> <span>₹23,750</span>
+                            </li>
+                            <li>
+                              <span>10th Mar 2025</span> <span>₹23,750</span>
+                            </li>
+                            <li>
+                              <span>10th June 2025</span> <span>₹23,750</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </label>
+                      <label class="plansProduct" for="id4">
+                        <div class="net-banking">
+                          <p>Half Yearly</p>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="id4"
+                            />
+                          </div>
+                          <div class="totaldiv">
+                            <span class="totalPrice">Total</span>
+                            <div class="planPrice">
+                              <strong>₹</strong>90,000
+                            </div>
+                            <div class="secondaryPrice">
+                              <strong>₹</strong>100,000
+                              <img src="images/line-red.png" /><span
+                                class="offer"
+                                >10% off</span
+                              >
+                            </div>
+                            <p class="monthlyPlan">
+                              Semi - Yearly payment according to the details
+                              below
+                            </p>
+                          </div>
+                          <ul>
+                            <li class="paymentDate">
+                              <span>Payment Date</span><span>Amount</span>
+                            </li>
+                            <li>
+                              <span>10th Sep 2024</span> <span>₹45,000</span>
+                            </li>
+                            <li>
+                              <span>10th Mar 2025</span> <span>₹45,000</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </label>
 
-                            <h2 class="accordion-header d-lg-none" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true"
-                                    aria-controls="collapseOne">Structure</button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show  d-lg-block"
-                                aria-labelledby="headingOne" data-bs-parent="#myTabContent">
-                                <div class="accordion-body body-padding-none">
-                                    <div class="data-table table-responsive ">
-                                        <div class="divTable">
-                                            <div class="divTableBody">
-                                                <div class="divTableRow">
-                                                    <div class="divTableCell div-table-top"
-                                                        style="border-top-left-radius: 20px;">Fee Particulars</div>
-                                                    <div class="divTableCell div-table-top"
-                                                        style="border-top-right-radius: 20px;">Amount (in Rupees)</div>
-                                                </div>
-                                                <div class="divTableRow">
-                                                    <div class="divTableCell">Admission fee</div>
-                                                    <div class="divTableCell"><b>₹50,000</b></div>
-                                                </div>
-                                                <div class="divTableRow">
-                                                    <div class="divTableCell">Maintenance Fee</div>
-                                                    <div class="divTableCell"><b>₹5,000</b></div>
-                                                </div>
-                                                <div class="divTableRow">
-                                                    <div class="divTableCell">Miscellaneous Fee</div>
-                                                    <div class="divTableCell"><b>₹10,000</b></div>
-                                                </div>
-                                                <div class="divTableRow">
-                                                    <div class="divTableCell">Tuition Fee</div>
-                                                    <div class="divTableCell"><b>₹20,000</b></div>
-                                                </div>
-                                                <div class="divTableRow">
-                                                    <div class="divTableCell">Sports Fee</div>
-                                                    <div class="divTableCell"><b>₹4,000</b></div>
-                                                </div>
-                                                <div class="divTableRow">
-                                                    <div class="divTableCell">Other Activities Fee</div>
-                                                    <div class="divTableCell"><b>₹2,000</b></div>
-                                                </div>
-                                                <div class="divTableRow">
-                                                    <div class="divTableCell">Examination Fee</div>
-                                                    <div class="divTableCell"><b>₹4,000</b></div>
-                                                </div>
-                                                <div class="divTableRow">
-                                                    <div class="divTableCell">Transport Fee</div>
-                                                    <div class="divTableCell"><b>₹5,000</b></div>
-                                                </div>
-                                                <div class="divTableRow">
-                                                    <div class="divTableCell div-table-bottom"
-                                                        style="border-bottom-left-radius: 20px; border-right: 1.3px solid #777 !important; border-top: 1px solid #777;">
-                                                        Total</div>
-                                                    <div class="divTableCell div-table-bottom"
-                                                        style="border-bottom-right-radius: 20px; border-top: 1px solid #777;">
-                                                        ₹100,000</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- DivTable.com -->
-                                        <button type="submit"
-                                            class="btn button-full-width next-button bg-accept mobileNone"><a href="#"
-                                                class="colorWhite"> Next</a></button>
+                      <div class="bestPlan marginminusPlan">
+                        <div class="bestplanInner">
+                          <p>
+                            <img
+                              src="images/star.png"
+                              class="pe-2"
+                              alt=""
+                            />Best Plan !
+                          </p>
+                        </div>
+                        <label class="plansProduct" for="id5">
+                          <div class="net-banking">
+                            <p>One- Time</p>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="flexRadioDefault"
+                                id="id5"
+                              />
+                            </div>
+                            <div class="totaldiv">
+                              <span class="totalPrice">Total</span>
+                              <div class="planPrice">
+                                <strong>₹</strong>85,000
+                              </div>
+                              <div class="secondaryPrice">
+                                ₹100,000 <img src="images/line-red.png" /><span
+                                  class="offer"
+                                  >15% off</span
+                                >
+                              </div>
+                              <p class="monthlyPlan">
+                                One Time payment according to the details below
+                              </p>
+                            </div>
+                            <ul>
+                              <li class="paymentDate">
+                                <span>Payment Date</span><span>Amount</span>
+                              </li>
+                              <li>
+                                <span>10th Sep 2024</span> <span>₹85,000</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade accordion-item"
+                id="contact-tab-pane"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+                tabindex="0"
+              >
+                <h2 class="accordion-header d-lg-none" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Payment options
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse d-lg-block"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#myTabContent"
+                >
+                  <div class="accordion-body body-padding-none">
+                    <form action="">
+                      <div class="row">
+                        <div class="parentCard m-0 selectedPlan">
+                          <div class="row displayFlexCol">
+                            <div class="left-col">
+                              <label
+                                class="plansProduct select-schedule"
+                                for="id12"
+                              >
+                                <p class="bestPlaninner">Select Schedule</p>
+                                <div class="net-banking activeCard">
+                                  <p>Monthly</p>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="flexRadioDefault"
+                                      id="id12 "
+                                      checked="checked"
+                                    />
+                                  </div>
+                                  <div class="totaldiv">
+                                    <span class="totalPrice">Total</span>
+                                    <div class="planPrice">₹85,000</div>
+                                    <p class="monthlyPlan">
+                                      Monthly payment according to the details
+                                    </p>
+                                  </div>
+                                  <ul>
+                                    <li class="paymentDate">
+                                      <span>Payment Date</span
+                                      ><span>Amount</span>
+                                    </li>
+                                    <li>
+                                      <span>10th Sep 2024</span>
+                                      <span>₹8,333.4</span>
+                                    </li>
+                                    <li>
+                                      <span>10th Oct 2024</span>
+                                      <span>₹8,333.4</span>
+                                    </li>
+                                  </ul>
 
-                                    </div>
+                                  <ul class="text-block">
+                                    <li>
+                                      <span>10th Nov 2024</span>
+                                      <span>₹8,333.4</span>
+                                    </li>
+                                    <li>
+                                      <span>10th Dec 2024</span>
+                                      <span>₹8,333.4</span>
+                                    </li>
+                                    <li>
+                                      <span>10th Jan 2025</span>
+                                      <span>₹8,333.4</span>
+                                    </li>
+                                    <li>
+                                      <span>10th Feb 2025</span>
+                                      <span>₹8,333.4</span>
+                                    </li>
+                                    <li>
+                                      <span>10th Mar 2025</span>
+                                      <span>₹8,333.4</span>
+                                    </li>
+                                    <li>
+                                      <span>10th Apr 2025</span>
+                                      <span>₹8,333.4</span>
+                                    </li>
+                                    <li>
+                                      <span>10th May 2025</span>
+                                      <span>₹8,333.4</span>
+                                    </li>
+                                    <li>
+                                      <span>10th Jun 2025</span>
+                                      <span>₹8,333.4</span>
+                                    </li>
+                                    <li>
+                                      <span>10th Jul 2025</span>
+                                      <span>₹8,333.4</span>
+                                    </li>
+                                    <li>
+                                      <span>10th Aug 2025</span>
+                                      <span>₹8,333.4</span>
+                                    </li>
+                                  </ul>
+                                  <p class="imgBox">
+                                    <a
+                                      href="javascript:void(0)"
+                                      class="moreImg read-more"
+                                      >show more </a
+                                    ><img src="images/arrow-right.png" />
+                                  </p>
                                 </div>
+                              </label>
                             </div>
 
-                        </div>
-                        <div class="tab-pane fade accordion-item" id="profile-tab-pane" role="tabpanel"
-                            aria-labelledby="profile-tab" tabindex="0">
-                            <h2 class="accordion-header d-lg-none" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Fee Schedule
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse d-lg-block showPanleDiv"
-                                aria-labelledby="headingTwo" data-bs-parent="#myTabContent">
-                                <div class="accordion-body body-padding-none ">
+                            <div class="col-right">
+                              <div class="paginationMain gap-top">
+                                <div class="shedule">Schedule:</div>
 
-                                    <div class="headerWrapper">
-                                        <div class="pb-3 col-md-12 select-shedule steps-semibold headerWrapper">
-                                            <p class="font-size-select-shedule"> Select Schedule as per your Preference
-                                            </p>
-                                            <button type="submit" id="nextButton"
-                                                class="btn button-full-width next-button bg-accept bg-accept2">Next</button>
+                                <div class="pagination">
+                                  <ul>
+                                    <li class="page-item activepangination">
+                                      <span aria-hidden="true">
+                                        <i
+                                          class="fa fa-angle-left"
+                                          aria-hidden="true"
+                                        ></i>
+                                      </span>
+                                    </li>
+                                    <li class="activepangination">1</li>
+                                    <li>2</li>
 
-
-                                        </div>
-                                        <!-- <button type="submit" class="btn button-full-width next-button">Next</button> -->
-
-                                    </div>
-
-                                    <div class="parentCard ">
-                                        <label class="plansProduct" for="id1">
-
-
-
-                                            <div class="net-banking ">
-                                                <p>Monthly</p>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                        id="id1">
-
-                                                </div>
-                                                <div class="totaldiv">
-                                                    <span class="totalPrice">Total</span>
-                                                    <div class="planPrice"><strong>₹</strong>100,000</div>
-                                                    <p class="monthlyPlan">Monthly payment according to the details
-                                                        below
-                                                    </p>
-                                                </div>
-                                                <ul>
-                                                    <li class="paymentDate"><span>Payment Date</span><span>Amount</span>
-                                                    </li>
-                                                    <li><span>10th Sep 2024</span> <span>₹8,333.4</span></li>
-                                                    <li><span>10th Oct 2024</span> <span>₹8,333.4</span></li>
-                                                    <li><span>10th Nov 2024</span> <span>₹8,333.4</span></li>
-                                                    <li><span>10th Dec 2024</span> <span>₹8,333.4</span></li>
-                                                    <li><span>10th Jan 2025</span> <span>₹8,333.4</span></li>
-                                                    <li><span>10th Feb 2025</span> <span>₹8,333.4</span></li>
-                                                    <li><span>10th Mar 2025</span> <span>₹8,333.4</span></li>
-                                                    <li><span>10th Apr 2025</span> <span>₹8,333.4</span></li>
-                                                    <li><span>10th May 2025</span> <span>₹8,333.4</span></li>
-                                                    <li><span>10th Jun 2025</span> <span>₹8,333.4</span></li>
-                                                    <li><span>10th Jul 2025</span> <span>₹8,333.4</span></li>
-                                                    <li><span>10th Aug 2025</span> <span>₹8,333.4</span></li>
-
-
-                                                </ul>
-                                            </div>
-
-
-                                        </label>
-
-                                        <label class="plansProduct" for="id2">
-                                            <div class="net-banking">
-                                                <p>Bi- Monthly</p>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                        id="id2">
-
-                                                </div>
-                                                <div class="totaldiv">
-                                                    <span class="totalPrice">Total</span>
-                                                    <div class="planPrice"><strong>₹</strong>98,000</div>
-                                                    <div class="secondaryPrice"><strong>₹</strong>100,000 <img
-                                                            src="images/line-red.png" /> <span class="offer">2%
-                                                            off</span></div>
-                                                    <p class="monthlyPlan">Bi- Monthly payment according to the details
-                                                        below
-                                                    </p>
-                                                </div>
-                                                <ul>
-                                                    <li class="paymentDate"><span>Payment Date</span><span>Amount</span>
-                                                    </li>
-                                                    <li><span>10th Sep 2024</span> <span>₹16,333.4</span></li>
-                                                    <li><span>10th Nov 2024</span> <span>₹16,333.4</span></li>
-                                                    <li><span>10th Jan 2025</span> <span>₹16,333.4</span></li>
-                                                    <li><span>10th Mar 2025</span> <span>₹16,333.4</span></li>
-                                                    <li><span>10th May 2025</span> <span>₹16,333.4</span></li>
-                                                    <li><span>10th Jul 2025</span> <span>₹16,333.4</span></li>
-
-
-
-                                                </ul>
-                                            </div>
-
-                                        </label>
-                                        <label class="plansProduct" for="id3">
-                                            <div class="net-banking">
-                                                <p>Quarterly</p>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                        id="id3">
-
-                                                </div>
-                                                <div class="totaldiv">
-                                                    <span class="totalPrice">Quarterly</span>
-                                                    <div class="planPrice"><strong>₹</strong>95,000</div>
-                                                    <div class="secondaryPrice"><strong>₹</strong>100,000 <img
-                                                            src="images/line-red.png" /><span class="offer">5%
-                                                            off</span></div>
-                                                    <p class="monthlyPlan">Quarterly payment according to the details
-                                                        below
-                                                    </p>
-                                                </div>
-                                                <ul>
-                                                    <li class="paymentDate"><span>Payment Date</span><span>Amount</span>
-                                                    </li>
-                                                    <li><span>10th Sep 2024</span> <span>₹23,750</span></li>
-                                                    <li><span>10th Dec 2024</span> <span>₹23,750</span></li>
-                                                    <li><span>10th Mar 2025</span> <span>₹23,750</span></li>
-                                                    <li><span>10th June 2025</span> <span>₹23,750</span></li>
-
-
-
-
-                                                </ul>
-                                            </div>
-
-                                        </label>
-                                        <label class="plansProduct" for="id4">
-                                            <div class="net-banking">
-                                                <p>Half Yearly</p>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                        id="id4">
-
-                                                </div>
-                                                <div class="totaldiv">
-                                                    <span class="totalPrice">Total</span>
-                                                    <div class="planPrice"><strong>₹</strong>90,000</div>
-                                                    <div class="secondaryPrice"><strong>₹</strong>100,000 <img
-                                                            src="images/line-red.png" /><span class="offer">10%
-                                                            off</span></div>
-                                                    <p class="monthlyPlan">Semi - Yearly payment according to the
-                                                        details below</p>
-                                                </div>
-                                                <ul>
-                                                    <li class="paymentDate"><span>Payment Date</span><span>Amount</span>
-                                                    </li>
-                                                    <li><span>10th Sep 2024</span> <span>₹45,000</span></li>
-                                                    <li><span>10th Mar 2025</span> <span>₹45,000</span></li>
-
-
-
-                                                </ul>
-                                            </div>
-
-                                        </label>
-
-                                        <div class="bestPlan marginminusPlan">
-                                            <div class="bestplanInner">
-                                                <p> <img src="images/star.png" class="pe-2" alt="" />Best Plan !</p>
-                                            </div>
-                                            <label class="plansProduct" for="id5">
-                                                <div class="net-banking">
-                                                    <p>One- Time</p>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio"
-                                                            name="flexRadioDefault" id="id5">
-
-                                                    </div>
-                                                    <div class="totaldiv">
-                                                        <span class="totalPrice">Total</span>
-                                                        <div class="planPrice"><strong>₹</strong>85,000</div>
-                                                        <div class="secondaryPrice">₹100,000 <img
-                                                                src="images/line-red.png" /><span class="offer">15%
-                                                                off</span></div>
-                                                        <p class="monthlyPlan">One Time payment according to the details
-                                                            below
-                                                        </p>
-                                                    </div>
-                                                    <ul>
-                                                        <li class="paymentDate"><span>Payment
-                                                                Date</span><span>Amount</span></li>
-                                                        <li><span>10th Sep 2024</span> <span>₹85,000</span></li>
-
-                                                    </ul>
-                                                </div>
-
-                                            </label>
-                                        </div>
-                                    </div>
+                                    <li class="page-item">
+                                      <span aria-hidden="true">
+                                        <i
+                                          class="fa fa-angle-right"
+                                          aria-hidden="true"
+                                        ></i
+                                      ></span>
+                                    </li>
+                                  </ul>
                                 </div>
+                              </div>
+                              <div
+                                class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-xl-0 g-1 button-style"
+                              >
+                                <div class="col position-relative wow fadeInUp">
+                                  <div class="calender-spiral"></div>
+                                  <div class="calendar radius-border">
+                                    <div
+                                      class="d-flex align-items-center justify-content-center my-4"
+                                    >
+                                      <div>
+                                        <span class="display-4 fw-bold"
+                                          >10<sup class="sup">th</sup></span
+                                        >
+                                      </div>
+                                      <div class="border-start ps-2 ms-2 py-2">
+                                        &nbsp;
+                                      </div>
+                                      <div class="fw-semibold text-center">
+                                        <h5 class="fw-semibold m-0">Sep</h5>
+                                        <h6 class="fw-semibold m-0">2024</h6>
+                                      </div>
+                                    </div>
+                                    <a
+                                      href="#"
+                                      class="btn btn-primary btn-height rounded-3 d-block m-0"
+                                    >
+                                      <div
+                                        class="btn btn-primary lh-1 p-0 btn-lg fw-semibold"
+                                      >
+                                        <span
+                                          class="material-icons-outlined small"
+                                        >
+                                          ₹ </span
+                                        >8,333.4
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="col position-relative wow fadeInUp">
+                                  <div class="calender-spiral"></div>
+                                  <div class="calendar radius-border">
+                                    <div
+                                      class="d-flex align-items-center justify-content-center my-4"
+                                    >
+                                      <div>
+                                        <span class="display-4 fw-bold"
+                                          >10<sup class="sup">th</sup></span
+                                        >
+                                      </div>
+                                      <div class="border-start ps-2 ms-2 py-2">
+                                        &nbsp;
+                                      </div>
+                                      <div class="fw-semibold text-center">
+                                        <h5 class="fw-semibold m-0">Oct</h5>
+                                        <h6 class="fw-semibold m-0">2024</h6>
+                                      </div>
+                                    </div>
+                                    <a
+                                      href="#"
+                                      class="btn btn-primary btn-height rounded-3 d-block m-0"
+                                    >
+                                      <div
+                                        class="btn btn-primary lh-1 p-0 btn-lg fw-semibold"
+                                      >
+                                        <span
+                                          class="material-icons-outlined small"
+                                        >
+                                          ₹
+                                        </span>
+                                        8,333.4
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="col position-relative wow fadeInUp">
+                                  <div class="calender-spiral"></div>
+                                  <div class="calendar radius-border">
+                                    <div
+                                      class="d-flex align-items-center justify-content-center my-4"
+                                    >
+                                      <div>
+                                        <span class="display-4 fw-bold"
+                                          >10<sup class="sup">th</sup></span
+                                        >
+                                      </div>
+                                      <div class="border-start ps-2 ms-2 py-2">
+                                        &nbsp;
+                                      </div>
+                                      <div class="fw-semibold text-center">
+                                        <h5 class="fw-semibold m-0">Nov</h5>
+                                        <h6 class="fw-semibold m-0">2024</h6>
+                                      </div>
+                                    </div>
+                                    <a
+                                      href="#"
+                                      class="btn btn-primary btn-height rounded-3 d-block m-0"
+                                    >
+                                      <div
+                                        class="btn btn-primary lh-1 p-0 btn-lg fw-semibold"
+                                      >
+                                        <span
+                                          class="material-icons-outlined small"
+                                        >
+                                          ₹ </span
+                                        >8,333.4
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="col position-relative wow fadeInUp">
+                                  <div class="calender-spiral"></div>
+                                  <div class="calendar radius-border">
+                                    <div
+                                      class="d-flex align-items-center justify-content-center my-4"
+                                    >
+                                      <div>
+                                        <span class="display-4 fw-bold"
+                                          >10<sup class="sup">th</sup></span
+                                        >
+                                      </div>
+                                      <div class="border-start ps-2 ms-2 py-2">
+                                        &nbsp;
+                                      </div>
+                                      <div class="fw-semibold text-center">
+                                        <h5 class="fw-semibold m-0">Dec</h5>
+                                        <h6 class="fw-semibold m-0">2024</h6>
+                                      </div>
+                                    </div>
+                                    <a
+                                      href="#"
+                                      class="btn btn-primary btn-height rounded-3 d-block m-0"
+                                    >
+                                      <div
+                                        class="btn btn-primary lh-1 p-0 btn-lg fw-semibold"
+                                      >
+                                        <span
+                                          class="material-icons-outlined small"
+                                        >
+                                          ₹
+                                        </span>
+                                        8,333.4
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+
+                                <div class="col position-relative wow fadeInUp">
+                                  <div class="calender-spiral"></div>
+                                  <div class="calendar radius-border">
+                                    <div
+                                      class="d-flex align-items-center justify-content-center my-4"
+                                    >
+                                      <div>
+                                        <span class="display-4 fw-bold"
+                                          >10<sup class="sup">th</sup></span
+                                        >
+                                      </div>
+                                      <div class="border-start ps-2 ms-2 py-2">
+                                        &nbsp;
+                                      </div>
+                                      <div class="fw-semibold text-center">
+                                        <h5 class="fw-semibold m-0">Jan</h5>
+                                        <h6 class="fw-semibold m-0">2025</h6>
+                                      </div>
+                                    </div>
+                                    <a
+                                      href="#"
+                                      class="btn btn-primary btn-height rounded-3 d-block m-0"
+                                    >
+                                      <div
+                                        class="btn btn-primary lh-1 p-0 btn-lg fw-semibold"
+                                      >
+                                        <span
+                                          class="material-icons-outlined small"
+                                        >
+                                          ₹ </span
+                                        >8,333.4
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+
+                                <div class="col position-relative wow fadeInUp">
+                                  <div class="calender-spiral"></div>
+                                  <div class="calendar radius-border">
+                                    <div
+                                      class="d-flex align-items-center justify-content-center my-4"
+                                    >
+                                      <div>
+                                        <span class="display-4 fw-bold"
+                                          >10<sup class="sup">th</sup></span
+                                        >
+                                      </div>
+                                      <div class="border-start ps-2 ms-2 py-2">
+                                        &nbsp;
+                                      </div>
+                                      <div class="fw-semibold text-center">
+                                        <h5 class="fw-semibold m-0">Feb</h5>
+                                        <h6 class="fw-semibold m-0">2025</h6>
+                                      </div>
+                                    </div>
+                                    <a
+                                      href="#"
+                                      class="btn btn-primary btn-height rounded-3 d-block m-0"
+                                    >
+                                      <div
+                                        class="btn btn-primary lh-1 p-0 btn-lg fw-semibold"
+                                      >
+                                        <span
+                                          class="material-icons-outlined small"
+                                        >
+                                          ₹
+                                        </span>
+                                        8,333.4
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+
+                                <div class="col position-relative wow fadeInUp">
+                                  <div class="calender-spiral"></div>
+                                  <div class="calendar radius-border">
+                                    <div
+                                      class="d-flex align-items-center justify-content-center my-4"
+                                    >
+                                      <div>
+                                        <span class="display-4 fw-bold"
+                                          >10<sup class="sup">th</sup></span
+                                        >
+                                      </div>
+                                      <div class="border-start ps-2 ms-2 py-2">
+                                        &nbsp;
+                                      </div>
+                                      <div class="fw-semibold text-center">
+                                        <h5 class="fw-semibold m-0">Mar</h5>
+                                        <h6 class="fw-semibold m-0">2025</h6>
+                                      </div>
+                                    </div>
+                                    <a
+                                      href="#"
+                                      class="btn btn-primary btn-height rounded-3 d-block m-0"
+                                    >
+                                      <div
+                                        class="btn btn-primary lh-1 p-0 btn-lg fw-semibold"
+                                      >
+                                        <span
+                                          class="material-icons-outlined small"
+                                        >
+                                          ₹
+                                        </span>
+                                        8,333.4
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+
+                                <div class="col position-relative wow fadeInUp">
+                                  <div class="calender-spiral"></div>
+                                  <div class="calendar radius-border">
+                                    <div
+                                      class="d-flex align-items-center justify-content-center my-4"
+                                    >
+                                      <div>
+                                        <span class="display-4 fw-bold"
+                                          >10<sup class="sup">th</sup></span
+                                        >
+                                      </div>
+                                      <div class="border-start ps-2 ms-2 py-2">
+                                        &nbsp;
+                                      </div>
+                                      <div class="fw-semibold text-center">
+                                        <h5 class="fw-semibold m-0">Apr</h5>
+                                        <h6 class="fw-semibold m-0">2025</h6>
+                                      </div>
+                                    </div>
+                                    <a
+                                      href="#"
+                                      class="btn btn-primary btn-height rounded-3 d-block m-0"
+                                    >
+                                      <div
+                                        class="btn btn-primary lh-1 p-0 btn-lg fw-semibold"
+                                      >
+                                        <span
+                                          class="material-icons-outlined small"
+                                        >
+                                          ₹
+                                        </span>
+                                        8,333.4
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
+                          </div>
                         </div>
-                        <div class="tab-pane fade accordion-item" id="contact-tab-pane" role="tabpanel"
-                            aria-labelledby="contact-tab" tabindex="0">
-                            <h2 class="accordion-header d-lg-none" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Payment options
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse d-lg-block"
-                                aria-labelledby="headingThree" data-bs-parent="#myTabContent">
-                                <div class="accordion-body  body-padding-none">
-                                    <form action="">
-                                        <div class="row">
-                                            <div class="parentCard m-0 selectedPlan">
-
-                                                <div class="row displayFlexCol">
-
-                                                    <div class="left-col">
-                                                        
-                                                            <label class="plansProduct select-schedule" for="id12">
-                                                                <p class="bestPlaninner">Select Schedule </p>
-                                                                <div class="net-banking activeCard">
-                                                                    <p>Monthly</p>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="radio"
-                                                                            name="flexRadioDefault" id="id12 "
-                                                                            checked="checked">
-
-                                                                    </div>
-                                                                    <div class="totaldiv">
-                                                                        <span class="totalPrice">Total</span>
-                                                                        <div class="planPrice">₹85,000</div>
-                                                                        <p class="monthlyPlan">Monthly payment according to
-                                                                            the
-                                                                            details</p>
-                                                                    </div>
-                                                                    <ul>
-                                                                        <li class="paymentDate"><span>Payment
-                                                                                Date</span><span>Amount</span></li>
-                                                                        <li><span>10th Sep 2024</span> <span>₹8,333.4</span>
-                                                                        </li>
-                                                                        <li><span>10th Oct 2024</span> <span>₹8,333.4</span>
-                                                                        </li>
-                                                                    </ul>
-
-
-
-                                                                    <ul class="text-block">
-                                                                        <li><span>10th Nov 2024</span> <span>₹8,333.4</span>
-                                                                        </li>
-                                                                        <li><span>10th Dec 2024</span> <span>₹8,333.4</span>
-                                                                        </li>
-                                                                        <li><span>10th Jan 2025</span> <span>₹8,333.4</span>
-                                                                        </li>
-                                                                        <li><span>10th Feb 2025</span> <span>₹8,333.4</span>
-                                                                        </li>
-                                                                        <li><span>10th Mar 2025</span> <span>₹8,333.4</span>
-                                                                        </li>
-                                                                        <li><span>10th Apr 2025</span> <span>₹8,333.4</span>
-                                                                        </li>
-                                                                        <li><span>10th May 2025</span> <span>₹8,333.4</span>
-                                                                        </li>
-                                                                        <li><span>10th Jun 2025</span> <span>₹8,333.4</span>
-                                                                        </li>
-                                                                        <li><span>10th Jul 2025</span> <span>₹8,333.4</span>
-                                                                        </li>
-                                                                        <li><span>10th Aug 2025</span> <span>₹8,333.4</span>
-                                                                        </li>
-                                                                    </ul>
-                                                                    <p class="imgBox">
-                                                                        <a href="javascript:void(0)"
-                                                                            class="moreImg read-more">show more </a><img
-                                                                            src="images/arrow-right.png" />
-                                                                    </p>
-                                                                </div>
-
-                                                            </label>
-                                                        
-                                                    </div>
-
-                                                    <div class="col-right">
-                                                        <div class="paginationMain gap-top">
-                                                            <div class="  shedule">Schedule: </div>
-                                                            
-                                                                <div class="pagination">
-                                                                    <ul>
-                                                                        <li class="page-item activepangination">
-                                                                            <span aria-hidden="true"> <i
-                                                                                    class="fa fa-angle-left"
-                                                                                    aria-hidden="true"></i>
-                                                                                </span>
-                                                                        </li>
-                                                                        <li class="activepangination">1 </li>
-                                                                        <li>2 </li>
-
-                                                                        <li class="page-item">
-
-                                                                            <span aria-hidden="true"> <i
-                                                                                    class="fa fa-angle-right"
-                                                                                    aria-hidden="true"></i></span>
-
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                
-                                                        </div>
-                                                        <div
-                                                            class="row row-cols-2  row-cols-md-2 row-cols-lg-4 g-xl-0 g-1 button-style ">
-
-                                                            <div class="col position-relative wow fadeInUp">
-                                                                <div class="calender-spiral"></div>
-                                                                <div class="calendar radius-border">
-                                                                    <div
-                                                                        class="d-flex align-items-center justify-content-center my-4">
-                                                                        <div><span class="display-4 fw-bold">10<sup
-                                                                                    class="sup">th</sup></span></div>
-                                                                        <div class="border-start ps-2 ms-2 py-2">
-                                                                            &nbsp;
-                                                                        </div>
-                                                                        <div class="fw-semibold text-center">
-                                                                            <h5 class="fw-semibold m-0">Sep</h5>
-                                                                            <h6 class="fw-semibold m-0">2024</h6>
-                                                                        </div>
-                                                                    </div>
-                                                                    <a href="#"
-                                                                        class="btn btn-primary btn-height rounded-3 d-block m-0">
-
-                                                                        <div
-                                                                            class="btn btn-primary lh-1 p-0 btn-lg fw-semibold">
-                                                                            <span class="material-icons-outlined small">
-                                                                                ₹
-                                                                            </span>8,333.4
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col position-relative wow fadeInUp">
-                                                                <div class="calender-spiral"></div>
-                                                                <div class="calendar  radius-border">
-                                                                    <div
-                                                                        class="d-flex align-items-center justify-content-center my-4">
-                                                                        <div><span class="display-4 fw-bold">10<sup
-                                                                                    class="sup">th</sup></span></div>
-                                                                        <div class="border-start ps-2 ms-2 py-2">
-                                                                            &nbsp;
-                                                                        </div>
-                                                                        <div class="fw-semibold text-center">
-                                                                            <h5 class="fw-semibold m-0">Oct</h5>
-                                                                            <h6 class="fw-semibold m-0">2024</h6>
-                                                                        </div>
-                                                                    </div>
-                                                                    <a href="#"
-                                                                        class="btn btn-primary btn-height rounded-3 d-block m-0">
-
-                                                                        <div
-                                                                            class="btn btn-primary lh-1 p-0 btn-lg fw-semibold">
-                                                                            <span class="material-icons-outlined small">
-                                                                                ₹
-                                                                            </span> 8,333.4
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col position-relative wow fadeInUp">
-                                                                <div class="calender-spiral"></div>
-                                                                <div class="calendar  radius-border">
-                                                                    <div
-                                                                        class="d-flex align-items-center justify-content-center my-4">
-                                                                        <div><span class="display-4 fw-bold">10<sup
-                                                                                    class="sup">th</sup></span></div>
-                                                                        <div class="border-start ps-2 ms-2 py-2">
-                                                                            &nbsp;
-                                                                        </div>
-                                                                        <div class="fw-semibold text-center">
-                                                                            <h5 class="fw-semibold m-0">Nov</h5>
-                                                                            <h6 class="fw-semibold m-0">2024</h6>
-                                                                        </div>
-                                                                    </div>
-                                                                    <a href="#"
-                                                                        class="btn btn-primary btn-height rounded-3 d-block m-0">
-
-                                                                        <div
-                                                                            class="btn btn-primary lh-1 p-0 btn-lg fw-semibold">
-                                                                            <span class="material-icons-outlined small">
-                                                                                ₹
-                                                                            </span>8,333.4
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col position-relative wow fadeInUp">
-                                                                <div class="calender-spiral"></div>
-                                                                <div class="calendar  radius-border">
-                                                                    <div
-                                                                        class="d-flex align-items-center justify-content-center my-4">
-                                                                        <div><span class="display-4 fw-bold">10<sup
-                                                                                    class="sup">th</sup></span></div>
-                                                                        <div class="border-start ps-2 ms-2 py-2">
-                                                                            &nbsp;
-                                                                        </div>
-                                                                        <div class="fw-semibold text-center">
-                                                                            <h5 class="fw-semibold m-0">Dec</h5>
-                                                                            <h6 class="fw-semibold m-0">2024</h6>
-                                                                        </div>
-                                                                    </div>
-                                                                    <a href="#"
-                                                                        class="btn btn-primary btn-height rounded-3 d-block m-0">
-
-                                                                        <div
-                                                                            class="btn btn-primary lh-1 p-0 btn-lg fw-semibold">
-                                                                            <span class="material-icons-outlined small">
-                                                                                ₹
-                                                                            </span> 8,333.4
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-
-
-                                                            <div class="col position-relative wow fadeInUp">
-                                                                <div class="calender-spiral"></div>
-                                                                <div class="calendar  radius-border">
-                                                                    <div
-                                                                        class="d-flex align-items-center justify-content-center my-4">
-                                                                        <div><span class="display-4 fw-bold">10<sup
-                                                                                    class="sup">th</sup></span></div>
-                                                                        <div class="border-start ps-2 ms-2 py-2">
-                                                                            &nbsp;
-                                                                        </div>
-                                                                        <div class="fw-semibold text-center">
-                                                                            <h5 class="fw-semibold m-0">Jan</h5>
-                                                                            <h6 class="fw-semibold m-0">2025</h6>
-                                                                        </div>
-                                                                    </div>
-                                                                    <a href="#"
-                                                                        class="btn btn-primary btn-height rounded-3 d-block m-0">
-
-                                                                        <div
-                                                                            class="btn btn-primary lh-1 p-0 btn-lg fw-semibold">
-                                                                            <span class="material-icons-outlined small">
-                                                                                ₹
-                                                                            </span>8,333.4
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-
-
-                                                            <div class="col position-relative wow fadeInUp">
-                                                                <div class="calender-spiral"></div>
-                                                                <div class="calendar  radius-border">
-                                                                    <div
-                                                                        class="d-flex align-items-center justify-content-center my-4">
-                                                                        <div><span class="display-4 fw-bold">10<sup
-                                                                                    class="sup">th</sup></span></div>
-                                                                        <div class="border-start ps-2 ms-2 py-2">
-                                                                            &nbsp;
-                                                                        </div>
-                                                                        <div class="fw-semibold text-center">
-                                                                            <h5 class="fw-semibold m-0">Feb</h5>
-                                                                            <h6 class="fw-semibold m-0">2025</h6>
-                                                                        </div>
-                                                                    </div>
-                                                                    <a href="#"
-                                                                        class="btn btn-primary btn-height rounded-3 d-block m-0">
-
-                                                                        <div
-                                                                            class="btn btn-primary lh-1 p-0 btn-lg fw-semibold">
-                                                                            <span class="material-icons-outlined small">
-                                                                                ₹
-                                                                            </span> 8,333.4
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col position-relative wow fadeInUp">
-                                                                <div class="calender-spiral"></div>
-                                                                <div class="calendar  radius-border">
-                                                                    <div
-                                                                        class="d-flex align-items-center justify-content-center my-4">
-                                                                        <div><span class="display-4 fw-bold">10<sup
-                                                                                    class="sup">th</sup></span></div>
-                                                                        <div class="border-start ps-2 ms-2 py-2">
-                                                                            &nbsp;
-                                                                        </div>
-                                                                        <div class="fw-semibold text-center">
-                                                                            <h5 class="fw-semibold m-0">Mar</h5>
-                                                                            <h6 class="fw-semibold m-0">2025</h6>
-                                                                        </div>
-                                                                    </div>
-                                                                    <a href="#"
-                                                                        class="btn btn-primary btn-height rounded-3 d-block m-0">
-
-                                                                        <div
-                                                                            class="btn btn-primary lh-1 p-0 btn-lg fw-semibold">
-                                                                            <span class="material-icons-outlined small">
-                                                                                ₹
-                                                                            </span> 8,333.4
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col position-relative wow fadeInUp">
-                                                                <div class="calender-spiral"></div>
-                                                                <div class="calendar  radius-border">
-                                                                    <div
-                                                                        class="d-flex align-items-center justify-content-center my-4">
-                                                                        <div><span class="display-4 fw-bold">10<sup
-                                                                                    class="sup">th</sup></span></div>
-                                                                        <div class="border-start ps-2 ms-2 py-2">
-                                                                            &nbsp;
-                                                                        </div>
-                                                                        <div class="fw-semibold text-center">
-                                                                            <h5 class="fw-semibold m-0">Apr</h5>
-                                                                            <h6 class="fw-semibold m-0">2025</h6>
-                                                                        </div>
-                                                                    </div>
-                                                                    <a href="#"
-                                                                        class="btn btn-primary btn-height rounded-3 d-block m-0">
-
-                                                                        <div
-                                                                            class="btn btn-primary lh-1 p-0 btn-lg fw-semibold">
-                                                                            <span class="material-icons-outlined small">
-                                                                                ₹
-                                                                            </span> 8,333.4
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="textNote">
-                                                Note: Payment will be deducted on the scheduled date as above. Please ensure
-                                                sufficient balance in your account.
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12 pt-4 pt-md-0 steps-semibold"> <span
-                                                    class="steps-1">1</span><span class="Personal-information">Personal Information</span>
-                                            </div>
-                                            <div class="col-md-6 col-lg-6 col-12 col-xl-6 col-xxl-6 wellcome-text">
-                                                <div class="form-group input-space-steps position-relative">
-                                                    <label for="exampleInputEmail1" class="pb-2 institute">Phone Number</label>
-                                                    <div class="position-relative">   
-                                                    <input type="email" class="form-control" id="phoneNumber" aria-describedby="emailHelp">
-                                                    <span class="send-otp-phone-number" >
-                                                        <a href="javascript:void(0)"> Send OTP</a>
-                                                    </span>
-                                                </div>
-                                                </div>
-
-
-
-                                                <div class="form-group input-space-steps-otp show-input">
-                                                    <label for="exampleInputEmail1" class="pb-2 institute">Enter OTP</label>
-                                                    <div style="clear: both;"></div>
-                                                    <input type="email" class="form-control "
-                                                        aria-describedby="emailHelp">
-                                                    <input type="email" class="form-control "
-                                                        aria-describedby="emailHelp">
-                                                    <input type="email" class="form-control"
-                                                        aria-describedby="emailHelp">
-                                                    <span class="dash">- </span>
-                                                    <input type="email" class="form-control "
-                                                        aria-describedby="emailHelp">
-                                                    <input type="email" class="form-control "
-                                                        aria-describedby="emailHelp">
-                                                    <input type="email" class="form-control "
-                                                        aria-describedby="emailHelp">
-
-                                                    <div class="received-text">I didn’t receive a code</div>
-                                                    <button type="submit" class="btn button-full-width next-button">Verify
-                                                    </button>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-6 col-lg-6 col-12 col-xl-6 col-xxl-6 wellcome-text">
-
-
-
-
-                                                <div class="form-group input-space-steps position-relative">
-                                                        <label for="exampleInputEmail1" class="pb-2 institute">Email Id</label>
-                                                        <div class="position-relative">
-                                                        <input type="email" class="form-control"
-                                                            aria-describedby="emailHelp">
-                                                        <span class="send-otp">
-                                                            <a href="javascript:void(0)"> Send OTP</a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-
-
-
-                                                <div class="form-group input-space-steps-otp right-otp">
-                                                    <label for="exampleInputEmail1" class="pb-2 institute">Enter OTP</label>
-                                                    <div style="clear: both;"></div>
-                                                    <input type="email" class="form-control "
-                                                        aria-describedby="emailHelp">
-                                                    <input type="email" class="form-control "
-                                                        aria-describedby="emailHelp">
-                                                    <input type="email" class="form-control"
-                                                        aria-describedby="emailHelp">
-                                                    <span class="dash">- </span>
-                                                    <input type="email" class="form-control "
-                                                        aria-describedby="emailHelp">
-                                                    <input type="email" class="form-control "
-                                                        aria-describedby="emailHelp">
-                                                    <input type="email" class="form-control "
-                                                        aria-describedby="emailHelp">
-
-                                                    <div class="received-text">I didn’t receive a code</div>
-                                                    <button type="submit" class="btn button-full-width next-button">Verify
-                                                    </button>
-                                                </div>
-
-                                            </div>
-
-
-
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12  pt-4 pt-md-0 steps-semibold"> <span
-                                                    class="steps-1">2</span><span class="Personal-information">Choose
-                                                    Payment method</span>
-                                            </div>
-                                            <div class="col-md-6 col-lg-6 col-12 col-xl-6 col-xxl-6 wellcome-text">
-
-
-
-
-                                                <div class="form-group input-space-steps">
-                                                    <label for="exampleInputEmail1" class="pb-2 institute">Account Holder
-                                                        Name</label>
-                                                    <input type="text" class="form-control" id="exampleInputEmail1"
-                                                        aria-describedby="emailHelp">
-                                                </div>
-
-
-                                            </div>
-                                            <div class="col-md-6 col-lg-6 col-12 col-xl-6 col-xxl-6 wellcome-text">
-
-
-
-
-                                                <div class="form-group input-space-steps">
-                                                    <label for="exampleInputEmail1" class="pb-2 institute">Select your
-                                                        Bank</label>
-
-                                                    <select class="form-select form-control"
-                                                        aria-label="Default select example">
-                                                        <option selected> </option>
-                                                        <option value="1">Bank of Maharashtra</option>
-                                                        <option value="2">ICICI Bank</option>
-                                                        <option value="3">IDBI Bank</option>
-                                                    </select>
-                                                </div>
-
-
-
-
-                                            </div>
-
-                                            <div class="col-md-12 card_online">
-
-                                                <label class="net-banking" for="id19">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                            id="id19">
-
-                                                    </div>
-                                                    <div class="banking-img-wrap">
-                                                        <img src="images/bank-building-banking.png" class="grayNone"
-                                                            alt="bank building banking" />
-                                                        <img src="images/bank-building-active.png" class="activeNone"
-                                                            alt="bank building" />
-                                                        <h6 class="bank-building">Net Banking</h6>
-                                                    </div>
-
-                                                </label>
-
-
-                                                <label class="net-banking" for="id13">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                            id="id13">
-
-                                                    </div>
-                                                    <div class="banking-img-wrap">
-                                                        <img src="images/debit-card.png" alt="debit-card" class="grayNone" />
-                                                        <img src="images/activeBankOption.png" class="activeNone"
-                                                            alt="activeBankOption" />
-
-                                                        <h6 class="bank-building">Debit Card</h6>
-                                                    </div>
-                                                </label>
-
-                                                <label class="net-banking" for="id14" id="disableFirst">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                            id="id14">
-
-                                                    </div>
-                                                    <div class="banking-img-wrap">
-                                                        <img src="images/adharCard.png" alt="adharCard" class="grayNone" />
-                                                        <img src="images/Aadhaar_Logo.png " class="activeNone"
-                                                            alt="Aadhaar Logo" />
-
-                                                        <h6 class="bank-building">Aadhar Card</h6>
-                                                    </div>
-                                                </label>
-
-
-
-
-                                                <div style="clear: both;"></div>
-                                                <div class="row">
-
-                                                    <div
-                                                        class="col-md-6 col-lg-6 col-12 col-xl-6 col-xxl-6 wellcome-text bank-details">
-                                                        <div class="form-group input-space-steps">
-
-                                                            <div class="form-group input-space-steps">
-                                                                <label for="exampleInputEmail1"
-                                                                    class="pb-2 institute">Account Number</label>
-                                                                <input type="email" class="form-control" id="numberInput"
-                                                                    aria-describedby="emailHelp">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group input-space-steps">
-                                                            <label for="exampleInputEmail1" class="pb-2 institute">Account
-                                                                Type</label>
-
-
-                                                            <select class="form-select form-control"
-                                                                aria-label="Default select example">
-                                                                <option selected>Choose Account Type</option>
-                                                                <option value="1">Savings Account</option>
-                                                                <option value="2">Current Account</option>
-                                                                <!-- <option value="3">Three</option> -->
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="col-md-6 col-lg-6 col-12 col-xl-6 col-xxl-6 wellcome-text bank-details">
-
-
-
-
-                                                        <div class="form-group input-space-steps">
-
-                                                            <div class="form-group input-space-steps">
-                                                                <label for="exampleInputEmail1"
-                                                                    class="pb-2 institute">Re-enter Account Number</label>
-                                                                <input type="email" class="form-control" id="numberInput1"
-                                                                    aria-describedby="emailHelp">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group input-space-steps">
-                                                            <label for="exampleInputEmail1" class="pb-2 institute">IFSC
-                                                                Code</label>
-                                                            <input type="email" class="form-control" id="exampleInputEmail2"
-                                                                aria-describedby="emailHelp">
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="col-md-12 terms-condition payment-details-foo">
-                                                        <label class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="flexCheckDefault10" checked>
-                                                            <span class="form-check-label font-Login"
-                                                                for="flexCheckDefault10">
-                                                                Terms & Conditions
-                                                            </span>
-                                                        </label>
-                                                    </div>
-
-
-                                                    <!-- <div class="col-md-12 terms-condition">
+                        <div class="textNote">
+                          Note: Payment will be deducted on the scheduled date
+                          as above. Please ensure sufficient balance in your
+                          account.
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12 pt-4 pt-md-0 steps-semibold">
+                          <span class="steps-1">1</span
+                          ><span class="Personal-information"
+                            >Personal Information</span
+                          >
+                        </div>
+                        <div
+                          class="col-md-6 col-lg-6 col-12 col-xl-6 col-xxl-6 wellcome-text"
+                        >
+                          <div
+                            class="form-group input-space-steps position-relative"
+                          >
+                            <label
+                              for="exampleInputEmail1"
+                              class="pb-2 institute"
+                              >Phone Number</label
+                            >
+                            <div class="position-relative">
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="phoneNumber"
+                                aria-describedby="emailHelp"
+                              />
+                              <span class="send-otp-phone-number">
+                                <a href="javascript:void(0)"> Send OTP</a>
+                              </span>
+                            </div>
+                          </div>
+
+                          <div
+                            class="form-group input-space-steps-otp show-input"
+                          >
+                            <label
+                              for="exampleInputEmail1"
+                              class="pb-2 institute"
+                              >Enter OTP</label
+                            >
+                            <div style="clear: both"></div>
+                            <input
+                              type="email"
+                              class="form-control"
+                              aria-describedby="emailHelp"
+                            />
+                            <input
+                              type="email"
+                              class="form-control"
+                              aria-describedby="emailHelp"
+                            />
+                            <input
+                              type="email"
+                              class="form-control"
+                              aria-describedby="emailHelp"
+                            />
+                            <span class="dash">- </span>
+                            <input
+                              type="email"
+                              class="form-control"
+                              aria-describedby="emailHelp"
+                            />
+                            <input
+                              type="email"
+                              class="form-control"
+                              aria-describedby="emailHelp"
+                            />
+                            <input
+                              type="email"
+                              class="form-control"
+                              aria-describedby="emailHelp"
+                            />
+
+                            <div class="received-text">
+                              I didn’t receive a code
+                            </div>
+                            <button
+                              type="submit"
+                              class="btn button-full-width next-button"
+                            >
+                              Verify
+                            </button>
+                          </div>
+                        </div>
+                        <div
+                          class="col-md-6 col-lg-6 col-12 col-xl-6 col-xxl-6 wellcome-text"
+                        >
+                          <div
+                            class="form-group input-space-steps position-relative"
+                          >
+                            <label
+                              for="exampleInputEmail1"
+                              class="pb-2 institute"
+                              >Email Id</label
+                            >
+                            <div class="position-relative">
+                              <input
+                                type="email"
+                                class="form-control"
+                                aria-describedby="emailHelp"
+                              />
+                              <span class="send-otp">
+                                <a href="javascript:void(0)"> Send OTP</a>
+                              </span>
+                            </div>
+                          </div>
+
+                          <div
+                            class="form-group input-space-steps-otp right-otp"
+                          >
+                            <label
+                              for="exampleInputEmail1"
+                              class="pb-2 institute"
+                              >Enter OTP</label
+                            >
+                            <div style="clear: both"></div>
+                            <input
+                              type="email"
+                              class="form-control"
+                              aria-describedby="emailHelp"
+                            />
+                            <input
+                              type="email"
+                              class="form-control"
+                              aria-describedby="emailHelp"
+                            />
+                            <input
+                              type="email"
+                              class="form-control"
+                              aria-describedby="emailHelp"
+                            />
+                            <span class="dash">- </span>
+                            <input
+                              type="email"
+                              class="form-control"
+                              aria-describedby="emailHelp"
+                            />
+                            <input
+                              type="email"
+                              class="form-control"
+                              aria-describedby="emailHelp"
+                            />
+                            <input
+                              type="email"
+                              class="form-control"
+                              aria-describedby="emailHelp"
+                            />
+
+                            <div class="received-text">
+                              I didn’t receive a code
+                            </div>
+                            <button
+                              type="submit"
+                              class="btn button-full-width next-button"
+                            >
+                              Verify
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12 pt-4 pt-md-0 steps-semibold">
+                          <span class="steps-1">2</span
+                          ><span class="Personal-information"
+                            >Choose Payment method</span
+                          >
+                        </div>
+                        <div
+                          class="col-md-6 col-lg-6 col-12 col-xl-6 col-xxl-6 wellcome-text"
+                        >
+                          <div class="form-group input-space-steps">
+                            <label
+                              for="exampleInputEmail1"
+                              class="pb-2 institute"
+                              >Account Holder Name</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="col-md-6 col-lg-6 col-12 col-xl-6 col-xxl-6 wellcome-text"
+                        >
+                          <div class="form-group input-space-steps">
+                            <label
+                              for="exampleInputEmail1"
+                              class="pb-2 institute"
+                              >Select your Bank</label
+                            >
+
+                            <select
+                              class="form-select form-control"
+                              aria-label="Default select example"
+                            >
+                              <option selected></option>
+                              <option value="1">Bank of Maharashtra</option>
+                              <option value="2">ICICI Bank</option>
+                              <option value="3">IDBI Bank</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12 card_online">
+                          <label class="net-banking" for="id19">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="flexRadioDefault"
+                                id="id19"
+                              />
+                            </div>
+                            <div class="banking-img-wrap">
+                              <img
+                                src="images/bank-building-banking.png"
+                                class="grayNone"
+                                alt="bank building banking"
+                              />
+                              <img
+                                src="images/bank-building-active.png"
+                                class="activeNone"
+                                alt="bank building"
+                              />
+                              <h6 class="bank-building">Net Banking</h6>
+                            </div>
+                          </label>
+
+                          <label class="net-banking" for="id13">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="flexRadioDefault"
+                                id="id13"
+                              />
+                            </div>
+                            <div class="banking-img-wrap">
+                              <img
+                                src="images/debit-card.png"
+                                alt="debit-card"
+                                class="grayNone"
+                              />
+                              <img
+                                src="images/activeBankOption.png"
+                                class="activeNone"
+                                alt="activeBankOption"
+                              />
+
+                              <h6 class="bank-building">Debit Card</h6>
+                            </div>
+                          </label>
+
+                          <label
+                            class="net-banking"
+                            for="id14"
+                            id="disableFirst"
+                          >
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="flexRadioDefault"
+                                id="id14"
+                              />
+                            </div>
+                            <div class="banking-img-wrap">
+                              <img
+                                src="images/adharCard.png"
+                                alt="adharCard"
+                                class="grayNone"
+                              />
+                              <img
+                                src="images/Aadhaar_Logo.png "
+                                class="activeNone"
+                                alt="Aadhaar Logo"
+                              />
+
+                              <h6 class="bank-building">Aadhar Card</h6>
+                            </div>
+                          </label>
+
+                          <div style="clear: both"></div>
+                          <div class="row">
+                            <div
+                              class="col-md-6 col-lg-6 col-12 col-xl-6 col-xxl-6 wellcome-text bank-details"
+                            >
+                              <div class="form-group input-space-steps">
+                                <div class="form-group input-space-steps">
+                                  <label
+                                    for="exampleInputEmail1"
+                                    class="pb-2 institute"
+                                    >Account Number</label
+                                  >
+                                  <input
+                                    type="email"
+                                    class="form-control"
+                                    id="numberInput"
+                                    aria-describedby="emailHelp"
+                                  />
+                                </div>
+                              </div>
+
+                              <div class="form-group input-space-steps">
+                                <label
+                                  for="exampleInputEmail1"
+                                  class="pb-2 institute"
+                                  >Account Type</label
+                                >
+
+                                <select
+                                  class="form-select form-control"
+                                  aria-label="Default select example"
+                                >
+                                  <option selected>Choose Account Type</option>
+                                  <option value="1">Savings Account</option>
+                                  <option value="2">Current Account</option>
+                                  <!-- <option value="3">Three</option> -->
+                                </select>
+                              </div>
+                            </div>
+                            <div
+                              class="col-md-6 col-lg-6 col-12 col-xl-6 col-xxl-6 wellcome-text bank-details"
+                            >
+                              <div class="form-group input-space-steps">
+                                <div class="form-group input-space-steps">
+                                  <label
+                                    for="exampleInputEmail1"
+                                    class="pb-2 institute"
+                                    >Re-enter Account Number</label
+                                  >
+                                  <input
+                                    type="email"
+                                    class="form-control"
+                                    id="numberInput1"
+                                    aria-describedby="emailHelp"
+                                  />
+                                </div>
+                              </div>
+
+                              <div class="form-group input-space-steps">
+                                <label
+                                  for="exampleInputEmail1"
+                                  class="pb-2 institute"
+                                  >IFSC Code</label
+                                >
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="exampleInputEmail2"
+                                  aria-describedby="emailHelp"
+                                />
+                              </div>
+                            </div>
+
+                            <div
+                              class="col-md-12 terms-condition payment-details-foo"
+                            >
+                              <label class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault10"
+                                  checked
+                                />
+                                <span
+                                  class="form-check-label font-Login"
+                                  for="flexCheckDefault10"
+                                >
+                                  Terms &amp; Conditions
+                                </span>
+                              </label>
+                            </div>
+
+                            <!-- <div class="col-md-12 terms-condition">
                                                         <div class="form-check">
                                                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10">
                                                             <label class="form-check-label" for="flexCheckDefault10">
@@ -996,25 +1435,33 @@
                                                         </div>
                                                     </div> -->
 
-                                                    <div class="col-md-12 terms-condition">
+                            <div class="col-md-12 terms-condition">
+                              <div class="col-md-12 terms-condition">
+                                <label class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="flexCheckDefault11"
+                                    checked
+                                  />
+                                  <span
+                                    class="form-check-label font-Login"
+                                    for="flexCheckDefault11"
+                                  >
+                                    Join the GetzPAID community and never miss
+                                    an update.
+                                  </span>
+                                </label>
+                              </div>
+                              <p class="noteStyle">
+                                Note: You will receive an email and SMS alert 5
+                                days before the mandate date.<br />
+                                If you need to make any changes, please
+                                email _____@dalycollege.in.
+                              </p>
 
-                                                        <div class="col-md-12 terms-condition">
-                                                            <label class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value=""
-                                                                    id="flexCheckDefault10" checked>
-                                                                <span class="form-check-label font-Login"
-                                                                    for="flexCheckDefault10">
-                                                                    Join the GetzPAID community and never miss an update.
-                                                                </span>
-
-
-                                                            </label>
-                                                        </div>
-                                                        <p class="noteStyle">Note: You will receive an email and SMS alert 5
-                                                            days before the mandate date.<br> If you need to make any
-                                                            changes, please email _____@dalycollege.in.</p>
-
-                                                        <!--                                                     
+                              <!--                                                     
                                                         <div class="form-check">
 
                                                             <label class="form-check-label" for="flexCheckDefault11">
@@ -1022,125 +1469,105 @@
                                                             <a href="javascript:void(0)" class="joinText">Join the GetzPAID community and never miss an update.</a> 
                                                             </label>
                                                         </div> -->
-                                                    </div>
-                                                    <button type="submit" class="btn button-full-width "
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#exampleModal3">Submit</button>
-
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </form>
-
-                                </div>
                             </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="tab-pane fade accordion-item" id="total-tab-pane" role="tabpanel"
-                        aria-labelledby="total-tab" tabindex="0">
-                        <h2 class="accordion-header d-lg-none" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                                Accordion Item #3
+                            <button
+                              type="submit"
+                              class="btn button-full-width"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal3"
+                            >
+                              Submit
                             </button>
-                        </h2>
-                        <!-- <div id="collapseFour" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingThree" data-bs-parent="#myTabContent">
-                                <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-                                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-                                    though the transition does limit overflow.
-                                </div>
-                            </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Right Panel -->
-    </div>
-    
-
-
-
-    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Just One Click Away!</h1>
-                    <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-style-input px-5 pt-5 pb-4">
-
-                    <p class="bold-heading-you-have">
-                        Set Up Your e-Mandate Now to <span class="successFully">Breeze</span> Through Your Fee Payment
-                        and Keep Your Journey at Daly College <span class="successFully">Smooth</span> and <span
-                            class="successFully">Uninterrupted!</span>
-
-
-                    </p>
-
-                </div>
-
-                <hr style="height: 5px;background-color: #000;width: 100%;">
-
-                <div class="px-5 ">
-                    <div class="row">
-
-
-                        <div class="col-md-12 col-12 text-right-success "><button type="button"
-                                class="btn btn-success border-radius-round">Let’s Go <img src="images/arrowLetsGo.png"
-                                    class="pe-3"> </button></div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Just One Click Away!</h1>
-                    <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-style-input px-5 pt-5 pb-4">
-                    <h1 class="bold-heading-you-have">
-                        <p>
-                            Now to <span class="successFully">Breeze</span> Through Your Fee Payment and Keep Your Journey at Daly College <span class="successFully">Smooth</span> and <span class="successFully">Uninterrupted!</span>
-
-                        </p>
-
-
-
-
-                </div>
-
-                -->
-    <!-- 
-                 <hr style="height: 7px;
-        background-color: #7e7e7e;
-        width: 100%;">
-                <div class="px-5 pt-0">
-                    <div class="row">
-                        <div class="col-md-6 col-6">
-                            <p class="text-para-create-your">Collect your money on time!</p>
+                          </div>
                         </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                        <div class="col-md-6 col-6 text-right-success"><button type="button" class="btn btn-success border-radius-round">Sign Up <img src="images/arrow.png" class="pe-3">  </button></div>
-
-                    </div>
-                </div> 
-    </div>
-    </div>
-    </div> -->
-    <footer>
-        <div class="container">
-            <span class="powerdText">Powered by <img src="images/footerlogo.svg" /></span>
+            <div
+              class="tab-pane fade accordion-item"
+              id="total-tab-pane"
+              role="tabpanel"
+              aria-labelledby="total-tab"
+              tabindex="0"
+            >
+              <h2 class="accordion-header d-lg-none" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Accordion Item #3
+                </button>
+              </h2>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- Right Panel -->
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel3"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+              Just One Click Away!
+            </h1>
+            <button
+              type="button"
+              class="btn-close d-none"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-style-input px-5 pt-5 pb-4">
+            <p class="bold-heading-you-have">
+              Set Up Your e-Mandate Now to
+              <span class="successFully">Breeze</span> Through Your Fee Payment
+              and Keep Your Journey at Daly College
+              <span class="successFully">Smooth</span> and
+              <span class="successFully">Uninterrupted!</span>
+            </p>
+          </div>
+
+          <hr style="height: 5px; background-color: #000; width: 100%" />
+
+          <div class="px-5">
+            <div class="row">
+              <div class="col-md-12 col-12 text-right-success">
+                <button
+                  type="button"
+                  class="btn btn-success border-radius-round"
+                >
+                  Let’s Go <img src="images/arrowLetsGo.png" class="pe-3" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <span class="powerdText"
+          >Powered by <img src="images/footerlogo.svg"
+        /></span>
+      </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -1150,59 +1577,59 @@
     <script src="js/custom.js"></script>
 
     <script>
-        $(function () {
-            $('#datepicker,#datepicker1').datepicker();
+      $(function () {
+        $("#datepicker,#datepicker1").datepicker();
+      });
+      document
+        .getElementById("numberInput")
+        .addEventListener("input", function (e) {
+          this.value = this.value.replace(/[^0-9]/g, "");
         });
-        document.getElementById('numberInput').addEventListener('input', function (e) {
-            this.value = this.value.replace(/[^0-9]/g, '');
+      document
+        .getElementById("numberInput1")
+        .addEventListener("input", function (e) {
+          this.value = this.value.replace(/[^0-9]/g, "");
         });
-        document.getElementById('numberInput1').addEventListener('input', function (e) {
-            this.value = this.value.replace(/[^0-9]/g, '');
+      document
+        .getElementById("phoneNumber")
+        .addEventListener("input", function (e) {
+          this.value = this.value.replace(/[^0-9]/g, "");
         });
-        document.getElementById('phoneNumber').addEventListener('input', function (e) {
-            this.value = this.value.replace(/[^0-9]/g, '');
+      (function (document, window, index) {
+        var inputs = document.querySelectorAll(".inputfile");
+        Array.prototype.forEach.call(inputs, function (input) {
+          var label = input.nextElementSibling,
+            labelVal = label.innerHTML;
+          input.addEventListener("change", function (e) {
+            var fileName = "";
+            if (this.files && this.files.length > 1)
+              fileName = (
+                this.getAttribute("data-multiple-caption") || ""
+              ).replace("{count}", this.files.length);
+            else fileName = e.target.value.split("\\").pop();
+
+            if (fileName) label.querySelector("span").innerHTML = fileName;
+            else label.innerHTML = labelVal;
+          });
+          // Firefox bug fix
+          input.addEventListener("focus", function () {
+            input.classList.add("has-focus");
+          });
+          input.addEventListener("blur", function () {
+            input.classList.remove("has-focus");
+          });
         });
-        (function (document, window, index) {
-            var inputs = document.querySelectorAll('.inputfile');
-            Array.prototype.forEach.call(inputs, function (input) {
-                var label = input.nextElementSibling,
-                    labelVal = label.innerHTML;
-                input.addEventListener('change', function (e) {
-                    var fileName = '';
-                    if (this.files && this.files.length > 1)
-                        fileName = (this.getAttribute('data-multiple-caption') || '').replace(
-                            '{count}', this.files.length);
-                    else
-                        fileName = e.target.value.split('\\').pop();
+      })(document, window, 0);
 
-                    if (fileName)
-                        label.querySelector('span').innerHTML = fileName;
-                    else
-                        label.innerHTML = labelVal;
-                });
-                // Firefox bug fix
-                input.addEventListener('focus', function () {
-                    input.classList.add('has-focus');
-                });
-                input.addEventListener('blur', function () {
-                    input.classList.remove('has-focus');
-                });
-            });
-        }(document, window, 0));
-
-
-
-
-        new DataTable('#example', {
-            ordering: false,
-            "bDestroy": false,
-            "bAutoWidth": false,
-            "bFilter": false,
-            "bSort": false,
-            "bPaginate": false,
-            "bInfo": false
-        });
+      new DataTable("#example", {
+        ordering: false,
+        bDestroy: false,
+        bAutoWidth: false,
+        bFilter: false,
+        bSort: false,
+        bPaginate: false,
+        bInfo: false,
+      });
     </script>
-</body>
-
+  </body>
 </html>

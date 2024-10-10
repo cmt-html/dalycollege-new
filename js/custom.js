@@ -46,6 +46,7 @@ $(".net-banking").on("click", function () {
 // })
 
 $(document).ready(function () {
+
   $(".read-more").click(function (e) {
     e.preventDefault();
 
@@ -56,10 +57,7 @@ $(document).ready(function () {
 
     $(this).siblings("img").toggleClass("rotateImg180");
   });
-
-  // $(".imgBox").on("click", function () {
-  //   $(".imgBox img").toggleClass("rotateImg180");
-  // });
+  
 });
 
 // Menu Js

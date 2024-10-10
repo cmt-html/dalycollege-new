@@ -12650,6 +12650,7 @@ select option {
 }
 .parentCard .plansProduct .planPrice {
   font-size: 40px;
+  line-height: normal;
   font-family: "metropolisbold";
   color: #00895d;
   -webkit-user-select: none;
