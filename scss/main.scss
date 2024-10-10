@@ -2242,6 +2242,14 @@ select option {
   }
 }
 
+#myTabContent {
+  .wellcome-text {
+    .form-control{
+      height: auto;
+    }
+  }
+}
+
 .rounded-4 {
   border-radius: 10px !important;
 }
